@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <test thread-count="5" name="Tests(failed)">
+    <classes>
+      <class name="tests.home.TestHomePage">
+        <methods>
+          <include name="testSearchProductsFromHomePage"/>
+          <include name="testUserProfileNavigationLinks"/>
+          <include name="testRegisterUserByUniqueEmailId"/>
+        </methods>
+      </class> <!-- tests.home.TestHomePage -->
+      <class name="tests.shopping.TestShoppingCart">
+        <methods>
+          <include name="testSecureCheckOutForProducts"/>
+        </methods>
+      </class> <!-- tests.shopping.TestShoppingCart -->
+      <class name="tests.shopping.TestProductShopping">
+        <methods>
+          <include name="testAddProductToWishList"/>
+        </methods>
+      </class> <!-- tests.shopping.TestProductShopping -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
