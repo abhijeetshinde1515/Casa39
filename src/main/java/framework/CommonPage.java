@@ -30,7 +30,7 @@ public class CommonPage extends BaseFragment {
 	/************ validations ************/
 	
 	public boolean isPageTitleDisplayed(String title) {
-		return pageTitle_by.isDisplayed() && pageTitle_by.getText().equals(title);
+		return pageTitle_by.isDisplayed() && pageTitle_by.getText().contains(title);
 	}
 	
 	

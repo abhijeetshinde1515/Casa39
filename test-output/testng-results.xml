@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
     <line>
       <![CDATA[STEP - Check connection to Casa39 English Website...]]>
@@ -44,7 +44,7 @@
       <![CDATA[Click - SUBSCRIBE]]>
     </line>
     <line>
-      <![CDATA[Verified - Error Message is Displayed]]>
+      <![CDATA[Verified - This email address is already subscribed]]>
     </line>
     <line>
       <![CDATA[STEP - Subscrition email by entering new email.]]>
@@ -287,6 +287,372 @@
       <![CDATA[STEP - Accepting Cookies...]]>
     </line>
     <line>
+      <![CDATA[STEP - Choose and Select Category As FLOOR TILES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting FLOOR TILES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - FLOORTILES]]>
+    </line>
+    <line>
+      <![CDATA[Verified - FLOOR TILES - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As WALL TILES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting WALL TILES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - WALLTILES]]>
+    </line>
+    <line>
+      <![CDATA[Verified - WALL TILES - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As TAPS From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting TAPS from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - TAPS]]>
+    </line>
+    <line>
+      <![CDATA[Verified - TAPS - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As ACCESSORIES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting ACCESSORIES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ACCESSORIES]]>
+    </line>
+    <line>
+      <![CDATA[Verified - ACCESSORIES - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As SANITARY WARES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting SANITARY WARES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - SANITARYWARES]]>
+    </line>
+    <line>
+      <![CDATA[Verified - SANITARY WARES - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As FURNITURE From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting FURNITURE from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - FURNITURE]]>
+    </line>
+    <line>
+      <![CDATA[Verified - FURNITURE - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As BATHTUBS From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting BATHTUBS from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - BATHTUBS]]>
+    </line>
+    <line>
+      <![CDATA[Verified - BATHTUBS - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As SHOWER ENCLOSURES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting SHOWER ENCLOSURES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - SHOWERENCLOSURES]]>
+    </line>
+    <line>
+      <![CDATA[Verified - SHOWER ENCLOSURES - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As BRANDS From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting BRANDS from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - BRANDS]]>
+    </line>
+    <line>
+      <![CDATA[Verified - BRANDS - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As OFFERS From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting OFFERS from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - OFFERS]]>
+    </line>
+    <line>
+      <![CDATA[Verified - OFFERS - Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Accepting Cookies...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As FLOOR TILES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting FLOOR TILES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Cleansers]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Cleansers - Sub Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As WALL TILES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting WALL TILES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Marbleeffect]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Bathroom Tiles Marble effect - Sub Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As TAPS From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting TAPS from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Waterfalltaps]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Waterfall taps - Sub Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As ACCESSORIES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting ACCESSORIES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Hooks]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Hooks - Sub Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As SANITARY WARES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting SANITARY WARES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Ceramic]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Shower Trays Ceramic - Sub Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As FURNITURE From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting FURNITURE from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Mirrors]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Mirrors - Sub Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As BATHTUBS From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting BATHTUBS from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Recessed]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Bathtubs Recessed - Sub Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As SHOWER ENCLOSURES From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting SHOWER ENCLOSURES from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Singledooropening]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Single door opening - Sub Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose and Select Category As BRANDS From Product Categories]]>
+    </line>
+    <line>
+      <![CDATA[Selecting BRANDS from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - RELAX]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Relax - Sub Category Opened Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Accepting Cookies...]]>
+    </line>
+    <line>
       <![CDATA[STEP - Go to Customer Log In Page and Validate Authenicated User Log In.]]>
     </line>
     <line>
@@ -337,13 +703,103 @@
     <line>
       <![CDATA[STEP - Closing Browser Successfully...]]>
     </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Accepting Cookies...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose other language]]>
+    </line>
+    <line>
+      <![CDATA[Click - English]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Italiano from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Italiano]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Italiano Language Selected Successfully]]>
+    </line>
+    <line>
+      <![CDATA[Click - Accetto!]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Reset Language]]>
+    </line>
+    <line>
+      <![CDATA[Click - Italiano]]>
+    </line>
+    <line>
+      <![CDATA[Selecting English from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - English]]>
+    </line>
+    <line>
+      <![CDATA[Verified - English Language Selected Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose other Country]]>
+    </line>
+    <line>
+      <![CDATA[Click - India]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Algeria from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Algeria]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Algeria Country Selected Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Choose other Currency]]>
+    </line>
+    <line>
+      <![CDATA[Click - Euro]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Us Dollar from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - UsDollar]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Us Dollar Currency Selected Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Reset Currency]]>
+    </line>
+    <line>
+      <![CDATA[Click - UsDollar]]>
+    </line>
+    <line>
+      <![CDATA[Selecting Euro from list...]]>
+    </line>
+    <line>
+      <![CDATA[Click - Euro]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Euro Currency Selected Successfully]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="224049" started-at="2021-07-20T16:41:07 IST" finished-at="2021-07-20T16:44:51 IST">
+  <suite name="Default suite" duration-ms="510795" started-at="2021-07-21T17:03:07 IST" finished-at="2021-07-21T17:11:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="224049" started-at="2021-07-20T16:41:07 IST" finished-at="2021-07-20T16:44:51 IST">
+    <test name="Default test" duration-ms="510795" started-at="2021-07-21T17:03:07 IST" finished-at="2021-07-21T17:11:37 IST">
       <class name="tests.home.TestHomePage">
-        <test-method status="PASS" signature="testEmailSubscription()[pri:0, instance:tests.home.TestHomePage@12f41634]" name="testEmailSubscription" duration-ms="42570" started-at="2021-07-20T16:41:20 IST" finished-at="2021-07-20T16:42:02 IST">
+        <test-method status="PASS" signature="testEmailSubscription()[pri:0, instance:tests.home.TestHomePage@5ed828d]" name="testEmailSubscription" duration-ms="43177" started-at="2021-07-21T17:03:23 IST" finished-at="2021-07-21T17:04:06 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -370,7 +826,7 @@
               <![CDATA[Click - SUBSCRIBE]]>
             </line>
             <line>
-              <![CDATA[Verified - Error Message is Displayed]]>
+              <![CDATA[Verified - This email address is already subscribed]]>
             </line>
             <line>
               <![CDATA[STEP - Subscrition email by entering new email.]]>
@@ -386,7 +842,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testEmailSubscription -->
-        <test-method status="PASS" signature="testHomePageInformationLinks()[pri:0, instance:tests.home.TestHomePage@12f41634]" name="testHomePageInformationLinks" duration-ms="99224" started-at="2021-07-20T16:42:02 IST" finished-at="2021-07-20T16:43:42 IST">
+        <test-method status="PASS" signature="testHomePageInformationLinks()[pri:0, instance:tests.home.TestHomePage@5ed828d]" name="testHomePageInformationLinks" duration-ms="107042" started-at="2021-07-21T17:04:06 IST" finished-at="2021-07-21T17:05:53 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -561,7 +1017,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testHomePageInformationLinks -->
-        <test-method status="PASS" signature="testSearchProductsFromHomePage()[pri:0, instance:tests.home.TestHomePage@12f41634]" name="testSearchProductsFromHomePage" duration-ms="29434" started-at="2021-07-20T16:43:42 IST" finished-at="2021-07-20T16:44:11 IST">
+        <test-method status="PASS" signature="testSearchProductsFromHomePage()[pri:0, instance:tests.home.TestHomePage@5ed828d]" name="testSearchProductsFromHomePage" duration-ms="34843" started-at="2021-07-21T17:05:53 IST" finished-at="2021-07-21T17:06:28 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -613,7 +1069,381 @@
             </line>
           </reporter-output>
         </test-method> <!-- testSearchProductsFromHomePage -->
-        <test-method status="PASS" signature="testSignInAuthenticatedUser()[pri:0, instance:tests.home.TestHomePage@12f41634]" name="testSignInAuthenticatedUser" duration-ms="39716" started-at="2021-07-20T16:44:11 IST" finished-at="2021-07-20T16:44:51 IST">
+        <test-method status="PASS" signature="testSelectProductCategory()[pri:0, instance:tests.home.TestHomePage@5ed828d]" name="testSelectProductCategory" duration-ms="112461" started-at="2021-07-21T17:06:28 IST" finished-at="2021-07-21T17:08:20 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Accepting Cookies...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As FLOOR TILES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting FLOOR TILES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - FLOORTILES]]>
+            </line>
+            <line>
+              <![CDATA[Verified - FLOOR TILES - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As WALL TILES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting WALL TILES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - WALLTILES]]>
+            </line>
+            <line>
+              <![CDATA[Verified - WALL TILES - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As TAPS From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting TAPS from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - TAPS]]>
+            </line>
+            <line>
+              <![CDATA[Verified - TAPS - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As ACCESSORIES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting ACCESSORIES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ACCESSORIES]]>
+            </line>
+            <line>
+              <![CDATA[Verified - ACCESSORIES - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As SANITARY WARES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting SANITARY WARES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - SANITARYWARES]]>
+            </line>
+            <line>
+              <![CDATA[Verified - SANITARY WARES - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As FURNITURE From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting FURNITURE from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - FURNITURE]]>
+            </line>
+            <line>
+              <![CDATA[Verified - FURNITURE - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As BATHTUBS From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting BATHTUBS from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - BATHTUBS]]>
+            </line>
+            <line>
+              <![CDATA[Verified - BATHTUBS - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As SHOWER ENCLOSURES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting SHOWER ENCLOSURES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - SHOWERENCLOSURES]]>
+            </line>
+            <line>
+              <![CDATA[Verified - SHOWER ENCLOSURES - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As BRANDS From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting BRANDS from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - BRANDS]]>
+            </line>
+            <line>
+              <![CDATA[Verified - BRANDS - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As OFFERS From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting OFFERS from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - OFFERS]]>
+            </line>
+            <line>
+              <![CDATA[Verified - OFFERS - Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSelectProductCategory -->
+        <test-method status="PASS" signature="testSelectProductSubCategory()[pri:0, instance:tests.home.TestHomePage@5ed828d]" name="testSelectProductSubCategory" duration-ms="96193" started-at="2021-07-21T17:08:20 IST" finished-at="2021-07-21T17:09:57 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Accepting Cookies...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As FLOOR TILES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting FLOOR TILES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Cleansers]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Cleansers - Sub Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As WALL TILES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting WALL TILES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Marbleeffect]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Bathroom Tiles Marble effect - Sub Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As TAPS From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting TAPS from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Waterfalltaps]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Waterfall taps - Sub Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As ACCESSORIES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting ACCESSORIES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Hooks]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Hooks - Sub Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As SANITARY WARES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting SANITARY WARES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Ceramic]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Shower Trays Ceramic - Sub Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As FURNITURE From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting FURNITURE from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Mirrors]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Mirrors - Sub Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As BATHTUBS From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting BATHTUBS from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Recessed]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Bathtubs Recessed - Sub Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As SHOWER ENCLOSURES From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting SHOWER ENCLOSURES from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Singledooropening]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Single door opening - Sub Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose and Select Category As BRANDS From Product Categories]]>
+            </line>
+            <line>
+              <![CDATA[Selecting BRANDS from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - RELAX]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Relax - Sub Category Opened Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSelectProductSubCategory -->
+        <test-method status="PASS" signature="testSignInAuthenticatedUser()[pri:0, instance:tests.home.TestHomePage@5ed828d]" name="testSignInAuthenticatedUser" duration-ms="42081" started-at="2021-07-21T17:09:57 IST" finished-at="2021-07-21T17:10:39 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -677,9 +1507,103 @@
             </line>
           </reporter-output>
         </test-method> <!-- testSignInAuthenticatedUser -->
+        <test-method status="PASS" signature="testUserSelectLanguageCountryAndCurrency()[pri:0, instance:tests.home.TestHomePage@5ed828d]" name="testUserSelectLanguageCountryAndCurrency" duration-ms="58723" started-at="2021-07-21T17:10:39 IST" finished-at="2021-07-21T17:11:37 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Accepting Cookies...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose other language]]>
+            </line>
+            <line>
+              <![CDATA[Click - English]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Italiano from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Italiano]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Italiano Language Selected Successfully]]>
+            </line>
+            <line>
+              <![CDATA[Click - Accetto!]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Reset Language]]>
+            </line>
+            <line>
+              <![CDATA[Click - Italiano]]>
+            </line>
+            <line>
+              <![CDATA[Selecting English from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - English]]>
+            </line>
+            <line>
+              <![CDATA[Verified - English Language Selected Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose other Country]]>
+            </line>
+            <line>
+              <![CDATA[Click - India]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Algeria from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Algeria]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Algeria Country Selected Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Choose other Currency]]>
+            </line>
+            <line>
+              <![CDATA[Click - Euro]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Us Dollar from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - UsDollar]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Us Dollar Currency Selected Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Reset Currency]]>
+            </line>
+            <line>
+              <![CDATA[Click - UsDollar]]>
+            </line>
+            <line>
+              <![CDATA[Selecting Euro from list...]]>
+            </line>
+            <line>
+              <![CDATA[Click - Euro]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Euro Currency Selected Successfully]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testUserSelectLanguageCountryAndCurrency -->
       </class> <!-- tests.home.TestHomePage -->
       <class name="tests.demo.TestDemo">
-        <test-method status="PASS" signature="testAutomationSetUpForCasa39English()[pri:0, instance:tests.demo.TestDemo@6043cd28]" name="testAutomationSetUpForCasa39English" duration-ms="13013" started-at="2021-07-20T16:41:07 IST" finished-at="2021-07-20T16:41:20 IST">
+        <test-method status="PASS" signature="testAutomationSetUpForCasa39English()[pri:0, instance:tests.demo.TestDemo@5bfbf16f]" name="testAutomationSetUpForCasa39English" duration-ms="16188" started-at="2021-07-21T17:03:07 IST" finished-at="2021-07-21T17:03:23 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - Check connection to Casa39 English Website...]]>

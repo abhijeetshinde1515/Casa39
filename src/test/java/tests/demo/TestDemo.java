@@ -7,7 +7,7 @@ import baseTestScripts.TestNGBaseTest;
 public class TestDemo extends TestNGBaseTest {
 
 	@Test()
-	public void testAutomationSetUpForCasa39English() throws InterruptedException {
+	public void testAutomationSetUpForCasa39English() throws Exception {
 		
 		logStep("Check connection to Casa39 English Website...");
 		navigateToCasa39Website(false);

@@ -10,6 +10,7 @@ import pages.home.HomePage;
 import pages.home.InformationLinksPage;
 import pages.home.SearchResultsPage;
 import utils.GeneratorUtils;
+import utils.ProductUtils;
 
 public class TestHomePage extends TestNGBaseTest {
 
@@ -65,7 +66,7 @@ public class TestHomePage extends TestNGBaseTest {
 
 		logStep("Subscrition email by entering existing email.");
 		homePage = homePage.subscribeToEmailAs(TestData.email);
-		assertTrue(homePage.isErrorMessageDisplayed("This email address is already subscribed."), "Error Message is Displayed");
+		assertTrue(homePage.isErrorMessageDisplayed("This email address is already subscribed."), "This email address is already subscribed");
 		
 		logStep("Subscrition email by entering new email.");
 		homePage = homePage.subscribeToEmailAs(GeneratorUtils.generateUniqueEmail());
@@ -189,6 +190,85 @@ public class TestHomePage extends TestNGBaseTest {
 		assertTrue(productDescriptionPage.isPageTitleDisplayed(productName), "Searched Product is Correctly Displayed");
 
 		searchResultsPage.clickCASA39Logo();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies that user can choose and select language, country and currency.", 
+			CreateDate = "21/07/2021")
+	@Test()
+	public void testUserSelectLanguageCountryAndCurrency() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+
+		String italian = "Italiano";
+		String english = "English";
+
+		logStep("Choose other language");
+		homePage.selectLanguageAs(italian);
+		assertEquals(homePage.getSelectedLanguage(), italian, italian + " Language Selected Successfully");
+		homePage.acceptCookies();
+
+		logStep("Reset Language");
+		homePage.selectLanguageAs(english);
+		assertEquals(homePage.getSelectedLanguage(), english, english + " Language Selected Successfully");
+
+		String algeria = "Algeria";
+
+		logStep("Choose other Country");
+		homePage.selectCountryAs(algeria);
+		assertEquals(homePage.getSelectedCountry(), algeria, algeria + " Country Selected Successfully");
+
+		String dollar = "Us Dollar";
+		String euro = "Euro";
+
+		logStep("Choose other Currency");
+		homePage.selectCurrencyAs(dollar);
+		assertEquals(homePage.getSelectedCurrency(), dollar, dollar + " Currency Selected Successfully");
+
+		logStep("Reset Currency");
+		homePage.selectCurrencyAs(euro);
+		assertEquals(homePage.getSelectedCurrency(), euro, euro + " Currency Selected Successfully");
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies that user can choose and select product category from homepage.", 
+			CreateDate = "21/07/2021")
+	@Test()
+	public void testSelectProductCategory() throws Exception {
+		HomePage homePage = navigateToCasa39Website(false);
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "FLOOR TILES", "Tiles");
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "WALL TILES", "Wall Tiles");
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "TAPS", "Taps");
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "ACCESSORIES", "accessories");
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "SANITARY WARES", "Toilet");
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "FURNITURE", "furniture");
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "BATHTUBS", "Bathtubs");
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "SHOWER ENCLOSURES", "Shower Enclosures");
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "BRANDS", "OUR BRANDS");
+		ProductUtils.selectAndValidateMainProductCategories(homePage, "OFFERS", "Sale");
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies that user can choose and select product sub-category from homepage.", 
+			CreateDate = "21/07/2021")
+	@Test()
+	public void testSelectProductSubCategory() throws Exception {
+		HomePage homePage = navigateToCasa39Website(false);
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "FLOOR TILES", "Cleansers", "Cleansers");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "WALL TILES", "Marble effect", "Bathroom Tiles Marble effect");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "TAPS", "Waterfall taps", "Waterfall taps");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "ACCESSORIES", "Hooks", "Hooks");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "SANITARY WARES", "Ceramic", "Shower Trays Ceramic");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "FURNITURE", "Mirrors", "Mirrors");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "BATHTUBS", "Recessed", "Bathtubs Recessed");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "SHOWER ENCLOSURES", "Single door opening", "Single door opening");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "BRANDS", "RELAX", "Relax");
 		closeBrowser();
 	}
 }

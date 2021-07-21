@@ -3,7 +3,7 @@ package utils;
 /**
  *
  */
-public class AssertUtil {
+public class AssertUtil extends ReportUtils {
 
 	/* TRUE */
 	public static void assertTrue(boolean condition, String message) {

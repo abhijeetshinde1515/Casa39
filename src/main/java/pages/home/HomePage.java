@@ -1,5 +1,7 @@
 package pages.home;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -8,9 +10,11 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 import framework.CommonPage;
 import pages.catalogue.CategoryPage;
+import pages.catalogue.ProductListPage;
 
 public class HomePage extends CommonPage {
 
@@ -65,6 +69,15 @@ public class HomePage extends CommonPage {
 	
 	@FindBy(linkText = "SIGN OUT")
 	WebElement signOut_by;
+	
+	@FindBy(id = "switcher-website-trigger")
+	WebElement website_switch;
+	
+	@FindBy(id = "switcher-country-trigger")
+	WebElement country_switch;
+	
+	@FindBy(id = "switcher-currency-trigger")
+	WebElement currency_switch;
 
 	/************ actions ***************/
 
@@ -149,6 +162,83 @@ public class HomePage extends CommonPage {
 	public SearchResultsPage clickEnterForSearch() {
 		searchBox_by.sendKeys(Keys.ENTER);
 		return new SearchResultsPage(driver);
+	}
+	
+	public HomePage selectLanguageAs(String language) {
+		click(website_switch);
+		Reporter.log("Selecting " + language + " from list...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("li.switcher-option a"));
+		for (WebElement listItem : listItems)
+			if (listItem.getText().contains(language)) {
+				click(listItem);
+				break;
+			}
+		return new HomePage(driver);
+	}
+	
+	public HomePage selectCountryAs(String country) {
+		click(country_switch);
+		Reporter.log("Selecting " + country + " from list...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("li.switcher-option a"));
+		for (WebElement listItem : listItems)
+			if (listItem.getText().equals(country)) {
+				click(listItem);
+				break;
+			}
+		return new HomePage(driver);
+	}
+	
+	public HomePage selectCurrencyAs(String currency) {
+		click(currency_switch);
+		Reporter.log("Selecting " + currency + " from list...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("li.switcher-option a"));
+		for (WebElement listItem : listItems)
+			if (listItem.getText().contains(currency)) {
+				click(listItem);
+				break;
+			}
+		return new HomePage(driver);
+	}
+	
+	public ProductListPage selectProductCategory(String category) {
+		Reporter.log("Selecting " + category + " from list...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("a.ammenu-link.-main.-parent"));
+		for (WebElement listItem : listItems)
+			if (listItem.getText().equals(category)) {
+				click(listItem);
+				break;
+			}
+		return new ProductListPage(driver);
+	}
+	
+	public ProductListPage selectProductSubCategory(String category, String subcategory) {
+		Reporter.log("Selecting " + category + " from list...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("a.ammenu-link.-main.-parent"));
+		for (WebElement listItem : listItems)
+			if (listItem.getText().equals(category)) {
+				Actions action = new Actions(driver);
+				action.moveToElement(listItem).perform();
+				WebElement subcategoryElement =  findElement(By.linkText(subcategory));
+				new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.linkText(subcategory)));
+				new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.linkText(subcategory)));
+				clickUsingJSExecutor(subcategoryElement);
+				break;
+			}
+		return new ProductListPage(driver);
+	}
+	
+	/************ accessors ***************/
+	
+	public String getSelectedLanguage() {
+		return website_switch.getText();
+	}
+	
+	public String getSelectedCountry() {
+		return country_switch.getText();
+	}
+	
+	public String getSelectedCurrency() {
+		return currency_switch.getText();
 	}
 
 	/************ validations ***************/

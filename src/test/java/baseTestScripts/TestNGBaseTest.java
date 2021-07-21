@@ -9,13 +9,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.home.HomePage;
 import utils.AssertUtil;
-import utils.ReportUtils;
 
 public class TestNGBaseTest extends AssertUtil {
 
 	protected RemoteWebDriver driver;
 	
-	public HomePage navigateToCasa39Website(boolean keepBrowserOpen) {
+	public HomePage navigateToCasa39Website(boolean keepBrowserOpen) throws Exception {
 		
 		logStep("Launch Browser Successfully...");
 		
@@ -45,16 +44,14 @@ public class TestNGBaseTest extends AssertUtil {
 		return new HomePage(driver);
 	}
 	
-	public void acceptCookies() {
+	public void acceptCookies() throws Exception {
 		logStep("Accepting Cookies...");
+		Thread.sleep(3000);
+		new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a.cc-btn.cc-dismiss")));
 		new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.cc-btn.cc-dismiss"))).click();
 	}
 	public void closeBrowser() {
 		logStep("Closing Browser Successfully...");
 		driver.quit();
-	}
-
-	public void logStep(String logs) {
-		ReportUtils.logStep(logs);
 	}
 }
