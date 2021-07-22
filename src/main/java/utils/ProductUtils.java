@@ -2,6 +2,7 @@ package utils;
 
 import pages.catalogue.ProductListPage;
 import pages.home.HomePage;
+import pages.home.MyAccountPage;
 
 public class ProductUtils extends AssertUtil {
 
@@ -20,4 +21,29 @@ public class ProductUtils extends AssertUtil {
 		assertTrue(productListPage.isPageTitleDisplayed(pageTitle), pageTitle +" - Sub Category Opened Successfully...");
 		return productListPage.clickCASA39Logo();
 	}
+	
+	public static MyAccountPage validateMyOderDetailsAs(MyAccountPage myAccountPage, String orderID, String date, String orderTotal, String status) {
+
+		assertTrue(myAccountPage.isOrderIdDisplayed(orderID), "Order ID as '"+orderID+"' Displayed correctly");
+		assertTrue(myAccountPage.isOrderDateDisplayed(date), "Order Date as '"+date+"' Displayed correctly");
+		assertTrue(myAccountPage.isOrderTotalDisplayed(orderTotal), "Order Total as '"+orderTotal+"' Displayed correctly");
+		assertTrue(myAccountPage.isOrderStatusDisplayed(status), "Order ID as '"+status+"' Displayed correctly");
+		
+		return myAccountPage;
+	}
+	
+	public static MyAccountPage validateAdditionalAddressDetailsAs(MyAccountPage myAccountPage, String firstName, String lastName, String street, String city, String country, String state, String zip, String phone) {
+
+		assertTrue(myAccountPage.isAdditionalAddressFirstNameDisplayed(firstName), "First Name as '"+firstName+"' Displayed correctly");
+		assertTrue(myAccountPage.isAdditionalAddressLastNameDisplayed(lastName), "Last Name as '"+lastName+"' Displayed correctly");
+		assertTrue(myAccountPage.isAdditionalStreetAddressDisplayed(street), "street Address as '"+street+"' Displayed correctly");
+		assertTrue(myAccountPage.isAdditionalCityDisplayed(city), "City as '"+city+"' Displayed correctly");
+		assertTrue(myAccountPage.isAdditionalCityDisplayed(country), "Country as '"+country+"' Displayed correctly");
+		assertTrue(myAccountPage.isAdditionalAddressStateDisplayed(state), "Country as '"+state+"' Displayed correctly");
+		assertTrue(myAccountPage.isAdditionalAddressZipCodeDisplayed(zip), "Zip/Postal code as '"+zip+"' Displayed correctly");
+		assertTrue(myAccountPage.isAdditionalAddressZipCodeDisplayed(phone), "Phone as '"+phone+"' Displayed correctly");
+		
+		return myAccountPage;
+	}
+
 }

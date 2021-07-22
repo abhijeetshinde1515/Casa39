@@ -78,6 +78,9 @@ public class HomePage extends CommonPage {
 	
 	@FindBy(id = "switcher-currency-trigger")
 	WebElement currency_switch;
+	
+	@FindBy(linkText = "MY ACCOUNT")
+	WebElement myAccount_by;
 
 	/************ actions ***************/
 
@@ -225,6 +228,12 @@ public class HomePage extends CommonPage {
 				break;
 			}
 		return new ProductListPage(driver);
+	}
+	
+	public MyAccountPage clickMyAccount() {
+		clickUsingJSExecutor(myAccount_by);
+		return new MyAccountPage(driver);
+		
 	}
 	
 	/************ accessors ***************/
