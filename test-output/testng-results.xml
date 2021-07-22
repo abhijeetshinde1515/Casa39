@@ -11,265 +11,105 @@
       <![CDATA[STEP - Accepting Cookies...]]>
     </line>
     <line>
-      <![CDATA[STEP - Log In with Valid username and Password]]>
+      <![CDATA[STEP - Choose and Select Category As FLOOR TILES From Product Categories]]>
     </line>
     <line>
-      <![CDATA[Click - SIGNIN]]>
+      <![CDATA[Selecting FLOOR TILES from list...]]>
     </line>
     <line>
-      <![CDATA[Click - Login]]>
+      <![CDATA[Click - Cleansers]]>
     </line>
     <line>
-      <![CDATA[STEP - Go to My Account Section]]>
+      <![CDATA[Verified - Cleansers - Sub Category Opened Successfully...]]>
     </line>
     <line>
-      <![CDATA[Click - MYACCOUNT]]>
+      <![CDATA[STEP - Validate Sorting Options]]>
     </line>
     <line>
-      <![CDATA[Verified - My Account Page is Displayed]]>
+      <![CDATA[Select Sorting Option As - bestsellers]]>
     </line>
     <line>
-      <![CDATA[STEP - Validate Account Information]]>
+      <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
     </line>
     <line>
-      <![CDATA[Verified - User Name as 'Ajay Sikarwar' is Correct]]>
+      <![CDATA[Select Sorting Option As - is_hot]]>
     </line>
     <line>
-      <![CDATA[Verified - User Email Id as 'ajay@xhtmljunkies.com' is Correct]]>
+      <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
     </line>
     <line>
-      <![CDATA[Verified - You are subscribed to "General Subscription".]]>
+      <![CDATA[Select Sorting Option As - most_viewed]]>
     </line>
     <line>
-      <![CDATA[STEP - Validate Address Book]]>
+      <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
     </line>
     <line>
-      <![CDATA[Verified - Billing Address is Correct]]>
+      <![CDATA[Select Sorting Option As - new]]>
     </line>
     <line>
-      <![CDATA[Verified - Shipping Address is Correct]]>
+      <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
     </line>
     <line>
-      <![CDATA[STEP - Go to My orders]]>
+      <![CDATA[Select Sorting Option As - price]]>
     </line>
     <line>
-      <![CDATA[Click Link As - My orders]]>
+      <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
     </line>
     <line>
-      <![CDATA[Verified - My orders Section is Displayed]]>
+      <![CDATA[STEP - Apply all filters one by one.]]>
     </line>
     <line>
-      <![CDATA[STEP - Validate Order Details]]>
+      <![CDATA[Click - ]]>
     </line>
     <line>
-      <![CDATA[Verified - Order ID as '000026948' Displayed correctly]]>
+      <![CDATA[Click - ]]>
     </line>
     <line>
-      <![CDATA[Verified - Order Date as '9/28/20' Displayed correctly]]>
+      <![CDATA[Click - ]]>
     </line>
     <line>
-      <![CDATA[Verified - Order Total as '€279.00' Displayed correctly]]>
+      <![CDATA[Click - ]]>
     </line>
     <line>
-      <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
+      <![CDATA[Click - ]]>
     </line>
     <line>
-      <![CDATA[Verified - Order ID as '000027299' Displayed correctly]]>
+      <![CDATA[Click - ]]>
     </line>
     <line>
-      <![CDATA[Verified - Order Date as '1/19/21' Displayed correctly]]>
+      <![CDATA[STEP - Set price range.]]>
     </line>
     <line>
-      <![CDATA[Verified - Order Total as '€169.00' Displayed correctly]]>
+      <![CDATA[STEP - Change Products Per Page]]>
     </line>
     <line>
-      <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
+      <![CDATA[Select Products Per Page As - 48]]>
     </line>
     <line>
-      <![CDATA[Verified - Order ID as '000026914' Displayed correctly]]>
+      <![CDATA[Select Products Per Page As - 72]]>
     </line>
     <line>
-      <![CDATA[Verified - Order Date as '9/21/20' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Total as '€518.00' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as '000027677' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Date as '5/24/21' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Total as '€727.16' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as '3000036324' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Date as '5/19/21' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Total as '€526.91' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Go to Addresses]]>
-    </line>
-    <line>
-      <![CDATA[Click Link As - Addresses]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Addresses Section is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Validate Additional Address Book]]>
-    </line>
-    <line>
-      <![CDATA[Verified - First Name as 'Ajay' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Last Name as 'Sikarwar' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - street Address as '7242 Atlantic Street' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - City as 'check' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Country as 'Italy' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Country as '' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Zip/Postal code as '73057' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Phone as '9033855585' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - First Name as 'Ajay' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Last Name as 'Sikarwar' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - street Address as 'farrari' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - City as 'check' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Country as 'Italy' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Country as '' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Zip/Postal code as '73057' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Phone as '9033855585' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Go to Account information]]>
-    </line>
-    <line>
-      <![CDATA[Click Link As - Account information]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Account information Section is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Go to Newsletter]]>
-    </line>
-    <line>
-      <![CDATA[Click Link As - Newsletter]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Newsletter Section is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Go to My quotes]]>
-    </line>
-    <line>
-      <![CDATA[Click Link As - My quotes]]>
-    </line>
-    <line>
-      <![CDATA[Verified - My quotes Section is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Validate My Quotes Details]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as '1000459434' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Date as '5/19/21' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Total as '€727.16' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as 'Complete' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as '2000455214' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Date as '5/4/21' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Total as '€32.29' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as 'Pending' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as '1000455205' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Date as '5/4/21' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Total as '€104.28' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as 'Pending' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as '9000446208' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Date as '4/6/21' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Total as '€0.00' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as 'Pending' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as '2000424146' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Date as '1/27/21' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order Total as '€613.55' Displayed correctly]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Order ID as 'Pending' Displayed correctly]]>
+      <![CDATA[Select Products Per Page As - 24]]>
     </line>
     <line>
       <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
@@ -278,18 +118,15 @@
       <![CDATA[Click - ]]>
     </line>
     <line>
-      <![CDATA[Click - SIGNOUT]]>
-    </line>
-    <line>
       <![CDATA[STEP - Closing Browser Successfully...]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="531951" started-at="2021-07-22T12:23:11 IST" finished-at="2021-07-22T12:32:03 IST">
+  <suite name="Default suite" duration-ms="35464" started-at="2021-07-22T17:10:13 IST" finished-at="2021-07-22T17:10:48 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="531951" started-at="2021-07-22T12:23:11 IST" finished-at="2021-07-22T12:32:03 IST">
-      <class name="tests.myProfile.TestMyProfile">
-        <test-method status="PASS" signature="testLoggedInUserMyAccountSection()[pri:0, instance:tests.myProfile.TestMyProfile@307f6b8c]" name="testLoggedInUserMyAccountSection" duration-ms="531891" started-at="2021-07-22T12:23:11 IST" finished-at="2021-07-22T12:32:03 IST">
+    <test name="Default test" duration-ms="35464" started-at="2021-07-22T17:10:13 IST" finished-at="2021-07-22T17:10:48 IST">
+      <class name="tests.shopping.TestProductShopping">
+        <test-method status="PASS" signature="testApplySortingOptionsFiltersAndPriceRange()[pri:0, instance:tests.shopping.TestProductShopping@307f6b8c]" name="testApplySortingOptionsFiltersAndPriceRange" duration-ms="35419" started-at="2021-07-22T17:10:13 IST" finished-at="2021-07-22T17:10:48 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -301,265 +138,105 @@
               <![CDATA[STEP - Accepting Cookies...]]>
             </line>
             <line>
-              <![CDATA[STEP - Log In with Valid username and Password]]>
+              <![CDATA[STEP - Choose and Select Category As FLOOR TILES From Product Categories]]>
             </line>
             <line>
-              <![CDATA[Click - SIGNIN]]>
+              <![CDATA[Selecting FLOOR TILES from list...]]>
             </line>
             <line>
-              <![CDATA[Click - Login]]>
+              <![CDATA[Click - Cleansers]]>
             </line>
             <line>
-              <![CDATA[STEP - Go to My Account Section]]>
+              <![CDATA[Verified - Cleansers - Sub Category Opened Successfully...]]>
             </line>
             <line>
-              <![CDATA[Click - MYACCOUNT]]>
+              <![CDATA[STEP - Validate Sorting Options]]>
             </line>
             <line>
-              <![CDATA[Verified - My Account Page is Displayed]]>
+              <![CDATA[Select Sorting Option As - bestsellers]]>
             </line>
             <line>
-              <![CDATA[STEP - Validate Account Information]]>
+              <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
             </line>
             <line>
-              <![CDATA[Verified - User Name as 'Ajay Sikarwar' is Correct]]>
+              <![CDATA[Select Sorting Option As - is_hot]]>
             </line>
             <line>
-              <![CDATA[Verified - User Email Id as 'ajay@xhtmljunkies.com' is Correct]]>
+              <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
             </line>
             <line>
-              <![CDATA[Verified - You are subscribed to "General Subscription".]]>
+              <![CDATA[Select Sorting Option As - most_viewed]]>
             </line>
             <line>
-              <![CDATA[STEP - Validate Address Book]]>
+              <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
             </line>
             <line>
-              <![CDATA[Verified - Billing Address is Correct]]>
+              <![CDATA[Select Sorting Option As - new]]>
             </line>
             <line>
-              <![CDATA[Verified - Shipping Address is Correct]]>
+              <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
             </line>
             <line>
-              <![CDATA[STEP - Go to My orders]]>
+              <![CDATA[Select Sorting Option As - price]]>
             </line>
             <line>
-              <![CDATA[Click Link As - My orders]]>
+              <![CDATA[Click - BestSellers
+Highlights
+MostViewed
+New
+Price]]>
             </line>
             <line>
-              <![CDATA[Verified - My orders Section is Displayed]]>
+              <![CDATA[STEP - Apply all filters one by one.]]>
             </line>
             <line>
-              <![CDATA[STEP - Validate Order Details]]>
+              <![CDATA[Click - ]]>
             </line>
             <line>
-              <![CDATA[Verified - Order ID as '000026948' Displayed correctly]]>
+              <![CDATA[Click - ]]>
             </line>
             <line>
-              <![CDATA[Verified - Order Date as '9/28/20' Displayed correctly]]>
+              <![CDATA[Click - ]]>
             </line>
             <line>
-              <![CDATA[Verified - Order Total as '€279.00' Displayed correctly]]>
+              <![CDATA[Click - ]]>
             </line>
             <line>
-              <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
+              <![CDATA[Click - ]]>
             </line>
             <line>
-              <![CDATA[Verified - Order ID as '000027299' Displayed correctly]]>
+              <![CDATA[Click - ]]>
             </line>
             <line>
-              <![CDATA[Verified - Order Date as '1/19/21' Displayed correctly]]>
+              <![CDATA[STEP - Set price range.]]>
             </line>
             <line>
-              <![CDATA[Verified - Order Total as '€169.00' Displayed correctly]]>
+              <![CDATA[STEP - Change Products Per Page]]>
             </line>
             <line>
-              <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
+              <![CDATA[Select Products Per Page As - 48]]>
             </line>
             <line>
-              <![CDATA[Verified - Order ID as '000026914' Displayed correctly]]>
+              <![CDATA[Select Products Per Page As - 72]]>
             </line>
             <line>
-              <![CDATA[Verified - Order Date as '9/21/20' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Total as '€518.00' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as '000027677' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Date as '5/24/21' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Total as '€727.16' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as '3000036324' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Date as '5/19/21' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Total as '€526.91' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as 'Canceled' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Go to Addresses]]>
-            </line>
-            <line>
-              <![CDATA[Click Link As - Addresses]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Addresses Section is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Validate Additional Address Book]]>
-            </line>
-            <line>
-              <![CDATA[Verified - First Name as 'Ajay' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Last Name as 'Sikarwar' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - street Address as '7242 Atlantic Street' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - City as 'check' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Country as 'Italy' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Country as '' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Zip/Postal code as '73057' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Phone as '9033855585' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - First Name as 'Ajay' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Last Name as 'Sikarwar' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - street Address as 'farrari' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - City as 'check' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Country as 'Italy' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Country as '' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Zip/Postal code as '73057' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Phone as '9033855585' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Go to Account information]]>
-            </line>
-            <line>
-              <![CDATA[Click Link As - Account information]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Account information Section is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Go to Newsletter]]>
-            </line>
-            <line>
-              <![CDATA[Click Link As - Newsletter]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Newsletter Section is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Go to My quotes]]>
-            </line>
-            <line>
-              <![CDATA[Click Link As - My quotes]]>
-            </line>
-            <line>
-              <![CDATA[Verified - My quotes Section is Displayed]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Validate My Quotes Details]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as '1000459434' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Date as '5/19/21' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Total as '€727.16' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as 'Complete' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as '2000455214' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Date as '5/4/21' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Total as '€32.29' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as 'Pending' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as '1000455205' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Date as '5/4/21' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Total as '€104.28' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as 'Pending' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as '9000446208' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Date as '4/6/21' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Total as '€0.00' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as 'Pending' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as '2000424146' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Date as '1/27/21' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order Total as '€613.55' Displayed correctly]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Order ID as 'Pending' Displayed correctly]]>
+              <![CDATA[Select Products Per Page As - 24]]>
             </line>
             <line>
               <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
@@ -568,14 +245,11 @@
               <![CDATA[Click - ]]>
             </line>
             <line>
-              <![CDATA[Click - SIGNOUT]]>
-            </line>
-            <line>
               <![CDATA[STEP - Closing Browser Successfully...]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testLoggedInUserMyAccountSection -->
-      </class> <!-- tests.myProfile.TestMyProfile -->
+        </test-method> <!-- testApplySortingOptionsFiltersAndPriceRange -->
+      </class> <!-- tests.shopping.TestProductShopping -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

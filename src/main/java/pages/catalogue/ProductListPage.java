@@ -17,5 +17,9 @@ public class ProductListPage extends CommonPage {
 
 	/************ accessors **************/
 
+	public ProductSorterFunction getProductSorterFunction() {
+		return new ProductSorterFunction(driver);
+	}
+
 	/************ validations ************/
 }
