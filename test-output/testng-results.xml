@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
     <line>
       <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -11,122 +11,63 @@
       <![CDATA[STEP - Accepting Cookies...]]>
     </line>
     <line>
-      <![CDATA[STEP - Choose and Select Category As FLOOR TILES From Product Categories]]>
+      <![CDATA[STEP - Search for a Available Product as Lineabeta Atlantica shower platform 50x50 cm 7224.08]]>
     </line>
     <line>
-      <![CDATA[Selecting FLOOR TILES from list...]]>
+      <![CDATA[Selecting product from suggested item list...]]>
     </line>
     <line>
-      <![CDATA[Click - Cleansers]]>
+      <![CDATA[Click - LineabetaAtlanticashowerplatform50x50cm7224.08]]>
     </line>
     <line>
-      <![CDATA[Verified - Cleansers - Sub Category Opened Successfully...]]>
+      <![CDATA[Verified - Lineabeta Atlantica shower platform 50x50 cm 7224.08 as Searched Product is Correctly Displayed]]>
     </line>
     <line>
-      <![CDATA[STEP - Validate Sorting Options]]>
+      <![CDATA[STEP - Ask For Discount]]>
     </line>
     <line>
-      <![CDATA[Select Sorting Option As - bestsellers]]>
+      <![CDATA[Click - ASKFORDISCOUNT]]>
     </line>
     <line>
-      <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+      <![CDATA[Verified - You're one step away from the additional discount!]]>
     </line>
     <line>
-      <![CDATA[Select Sorting Option As - is_hot]]>
+      <![CDATA[STEP - Fill and Submit form for discount]]>
     </line>
     <line>
-      <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+      <![CDATA[Set - ELSNER TESTING]]>
     </line>
     <line>
-      <![CDATA[Select Sorting Option As - most_viewed]]>
+      <![CDATA[Set - email_0723163235342@test.com]]>
     </line>
     <line>
-      <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+      <![CDATA[Set - 10]]>
     </line>
     <line>
-      <![CDATA[Select Sorting Option As - new]]>
+      <![CDATA[Set - 123456]]>
     </line>
     <line>
-      <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+      <![CDATA[Select Sorting Option As - India]]>
     </line>
     <line>
-      <![CDATA[Select Sorting Option As - price]]>
+      <![CDATA[Set - Testing Form_0723163235947]]>
     </line>
     <line>
-      <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+      <![CDATA[Click - SUBMIT]]>
     </line>
     <line>
-      <![CDATA[STEP - Apply all filters one by one.]]>
-    </line>
-    <line>
-      <![CDATA[Click - ]]>
-    </line>
-    <line>
-      <![CDATA[Click - ]]>
-    </line>
-    <line>
-      <![CDATA[Click - ]]>
-    </line>
-    <line>
-      <![CDATA[Click - ]]>
-    </line>
-    <line>
-      <![CDATA[Click - ]]>
-    </line>
-    <line>
-      <![CDATA[Click - ]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Set price range.]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Change Products Per Page]]>
-    </line>
-    <line>
-      <![CDATA[Select Products Per Page As - 48]]>
-    </line>
-    <line>
-      <![CDATA[Select Products Per Page As - 72]]>
-    </line>
-    <line>
-      <![CDATA[Select Products Per Page As - 24]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
-    </line>
-    <line>
-      <![CDATA[Click - ]]>
+      <![CDATA[Verified - Thank you very much for your request. We will respond to it as soon as possible.]]>
     </line>
     <line>
       <![CDATA[STEP - Closing Browser Successfully...]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35464" started-at="2021-07-22T17:10:13 IST" finished-at="2021-07-22T17:10:48 IST">
+  <suite name="Default suite" duration-ms="28676" started-at="2021-07-23T16:32:11 IST" finished-at="2021-07-23T16:32:40 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35464" started-at="2021-07-22T17:10:13 IST" finished-at="2021-07-22T17:10:48 IST">
+    <test name="Default test" duration-ms="28676" started-at="2021-07-23T16:32:11 IST" finished-at="2021-07-23T16:32:40 IST">
       <class name="tests.shopping.TestProductShopping">
-        <test-method status="PASS" signature="testApplySortingOptionsFiltersAndPriceRange()[pri:0, instance:tests.shopping.TestProductShopping@307f6b8c]" name="testApplySortingOptionsFiltersAndPriceRange" duration-ms="35419" started-at="2021-07-22T17:10:13 IST" finished-at="2021-07-22T17:10:48 IST">
+        <test-method status="PASS" signature="testAskForDiscount()[pri:0, instance:tests.shopping.TestProductShopping@307f6b8c]" name="testAskForDiscount" duration-ms="28610" started-at="2021-07-23T16:32:11 IST" finished-at="2021-07-23T16:32:40 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -138,117 +79,58 @@ Price]]>
               <![CDATA[STEP - Accepting Cookies...]]>
             </line>
             <line>
-              <![CDATA[STEP - Choose and Select Category As FLOOR TILES From Product Categories]]>
+              <![CDATA[STEP - Search for a Available Product as Lineabeta Atlantica shower platform 50x50 cm 7224.08]]>
             </line>
             <line>
-              <![CDATA[Selecting FLOOR TILES from list...]]>
+              <![CDATA[Selecting product from suggested item list...]]>
             </line>
             <line>
-              <![CDATA[Click - Cleansers]]>
+              <![CDATA[Click - LineabetaAtlanticashowerplatform50x50cm7224.08]]>
             </line>
             <line>
-              <![CDATA[Verified - Cleansers - Sub Category Opened Successfully...]]>
+              <![CDATA[Verified - Lineabeta Atlantica shower platform 50x50 cm 7224.08 as Searched Product is Correctly Displayed]]>
             </line>
             <line>
-              <![CDATA[STEP - Validate Sorting Options]]>
+              <![CDATA[STEP - Ask For Discount]]>
             </line>
             <line>
-              <![CDATA[Select Sorting Option As - bestsellers]]>
+              <![CDATA[Click - ASKFORDISCOUNT]]>
             </line>
             <line>
-              <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+              <![CDATA[Verified - You're one step away from the additional discount!]]>
             </line>
             <line>
-              <![CDATA[Select Sorting Option As - is_hot]]>
+              <![CDATA[STEP - Fill and Submit form for discount]]>
             </line>
             <line>
-              <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+              <![CDATA[Set - ELSNER TESTING]]>
             </line>
             <line>
-              <![CDATA[Select Sorting Option As - most_viewed]]>
+              <![CDATA[Set - email_0723163235342@test.com]]>
             </line>
             <line>
-              <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+              <![CDATA[Set - 10]]>
             </line>
             <line>
-              <![CDATA[Select Sorting Option As - new]]>
+              <![CDATA[Set - 123456]]>
             </line>
             <line>
-              <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+              <![CDATA[Select Sorting Option As - India]]>
             </line>
             <line>
-              <![CDATA[Select Sorting Option As - price]]>
+              <![CDATA[Set - Testing Form_0723163235947]]>
             </line>
             <line>
-              <![CDATA[Click - BestSellers
-Highlights
-MostViewed
-New
-Price]]>
+              <![CDATA[Click - SUBMIT]]>
             </line>
             <line>
-              <![CDATA[STEP - Apply all filters one by one.]]>
-            </line>
-            <line>
-              <![CDATA[Click - ]]>
-            </line>
-            <line>
-              <![CDATA[Click - ]]>
-            </line>
-            <line>
-              <![CDATA[Click - ]]>
-            </line>
-            <line>
-              <![CDATA[Click - ]]>
-            </line>
-            <line>
-              <![CDATA[Click - ]]>
-            </line>
-            <line>
-              <![CDATA[Click - ]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Set price range.]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Change Products Per Page]]>
-            </line>
-            <line>
-              <![CDATA[Select Products Per Page As - 48]]>
-            </line>
-            <line>
-              <![CDATA[Select Products Per Page As - 72]]>
-            </line>
-            <line>
-              <![CDATA[Select Products Per Page As - 24]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
-            </line>
-            <line>
-              <![CDATA[Click - ]]>
+              <![CDATA[Verified - Thank you very much for your request. We will respond to it as soon as possible.]]>
             </line>
             <line>
               <![CDATA[STEP - Closing Browser Successfully...]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testApplySortingOptionsFiltersAndPriceRange -->
+        </test-method> <!-- testAskForDiscount -->
       </class> <!-- tests.shopping.TestProductShopping -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

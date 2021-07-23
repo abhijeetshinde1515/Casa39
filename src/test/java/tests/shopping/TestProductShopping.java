@@ -3,9 +3,13 @@ package tests.shopping;
 import org.testng.annotations.Test;
 import baseTestScripts.TestNGBaseTest;
 import framework.TestDocumentation;
+import pages.catalogue.InformationModal;
+import pages.catalogue.ProductDescriptionPage;
 import pages.catalogue.ProductListPage;
 import pages.catalogue.ProductSorterFunction;
 import pages.home.HomePage;
+import pages.home.SearchResultsPage;
+import utils.GeneratorUtils;
 
 public class TestProductShopping extends TestNGBaseTest {
 
@@ -44,6 +48,68 @@ public class TestProductShopping extends TestNGBaseTest {
 		productSorterFunction.setShowProductsPerPage("24");
 		
 		productSorterFunction.clickCASA39Logo();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies user can add product to card by selecting quantity.", 
+			CreateDate = "23/07/2021")
+	@Test()
+	public void testAddProductToCart() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+		
+		String productName = "Lineabeta Basket waste bin 5346.29";
+		String searchText = "Lineabeta Basket waste";
+
+		logStep("Search for a Available Product as " + productName);
+		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
+		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText,
+				productName);
+		assertTrue(descriptionPage.isPageTitleDisplayed(productName), productName +" as Searched Product is Correctly Displayed");
+
+		logStep("Select Quantity and add to cart");
+		descriptionPage.selectQuantityAs("3");
+		InformationModal informationModal = descriptionPage.clickAddToCart();
+		assertTrue(informationModal.isSuccessMessageDisplayed(productName), productName);
+		assertTrue(informationModal.isSuccessMessageDisplayed("has been added to your cart"), "has been added to your cart");
+		informationModal.clickCross();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies user can ask for discount by submitting form.", 
+			CreateDate = "23/07/2021")
+	@Test()
+	public void testAskForDiscount() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+		
+		String productName = "Lineabeta Atlantica shower platform 50x50 cm 7224.08";
+		String searchText = "Lineabeta Atlantica shower";
+
+		logStep("Search for a Available Product as " + productName);
+		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
+		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText,
+				productName);
+		assertTrue(descriptionPage.isPageTitleDisplayed(productName), productName +" as Searched Product is Correctly Displayed");
+
+		logStep("Ask For Discount");
+		descriptionPage.clickAskForDiscount();
+		assertTrue(descriptionPage.validateSectionTitle(), "You're one step away from the additional discount!");
+		
+		logStep("Fill and Submit form for discount");
+		descriptionPage.setCompanyName("ELSNER TESTING");
+		descriptionPage.setEmail();
+		descriptionPage.setFormQuantity("10");
+		descriptionPage.setZip("123456");
+		descriptionPage.setCountry("India");
+		descriptionPage.setMessage(GeneratorUtils.generateUniqueId("Testing Form"));
+		descriptionPage.submitForm();
+		assertTrue(descriptionPage.getSuccessMessage().contains("Thank you very much for your request. We will respond to it as soon as possible."),
+				"Thank you very much for your request. We will respond to it as soon as possible.");
 		closeBrowser();
 	}
 }

@@ -59,6 +59,11 @@ public class BaseFragment {
 		executor.executeScript("arguments[0].click();", webElement);
 	}
 	
+	public void sendKeys(WebElement webElement, String text) {
+		Reporter.log("Set - "+ text);
+		webElement.sendKeys(text);
+	}
+	
 	public void clickWhenClickable(WebElement element) {
 		Reporter.log("Click - "+element.getText().replaceAll(" ", ""), true);
 		Actions actions = new Actions(driver);

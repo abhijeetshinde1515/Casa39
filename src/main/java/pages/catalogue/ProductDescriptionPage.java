@@ -7,8 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
+
 import framework.CommonPage;
+import utils.GeneratorUtils;
 
 public class ProductDescriptionPage extends CommonPage {
 
@@ -33,6 +37,12 @@ public class ProductDescriptionPage extends CommonPage {
 	
 	@FindBy(id = "product-addtocart-button")
 	WebElement addToCart_by;
+	
+	@FindBy(id = "product-askdiscount-button")
+	WebElement askForDisount_by;
+	
+	@FindBy(css = "div.section-title")
+	WebElement sectionTitle;
 	
 	@FindBy(css = "a.action.towishlist span")
 	WebElement addToWishList_by;
@@ -67,6 +77,30 @@ public class ProductDescriptionPage extends CommonPage {
 	@FindBy(css = "button.action.submit")
 	WebElement submitReview_by;
 	
+	@FindBy(xpath = "//*[@id=\"inputName\"]")
+	WebElement companyName_by;
+	
+	@FindBy(id = "inputEmail")
+	WebElement email_by;
+	
+	@FindBy(xpath = "//*[@id=\"flooring_input_crm\"]")
+	WebElement quantityForm_by;
+	
+	@FindBy(id = "inputZip")
+	WebElement zip_by;
+	
+	@FindBy(id = "inputCountry")
+	WebElement country_by;
+	
+	@FindBy(id = "message")
+	WebElement message_by;
+	
+	@FindBy(css = "#weclap-offer-form .button.button")
+	WebElement submitButton_by;
+	
+	@FindBy(css = "div.alert")
+	WebElement successMessage_by;
+	
 	/************ actions *****************/
 
 	public void selectSizeOptionAs(String sizeOption) {
@@ -92,8 +126,44 @@ public class ProductDescriptionPage extends CommonPage {
 		quantity_by.sendKeys(quantity);
 	}
 	
-	public void clickAddToCart() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(addToCart_by)).click();
+	public InformationModal clickAddToCart() {
+		clickUsingJSExecutor(addToCart_by);
+		return new InformationModal(driver);
+	}
+	
+	public void clickAskForDiscount() {
+		clickUsingJSExecutor(askForDisount_by);
+	}
+	
+	public void setCompanyName(String companyName) {
+		sendKeys(companyName_by, companyName);
+	}
+	
+	public void setEmail() {
+		sendKeys(email_by, GeneratorUtils.generateUniqueEmail());
+	}
+	
+	public void setFormQuantity(String quantity) {
+		 sendKeys(quantityForm_by, quantity);
+	}
+	
+	public void setZip(String zip) {
+		sendKeys(zip_by, zip);
+	}
+	
+	public void setMessage(String message) {
+		sendKeys(message_by, message);
+	}
+	
+	public void submitForm() {
+		clickUsingJSExecutor(submitButton_by);
+		waituntilPageLoads();
+	}
+	
+	public void setCountry(String country)  {
+		Reporter.log("Select Option As - "+country);
+		Select sortOptions = new Select(country_by);
+		sortOptions.selectByVisibleText(country);
 		waituntilPageLoads();
 	}
 	
@@ -158,6 +228,10 @@ public class ProductDescriptionPage extends CommonPage {
 		return reviews_by.getText();
 	}
 	
+	public String getSuccessMessage() {
+		return successMessage_by.getText();
+	}
+	
 	/************ validations *************/
 
 	public boolean isProductNameDisplayed(String productName) {
@@ -166,5 +240,9 @@ public class ProductDescriptionPage extends CommonPage {
 	
 	public boolean validateReviewingProductNameAs(String productName) {
 		return reviewItemName_by.isDisplayed() && reviewItemName_by.getText().contains(productName);
+	}
+	
+	public boolean validateSectionTitle() {
+		return sectionTitle.isDisplayed() && sectionTitle.getText().contains("You're one step away from the additional discount!");
 	}
 }
