@@ -28,7 +28,7 @@ public class TestHomePage extends TestNGBaseTest {
 		String password = "password@123";
 
 		logStep("Navigate to Magento Website Home Page.");
-		HomePage homePage = navigateToCasa39Website(true);
+		HomePage homePage = navigateToCasa39Website(false);
 
 		logStep("Go to Customer Register Page");
 		CustomerSignInPage customerSignInPage = homePage.clickSignIn();

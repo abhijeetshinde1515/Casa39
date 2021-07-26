@@ -36,6 +36,9 @@ public class ProductDescriptionPage extends CommonPage {
 	@FindBy(id = "qty")
 	WebElement quantity_by;
 	
+	@FindBy(id = "flooring_qty")
+	WebElement flooringQty_by;
+	
 	@FindBy(id = "product-addtocart-button")
 	WebElement addToCart_by;
 	
@@ -133,7 +136,12 @@ public class ProductDescriptionPage extends CommonPage {
 
 	public void selectQuantityAs(String quantity) {
 		quantity_by.clear();
-		quantity_by.sendKeys(quantity);
+		sendKeys(quantity_by, quantity);
+	}
+	
+	public void selectFlooringQtyAs(String quantity) {
+		flooringQty_by.clear();
+		sendKeys(flooringQty_by, quantity);
 	}
 	
 	public InformationModal clickAddToCart() {

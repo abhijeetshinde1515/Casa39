@@ -55,7 +55,7 @@ public class MinicartModal extends BaseFragment {
 	
 	/************ accessors **************/
 	public boolean getEmptyCartText() {
-		return emptyCart_by.getText().equals("You have no items in your shopping cart.");
+		return emptyCart_by.getText().contains("You have no items in your shopping cart.");
 	}
 	
 	public String getProductNumber() {

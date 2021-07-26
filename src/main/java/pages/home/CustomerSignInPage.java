@@ -54,6 +54,7 @@ public class CustomerSignInPage extends CommonPage {
 	
 	public HomePage clickSignIn() {
 		click(signIn_by);
+		hardWait(3000);
 		return new HomePage(driver);
 	}
 	

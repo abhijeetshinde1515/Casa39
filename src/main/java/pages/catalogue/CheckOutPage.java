@@ -26,6 +26,9 @@ public class CheckOutPage extends CommonPage {
 	@FindBy(css = "a.edit-cart-link")
 	WebElement editCartLink_by;
 	
+	@FindBy(css = ".product-item-name")
+	WebElement productName_by;
+	
 	/************ actions ****************/
 	
 	public ShoppingCartPage clickBackToShoppingCartPage() {
@@ -41,6 +44,10 @@ public class CheckOutPage extends CommonPage {
 	
 	public boolean getShipToAddress(String address) {
 		return streetName_by.getText().contains(address);
+	}
+	
+	public boolean getProductName(String productName) {
+		return productName_by.getText().contains(productName);
 	}
 	
 	/************ validations ************/

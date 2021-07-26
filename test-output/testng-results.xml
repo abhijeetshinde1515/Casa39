@@ -2,9 +2,6 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[STEP - Navigate to Magento Website Home Page.]]>
-    </line>
-    <line>
       <![CDATA[STEP - Launch Browser Successfully...]]>
     </line>
     <line>
@@ -14,85 +11,101 @@
       <![CDATA[STEP - Accepting Cookies...]]>
     </line>
     <line>
-      <![CDATA[STEP - Go to Customer Register Page]]>
+      <![CDATA[STEP - Search for a Available Product as Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
     </line>
     <line>
-      <![CDATA[Click - SIGN IN]]>
+      <![CDATA[Selecting product from suggested item list...]]>
     </line>
     <line>
-      <![CDATA[Click - New account]]>
+      <![CDATA[Click - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
     </line>
     <line>
-      <![CDATA[STEP - Set required fields]]>
+      <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 as Searched Product is Correctly Displayed]]>
     </line>
     <line>
-      <![CDATA[Set - First]]>
+      <![CDATA[STEP - Select Quantity and add to cart]]>
     </line>
     <line>
-      <![CDATA[Set - Last]]>
+      <![CDATA[Set - 30]]>
     </line>
     <line>
-      <![CDATA[Set - email_0726150916301@test.com]]>
+      <![CDATA[Click - Add to Cart]]>
     </line>
     <line>
-      <![CDATA[Set - password@123]]>
+      <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
     </line>
     <line>
-      <![CDATA[STEP - Create account]]>
+      <![CDATA[Verified - has been added to your cart]]>
     </line>
     <line>
-      <![CDATA[Click - Create an Account]]>
+      <![CDATA[Click - Continue]]>
     </line>
     <line>
-      <![CDATA[STEP - Log In new username and Password]]>
+      <![CDATA[STEP - Validate Non-Empty Cart and Close]]>
     </line>
     <line>
-      <![CDATA[Click - SIGN IN]]>
+      <![CDATA[Click - My Cart
+€687.85]]>
     </line>
     <line>
-      <![CDATA[Click - Login]]>
+      <![CDATA[Verified - Item Prices are Correct]]>
     </line>
     <line>
-      <![CDATA[STEP - Go to My Account Section]]>
+      <![CDATA[Verified - Total Items are Correct]]>
     </line>
     <line>
-      <![CDATA[Click - MY ACCOUNT]]>
+      <![CDATA[STEP - View Shopping Cart]]>
     </line>
     <line>
-      <![CDATA[Verified - My Account Page is Displayed]]>
+      <![CDATA[Click - View and edit cart]]>
     </line>
     <line>
-      <![CDATA[STEP - Validate Account Information]]>
+      <![CDATA[Verified - Page Title is Displayed]]>
     </line>
     <line>
-      <![CDATA[Verified - User Name as is Correct]]>
+      <![CDATA[Validating '€687.85' from Summary...]]>
     </line>
     <line>
-      <![CDATA[Verified - User Email Id as 'email_0726150916301@test.com' is Correct]]>
+      <![CDATA[Verified - Sub Total is Correct]]>
     </line>
     <line>
-      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+      <![CDATA[Validating '€50.00' from Summary...]]>
     </line>
     <line>
-      <![CDATA[Click - ]]>
+      <![CDATA[Verified - Shipping Price is Correct]]>
     </line>
     <line>
-      <![CDATA[Click - SIGN OUT]]>
+      <![CDATA[Validating '€160.33' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Tax Amount is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€889.16' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Order Total is Correct]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Proceed To Checkout]]>
+    </line>
+    <line>
+      <![CDATA[Click - Proceed to Checkout]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 is Displayed]]>
     </line>
     <line>
       <![CDATA[STEP - Closing Browser Successfully...]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43091" started-at="2021-07-26T15:09:16 IST" finished-at="2021-07-26T15:09:59 IST">
+  <suite name="Default suite" duration-ms="57528" started-at="2021-07-26T16:26:54 IST" finished-at="2021-07-26T16:27:52 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43091" started-at="2021-07-26T15:09:16 IST" finished-at="2021-07-26T15:09:59 IST">
+    <test name="Default test" duration-ms="57528" started-at="2021-07-26T16:26:54 IST" finished-at="2021-07-26T16:27:52 IST">
       <class name="tests.home.MyTestHomePage">
-        <test-method status="PASS" signature="testRegisterUserByUniqueEmailId()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testRegisterUserByUniqueEmailId" duration-ms="43036" started-at="2021-07-26T15:09:16 IST" finished-at="2021-07-26T15:09:59 IST">
+        <test-method status="PASS" signature="testSecureCheckOutForProducts()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testSecureCheckOutForProducts" duration-ms="57449" started-at="2021-07-26T16:26:54 IST" finished-at="2021-07-26T16:27:52 IST">
           <reporter-output>
-            <line>
-              <![CDATA[STEP - Navigate to Magento Website Home Page.]]>
-            </line>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
             </line>
@@ -103,76 +116,95 @@
               <![CDATA[STEP - Accepting Cookies...]]>
             </line>
             <line>
-              <![CDATA[STEP - Go to Customer Register Page]]>
+              <![CDATA[STEP - Search for a Available Product as Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
             </line>
             <line>
-              <![CDATA[Click - SIGN IN]]>
+              <![CDATA[Selecting product from suggested item list...]]>
             </line>
             <line>
-              <![CDATA[Click - New account]]>
+              <![CDATA[Click - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
             </line>
             <line>
-              <![CDATA[STEP - Set required fields]]>
+              <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 as Searched Product is Correctly Displayed]]>
             </line>
             <line>
-              <![CDATA[Set - First]]>
+              <![CDATA[STEP - Select Quantity and add to cart]]>
             </line>
             <line>
-              <![CDATA[Set - Last]]>
+              <![CDATA[Set - 30]]>
             </line>
             <line>
-              <![CDATA[Set - email_0726150916301@test.com]]>
+              <![CDATA[Click - Add to Cart]]>
             </line>
             <line>
-              <![CDATA[Set - password@123]]>
+              <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
             </line>
             <line>
-              <![CDATA[STEP - Create account]]>
+              <![CDATA[Verified - has been added to your cart]]>
             </line>
             <line>
-              <![CDATA[Click - Create an Account]]>
+              <![CDATA[Click - Continue]]>
             </line>
             <line>
-              <![CDATA[STEP - Log In new username and Password]]>
+              <![CDATA[STEP - Validate Non-Empty Cart and Close]]>
             </line>
             <line>
-              <![CDATA[Click - SIGN IN]]>
+              <![CDATA[Click - My Cart
+€687.85]]>
             </line>
             <line>
-              <![CDATA[Click - Login]]>
+              <![CDATA[Verified - Item Prices are Correct]]>
             </line>
             <line>
-              <![CDATA[STEP - Go to My Account Section]]>
+              <![CDATA[Verified - Total Items are Correct]]>
             </line>
             <line>
-              <![CDATA[Click - MY ACCOUNT]]>
+              <![CDATA[STEP - View Shopping Cart]]>
             </line>
             <line>
-              <![CDATA[Verified - My Account Page is Displayed]]>
+              <![CDATA[Click - View and edit cart]]>
             </line>
             <line>
-              <![CDATA[STEP - Validate Account Information]]>
+              <![CDATA[Verified - Page Title is Displayed]]>
             </line>
             <line>
-              <![CDATA[Verified - User Name as is Correct]]>
+              <![CDATA[Validating '€687.85' from Summary...]]>
             </line>
             <line>
-              <![CDATA[Verified - User Email Id as 'email_0726150916301@test.com' is Correct]]>
+              <![CDATA[Verified - Sub Total is Correct]]>
             </line>
             <line>
-              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+              <![CDATA[Validating '€50.00' from Summary...]]>
             </line>
             <line>
-              <![CDATA[Click - ]]>
+              <![CDATA[Verified - Shipping Price is Correct]]>
             </line>
             <line>
-              <![CDATA[Click - SIGN OUT]]>
+              <![CDATA[Validating '€160.33' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Tax Amount is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€889.16' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Order Total is Correct]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Proceed To Checkout]]>
+            </line>
+            <line>
+              <![CDATA[Click - Proceed to Checkout]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 is Displayed]]>
             </line>
             <line>
               <![CDATA[STEP - Closing Browser Successfully...]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testRegisterUserByUniqueEmailId -->
+        </test-method> <!-- testSecureCheckOutForProducts -->
       </class> <!-- tests.home.MyTestHomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
