@@ -5,14 +5,63 @@ import baseTestScripts.TestData;
 import baseTestScripts.TestNGBaseTest;
 import framework.TestDocumentation;
 import pages.catalogue.ProductDescriptionPage;
+import pages.home.CustomerRegisterPage;
 import pages.home.CustomerSignInPage;
 import pages.home.HomePage;
 import pages.home.InformationLinksPage;
+import pages.home.MyAccountPage;
 import pages.home.SearchResultsPage;
 import utils.GeneratorUtils;
 import utils.ProductUtils;
 
 public class TestHomePage extends TestNGBaseTest {
+
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies that a client User can register with unique email id.", 
+			CreateDate = "26/07/2021")
+	@Test()
+	public void testRegisterNewUserByUniqueEmailId() throws Exception {
+		String firstName = "First";
+		String lastName = "Last";
+		String email = GeneratorUtils.generateUniqueEmail();
+		String password = "password@123";
+
+		logStep("Navigate to Magento Website Home Page.");
+		HomePage homePage = navigateToCasa39Website(true);
+
+		logStep("Go to Customer Register Page");
+		CustomerSignInPage customerSignInPage = homePage.clickSignIn();
+		CustomerRegisterPage customerRegisterPage = customerSignInPage.clickCreateAnAccount();
+
+		logStep("Set required fields");
+		customerRegisterPage.setFirstName(firstName);
+		customerRegisterPage.setLastName(lastName);
+		customerRegisterPage.setEmail(email);
+		customerRegisterPage.setPassword(password);
+		customerRegisterPage.setConfirmPassword(password);
+
+		logStep("Create account");
+		customerRegisterPage.clickCreateAccount();
+
+		logStep("Log In new username and Password");
+		customerSignInPage = homePage.clickSignIn();
+		customerSignInPage.setEmail(email);
+		customerSignInPage.setPassword(password);
+		homePage = customerSignInPage.clickSignIn();
+		
+		logStep("Go to My Account Section");
+		MyAccountPage myAccountPage = homePage.clickMyAccount();
+		assertTrue(myAccountPage.isMyAccountPageDisplayed(), "My Account Page is Displayed");
+		
+		logStep("Validate Account Information");
+		assertTrue(myAccountPage.isAccountInformationDisplayed("First Last"), "User Name as is Correct");
+		assertTrue(myAccountPage.isAccountInformationDisplayed(email), "User Email Id as '"+email+"' is Correct");
+		
+		homePage = myAccountPage.clickCASA39Logo();
+		homePage.clickSignOut();
+		closeBrowser();
+	}
 
 	@TestDocumentation(
 			TestNumber = "",

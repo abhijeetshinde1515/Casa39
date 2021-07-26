@@ -3,6 +3,7 @@ package tests.shopping;
 import org.testng.annotations.Test;
 import baseTestScripts.TestNGBaseTest;
 import framework.TestDocumentation;
+import pages.catalogue.CartQuotesPage;
 import pages.catalogue.InformationModal;
 import pages.catalogue.ProductDescriptionPage;
 import pages.catalogue.ProductListPage;
@@ -110,6 +111,85 @@ public class TestProductShopping extends TestNGBaseTest {
 		descriptionPage.submitForm();
 		assertTrue(descriptionPage.getSuccessMessage().contains("Thank you very much for your request. We will respond to it as soon as possible."),
 				"Thank you very much for your request. We will respond to it as soon as possible.");
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies user can add review on Products.", 
+			CreateDate = "26/07/2021")
+	@Test()
+	public void testAddProductReviewByUser() throws Exception {
+		
+		HomePage homePage = navigateToCasa39Website(false);
+		
+		String productName = "House Design mirror Traccia";
+		String searchText = "House Design mirror Traccia";
+
+		logStep("Search for a Available Product as " + productName);
+		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
+		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText,
+				productName);
+		assertTrue(descriptionPage.isPageTitleDisplayed(productName), productName +" as Searched Product is Correctly Displayed");
+		
+		logStep("Write Your Own Review");
+		descriptionPage.clickWriteYourOwnReview();
+		
+		logStep("Submit a Review");
+		assertTrue(descriptionPage.validateReviewingProductNameAs(productName), "You are Reviewing "+productName);
+		
+		descriptionPage.setRating(4);
+		descriptionPage.setNickName(GeneratorUtils.generateUniqueId("Test_Nickname"));
+		descriptionPage.setSummary(GeneratorUtils.generateUniqueId("Test_Summary"));
+		descriptionPage.setReview(GeneratorUtils.generateUniqueId("Test_Review"));
+		descriptionPage.clickSubmitReview();
+		assertTrue(descriptionPage.isSuccessMessageDisplayed("You submitted your review for moderation."), "Review Submitted for Review Successfully");
+		
+		descriptionPage.clickCASA39Logo();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies user can add product quotes successfully.", 
+			CreateDate = "26/07/2021")
+	@Test()
+	public void testProductAddToQuote() throws Exception {
+		
+		HomePage homePage = navigateToCasa39Website(false);
+		
+		String productName = "Lineabeta Duemila hook 5507.29";
+		String searchText = "Lineabeta Duemila hook";
+
+		logStep("Search for a Available Product as " + productName);
+		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
+		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText,
+				productName);
+		assertTrue(descriptionPage.isPageTitleDisplayed(productName), productName +" as Searched Product is Correctly Displayed");
+		
+		logStep("Add to Quote");
+		InformationModal informationModal = descriptionPage.clickAddToQuote();
+		assertTrue(informationModal.isSuccessMessageDisplayed(productName), productName);
+		assertTrue(informationModal.isSuccessMessageDisplayed("has been added to your quote cart"), "has been added to your cart");
+		
+		logStep("Navigate to Cart Quotes Page");
+		CartQuotesPage cartQuotesPage = informationModal.clickQuoteCart();
+		assertTrue(cartQuotesPage.isPageTitleDisplayed("Cart Quotes"), "Cart Quotes Page is Displayed");
+		
+		logStep("Update Quote");
+		cartQuotesPage.updateQuantity("10");
+		cartQuotesPage.updateQuote();
+		
+		logStep("Enter User Details to Request Quote");
+		cartQuotesPage.setEmail(GeneratorUtils.generateUniqueEmail());
+		cartQuotesPage.setFirstName(GeneratorUtils.generateUniqueId("FirstName"));
+		cartQuotesPage.setLastName(GeneratorUtils.generateUniqueId("LastName"));
+		cartQuotesPage.setZipCode("123456");
+		cartQuotesPage.setRemarks("Remarks");
+		cartQuotesPage.clickRequestQuote();
+		assertTrue(homePage.isPageTitleDisplayed("Your quote request has been received!"), "Your quote request has been received!");
+		
+		cartQuotesPage.clickCASA39Logo();
 		closeBrowser();
 	}
 }

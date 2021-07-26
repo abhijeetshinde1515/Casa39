@@ -32,9 +32,6 @@ public class HomePage extends CommonPage {
 	@FindBy(css = ".logged-in")
 	WebElement loggedIn_by;
 
-	@FindBy(linkText = "Create an Account")
-	WebElement createAccount_by;
-
 	@FindBy(css = ".copyright")
 	WebElement copyright_by;
 
@@ -83,11 +80,6 @@ public class HomePage extends CommonPage {
 	WebElement myAccount_by;
 
 	/************ actions ***************/
-
-	public CustomerRegisterPage clickCreateAnAccount() {
-		click(createAccount_by);
-		return new CustomerRegisterPage(driver);
-	}
 
 	public InformationLinksPage clickInfoLinksAs(String linkText) {
 		WebElement element = findElement(By.linkText(linkText));

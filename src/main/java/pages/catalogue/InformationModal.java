@@ -20,11 +20,19 @@ public class InformationModal extends CommonPage {
 	@FindBy(css = "button.am-btn-left")
 	WebElement crossButton_by;
 	
+	@FindBy(css = "button.button.am-btn-right")
+	WebElement quoteButton_by;
+	
 	/************ actions ****************/
 	
 	public ProductDescriptionPage clickCross() {
 		click(crossButton_by);
 		return new ProductDescriptionPage(driver);
+	}
+	
+	public CartQuotesPage clickQuoteCart() {
+		click(quoteButton_by);
+		return new CartQuotesPage(driver);
 	}
 	
 	/************ accessors **************/

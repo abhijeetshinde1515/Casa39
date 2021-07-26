@@ -37,6 +37,9 @@ public class CustomerSignInPage extends CommonPage {
 	@FindBy(css = ".amsl-close")
 	WebElement close_by;
 
+	@FindBy(linkText = "New account")
+	WebElement createAccount_by;
+
 	/************ actions ***************/
 	
 	public void setEmail(String email) {
@@ -57,6 +60,11 @@ public class CustomerSignInPage extends CommonPage {
 	public HomePage closeSignInPage() {
 		click(close_by);
 		return new HomePage(driver);
+	}
+	
+	public CustomerRegisterPage clickCreateAnAccount() {
+		click(createAccount_by);
+		return new CustomerRegisterPage(driver);
 	}
 
 	/************ accessors ***************/

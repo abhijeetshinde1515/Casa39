@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[STEP - Navigate to Magento Website Home Page.]]>
+    </line>
     <line>
       <![CDATA[STEP - Launch Browser Successfully...]]>
     </line>
@@ -11,64 +14,85 @@
       <![CDATA[STEP - Accepting Cookies...]]>
     </line>
     <line>
-      <![CDATA[STEP - Search for a Available Product as Lineabeta Atlantica shower platform 50x50 cm 7224.08]]>
+      <![CDATA[STEP - Go to Customer Register Page]]>
     </line>
     <line>
-      <![CDATA[Selecting product from suggested item list...]]>
+      <![CDATA[Click - SIGN IN]]>
     </line>
     <line>
-      <![CDATA[Click - LineabetaAtlanticashowerplatform50x50cm7224.08]]>
+      <![CDATA[Click - New account]]>
     </line>
     <line>
-      <![CDATA[Verified - Lineabeta Atlantica shower platform 50x50 cm 7224.08 as Searched Product is Correctly Displayed]]>
+      <![CDATA[STEP - Set required fields]]>
     </line>
     <line>
-      <![CDATA[STEP - Ask For Discount]]>
+      <![CDATA[Set - First]]>
     </line>
     <line>
-      <![CDATA[Click - ASKFORDISCOUNT]]>
+      <![CDATA[Set - Last]]>
     </line>
     <line>
-      <![CDATA[Verified - You're one step away from the additional discount!]]>
+      <![CDATA[Set - email_0726150916301@test.com]]>
     </line>
     <line>
-      <![CDATA[STEP - Fill and Submit form for discount]]>
+      <![CDATA[Set - password@123]]>
     </line>
     <line>
-      <![CDATA[Set - ELSNER TESTING]]>
+      <![CDATA[STEP - Create account]]>
     </line>
     <line>
-      <![CDATA[Set - email_0723163235342@test.com]]>
+      <![CDATA[Click - Create an Account]]>
     </line>
     <line>
-      <![CDATA[Set - 10]]>
+      <![CDATA[STEP - Log In new username and Password]]>
     </line>
     <line>
-      <![CDATA[Set - 123456]]>
+      <![CDATA[Click - SIGN IN]]>
     </line>
     <line>
-      <![CDATA[Select Sorting Option As - India]]>
+      <![CDATA[Click - Login]]>
     </line>
     <line>
-      <![CDATA[Set - Testing Form_0723163235947]]>
+      <![CDATA[STEP - Go to My Account Section]]>
     </line>
     <line>
-      <![CDATA[Click - SUBMIT]]>
+      <![CDATA[Click - MY ACCOUNT]]>
     </line>
     <line>
-      <![CDATA[Verified - Thank you very much for your request. We will respond to it as soon as possible.]]>
+      <![CDATA[Verified - My Account Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate Account Information]]>
+    </line>
+    <line>
+      <![CDATA[Verified - User Name as is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Verified - User Email Id as 'email_0726150916301@test.com' is Correct]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Click - SIGN OUT]]>
     </line>
     <line>
       <![CDATA[STEP - Closing Browser Successfully...]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28676" started-at="2021-07-23T16:32:11 IST" finished-at="2021-07-23T16:32:40 IST">
+  <suite name="Default suite" duration-ms="43091" started-at="2021-07-26T15:09:16 IST" finished-at="2021-07-26T15:09:59 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28676" started-at="2021-07-23T16:32:11 IST" finished-at="2021-07-23T16:32:40 IST">
-      <class name="tests.shopping.TestProductShopping">
-        <test-method status="PASS" signature="testAskForDiscount()[pri:0, instance:tests.shopping.TestProductShopping@307f6b8c]" name="testAskForDiscount" duration-ms="28610" started-at="2021-07-23T16:32:11 IST" finished-at="2021-07-23T16:32:40 IST">
+    <test name="Default test" duration-ms="43091" started-at="2021-07-26T15:09:16 IST" finished-at="2021-07-26T15:09:59 IST">
+      <class name="tests.home.MyTestHomePage">
+        <test-method status="PASS" signature="testRegisterUserByUniqueEmailId()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testRegisterUserByUniqueEmailId" duration-ms="43036" started-at="2021-07-26T15:09:16 IST" finished-at="2021-07-26T15:09:59 IST">
           <reporter-output>
+            <line>
+              <![CDATA[STEP - Navigate to Magento Website Home Page.]]>
+            </line>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
             </line>
@@ -79,59 +103,77 @@
               <![CDATA[STEP - Accepting Cookies...]]>
             </line>
             <line>
-              <![CDATA[STEP - Search for a Available Product as Lineabeta Atlantica shower platform 50x50 cm 7224.08]]>
+              <![CDATA[STEP - Go to Customer Register Page]]>
             </line>
             <line>
-              <![CDATA[Selecting product from suggested item list...]]>
+              <![CDATA[Click - SIGN IN]]>
             </line>
             <line>
-              <![CDATA[Click - LineabetaAtlanticashowerplatform50x50cm7224.08]]>
+              <![CDATA[Click - New account]]>
             </line>
             <line>
-              <![CDATA[Verified - Lineabeta Atlantica shower platform 50x50 cm 7224.08 as Searched Product is Correctly Displayed]]>
+              <![CDATA[STEP - Set required fields]]>
             </line>
             <line>
-              <![CDATA[STEP - Ask For Discount]]>
+              <![CDATA[Set - First]]>
             </line>
             <line>
-              <![CDATA[Click - ASKFORDISCOUNT]]>
+              <![CDATA[Set - Last]]>
             </line>
             <line>
-              <![CDATA[Verified - You're one step away from the additional discount!]]>
+              <![CDATA[Set - email_0726150916301@test.com]]>
             </line>
             <line>
-              <![CDATA[STEP - Fill and Submit form for discount]]>
+              <![CDATA[Set - password@123]]>
             </line>
             <line>
-              <![CDATA[Set - ELSNER TESTING]]>
+              <![CDATA[STEP - Create account]]>
             </line>
             <line>
-              <![CDATA[Set - email_0723163235342@test.com]]>
+              <![CDATA[Click - Create an Account]]>
             </line>
             <line>
-              <![CDATA[Set - 10]]>
+              <![CDATA[STEP - Log In new username and Password]]>
             </line>
             <line>
-              <![CDATA[Set - 123456]]>
+              <![CDATA[Click - SIGN IN]]>
             </line>
             <line>
-              <![CDATA[Select Sorting Option As - India]]>
+              <![CDATA[Click - Login]]>
             </line>
             <line>
-              <![CDATA[Set - Testing Form_0723163235947]]>
+              <![CDATA[STEP - Go to My Account Section]]>
             </line>
             <line>
-              <![CDATA[Click - SUBMIT]]>
+              <![CDATA[Click - MY ACCOUNT]]>
             </line>
             <line>
-              <![CDATA[Verified - Thank you very much for your request. We will respond to it as soon as possible.]]>
+              <![CDATA[Verified - My Account Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate Account Information]]>
+            </line>
+            <line>
+              <![CDATA[Verified - User Name as is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Verified - User Email Id as 'email_0726150916301@test.com' is Correct]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Click - SIGN OUT]]>
             </line>
             <line>
               <![CDATA[STEP - Closing Browser Successfully...]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testAskForDiscount -->
-      </class> <!-- tests.shopping.TestProductShopping -->
+        </test-method> <!-- testRegisterUserByUniqueEmailId -->
+      </class> <!-- tests.home.MyTestHomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

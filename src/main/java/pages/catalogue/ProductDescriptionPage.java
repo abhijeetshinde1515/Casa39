@@ -19,6 +19,7 @@ public class ProductDescriptionPage extends CommonPage {
 	public ProductDescriptionPage(RemoteWebDriver webDriver) {
 		super(webDriver);
 		waituntilPageLoads();
+		hardWait(5000);
 	}
 
 	/************ locators ***************/
@@ -100,6 +101,15 @@ public class ProductDescriptionPage extends CommonPage {
 	
 	@FindBy(css = "div.alert")
 	WebElement successMessage_by;
+	
+	@FindBy(xpath = "//*[@id=\"block-title-button\"]/strong")
+	WebElement review_by;
+	
+	@FindBy(css = "#review-form button.action.submit.primary")
+	WebElement submitReviewButton_by;
+	
+	@FindBy(id = "product-addtoquote")
+	WebElement addToQuote_by;
 	
 	/************ actions *****************/
 
@@ -189,7 +199,7 @@ public class ProductDescriptionPage extends CommonPage {
 	}
 	
 	public void setRating(int rating) {
-		WebElement radioBtn = findElement(By.id("Rating_"+rating));
+		WebElement radioBtn = findElement(By.id("Vote_"+rating));
 		((JavascriptExecutor) driver).executeScript("arguments[0].checked = true;", radioBtn);
 	}
 	
@@ -206,8 +216,18 @@ public class ProductDescriptionPage extends CommonPage {
 	}
 	
 	public void clickSubmitReview() {
-		click(submitReview_by);
+		clickUsingJSExecutor(submitReviewButton_by);
 		waituntilPageLoads();
+	}
+	
+	public void clickWriteYourOwnReview() {
+		waituntilPageLoads();
+		clickUsingJSExecutor(review_by);
+	}
+	
+	public InformationModal clickAddToQuote() {
+		clickUsingJSExecutor(addToQuote_by);
+		return new InformationModal(driver);
 	}
 	
 	/************ accessors ***************/

@@ -46,7 +46,7 @@ public class TestNGBaseTest extends AssertUtil {
 	
 	public void acceptCookies() throws Exception {
 		logStep("Accepting Cookies...");
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a.cc-btn.cc-dismiss")));
 		new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.cssSelector("a.cc-btn.cc-dismiss"))).click();
 	}

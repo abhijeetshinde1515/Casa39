@@ -49,12 +49,12 @@ public class BaseFragment {
 	}
 
 	public void click(WebElement webElement) {
-		Reporter.log("Click - "+webElement.getText().replaceAll(" ", ""), true);
+		Reporter.log("Click - "+webElement.getText(), true);
 		webElement.click();
 	}
 	
 	public void clickUsingJSExecutor(WebElement webElement) {
-		Reporter.log("Click - "+webElement.getText().replaceAll(" ", ""), true);
+		Reporter.log("Click - "+webElement.getText(), true);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", webElement);
 	}
@@ -65,7 +65,7 @@ public class BaseFragment {
 	}
 	
 	public void clickWhenClickable(WebElement element) {
-		Reporter.log("Click - "+element.getText().replaceAll(" ", ""), true);
+		Reporter.log("Click - "+element.getText(), true);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(new WebDriverWait(driver, 30).until(
 				ExpectedConditions.elementToBeClickable(element))).click().build().perform();

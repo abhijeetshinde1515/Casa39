@@ -38,28 +38,29 @@ public class CustomerRegisterPage extends CommonPage {
 	/************ actions ***************/
 	
 	public void setFirstName(String firstName) {
-		firstName_by.sendKeys(firstName);
+		sendKeys(firstName_by, firstName);
 	}
 	
 	public void setLastName(String lastName) {
-		lastName_by.sendKeys(lastName);
+		sendKeys(lastName_by, lastName);
 	}
 	
 	public void setEmail(String email) {
-		emailAddress_by.sendKeys(email);
+		sendKeys(emailAddress_by, email);
 	}
 	
 	public void setPassword(String password) {
-		password_by.sendKeys(password);
+		sendKeys(password_by, password);
 	}
 	
 	public void setConfirmPassword(String confirmPassword) {
 		password_confirmation_by.sendKeys(confirmPassword);
 	}
 	
-	public MyAccountPage clickCreateAccount() {
+	public HomePage clickCreateAccount() {
 		click(createAccount_by);
-		return new MyAccountPage(driver);
+		refreshPage();
+		return new HomePage(driver);
 	}
 
 	/************ validations ***************/
