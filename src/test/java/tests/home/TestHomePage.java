@@ -329,7 +329,7 @@ public class TestHomePage extends TestNGBaseTest {
 			CreateDate = "27/07/2021")
 	@Test()
 	public void testBuyersProtectionInformationBadge() throws Exception {
-		HomePage homePage = navigateToCasa39Website(true);
+		HomePage homePage = navigateToCasa39Website(false);
 		
 		logStep("Open Buyer's Protection Information Badge");
 		BuyersProtectionModal buyersProtectionModal = homePage.clickBuyersProtection();
@@ -387,6 +387,17 @@ public class TestHomePage extends TestNGBaseTest {
 		assertTrue(whychooseUsSection.isPageSectionDisplayed("QUOTES"), "QUOTES section is Displayed");
 		assertTrue(whychooseUsSection.getPageContent(quotes), "QUOTES content is Displayed");
 		whychooseUsSection.clickHome();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies all product subcategory links of home page.", 
+			CreateDate = "27/07/2021")
+	@Test()
+	public void testAllProductSubCategoryLinks() throws Exception {
+		HomePage homePage = navigateToCasa39Website(false);
+		ProductUtils.selectAndValidateAllProductSubCategories(homePage);
 		closeBrowser();
 	}
 }

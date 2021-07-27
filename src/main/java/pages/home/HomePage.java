@@ -15,6 +15,7 @@ import org.testng.Reporter;
 import framework.CommonPage;
 import pages.catalogue.CategoryPage;
 import pages.catalogue.ProductListPage;
+import utils.ReportUtils;
 
 public class HomePage extends CommonPage {
 
@@ -233,6 +234,14 @@ public class HomePage extends CommonPage {
 		return new ProductListPage(driver);
 	}
 	
+	public void selectProductAllSubCategory() {
+		List<WebElement> listItems = driver.findElements(By.cssSelector("a.ammenu-link.-level2"));
+		for (WebElement listItem : listItems) {
+				ReportUtils.logStep(listItem.getAttribute("title") + " - " + listItem.getAttribute("href"));
+				
+		}
+	}
+
 	public MyAccountPage clickMyAccount() {
 		clickUsingJSExecutor(myAccount_by);
 		return new MyAccountPage(driver);

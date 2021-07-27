@@ -30,6 +30,15 @@ public class ShoppingCartPage extends CommonPage {
 	@FindBy(css = ".cart-empty")
 	WebElement emptyCart_by;
 	
+	@FindBy(id = "coupon_code")
+	WebElement couponCode_by;
+	
+	@FindBy(css = "button.action.apply.primary")
+	WebElement applyCodeButton_by;
+	
+	@FindBy(id = "empty_cart_button")
+	WebElement clearShoppingButton_by;
+	
 	/************ actions ****************/
 	public CheckOutPage clickProceedToCheckOut() {
 		waituntilPageLoads();
@@ -40,6 +49,17 @@ public class ShoppingCartPage extends CommonPage {
 	public void clickRemoveItemFromList() {
 		click(removeItem_by);
 	}
+	
+	public void clickApplyCoupon(String coupon) {
+		sendKeys(couponCode_by, coupon);
+		clickUsingJSExecutor(applyCodeButton_by);
+		waituntilPageLoads();
+	}
+	
+	public void clearShoppingCart() {
+		clickUsingJSExecutor(clearShoppingButton_by);
+	}
+	
 	/************ accessors **************/
 	
 	/************ validations ************/

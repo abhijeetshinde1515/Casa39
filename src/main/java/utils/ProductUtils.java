@@ -45,5 +45,10 @@ public class ProductUtils extends AssertUtil {
 		
 		return myAccountPage;
 	}
+	//start
+	public static void selectAndValidateAllProductSubCategories(HomePage homePage) {
+		logStep("List all subcategories associated with it's navigation link");
+		homePage.selectProductAllSubCategory();
+	}
 
 }

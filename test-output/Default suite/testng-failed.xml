@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.home.MyTestHomePage">
+      <class name="tests.home.TestHomePage">
         <methods>
-          <include name="testMinicartModalFromHomePage"/>
+          <include name="testBuyersProtectionInformationBadge"/>
         </methods>
-      </class> <!-- tests.home.MyTestHomePage -->
+      </class> <!-- tests.home.TestHomePage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

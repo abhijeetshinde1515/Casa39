@@ -51,8 +51,8 @@ public class TestShoppingCart extends TestNGBaseTest {
 		
 		logStep("View Shopping Cart");
 		ShoppingCartPage shoppingCartPage = minicartModal.clickViewAndEditCart();
-		assertTrue(shoppingCartPage.isPageTitleDisplayed("Shopping cart"), "Page Title is Displayed");
-		assertTrue(shoppingCartPage.validatePriceSummary("€687.85"), "Sub Total is Correct");
+		assertTrue(shoppingCartPage.validatePriceSummary("€687.85"), "Sub Total is Correct");assertTrue(shoppingCartPage.isPageTitleDisplayed("Shopping cart"), "Page Title is Displayed");
+		
 		assertTrue(shoppingCartPage.validatePriceSummary("€50.00"), "Shipping Price is Correct");
 		assertTrue(shoppingCartPage.validatePriceSummary("€160.33"), "Tax Amount is Correct");
 		assertTrue(shoppingCartPage.validatePriceSummary("€889.16"), "Order Total is Correct");
@@ -92,6 +92,43 @@ public class TestShoppingCart extends TestNGBaseTest {
 		
 		cartQuotesPage.clickCASA39Logo();
 		homePage.clickSignOut();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "", 
+			Coverage = "Verifies user can apply discount on shopping cart page.",
+			CreateDate = "27/07/2021")
+	@Test()
+	public void testApplyForDiscountOnShoppingCartPage() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+
+		String productName = "Zucchetti Closer Wall Mounted Showerhead Z94250";
+		String searchText = "Zucchetti Closer Wall Mounted Showerhead Z94250";
+
+		logStep("Search for a Available Product as " + productName);
+		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
+		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText, productName);
+		assertTrue(descriptionPage.isPageTitleDisplayed(productName), productName + " as Searched Product is Correctly Displayed");
+
+		logStep("Select Quantity and add to cart");
+		InformationModal informationModal = descriptionPage.clickAddToCart();
+		assertTrue(informationModal.isSuccessMessageDisplayed(productName), productName);
+		assertTrue(informationModal.isSuccessMessageDisplayed("has been added to your cart"), "has been added to your cart");
+		
+		logStep("Navigate to Shopping Cart Page");
+		ShoppingCartPage shoppingCartPage = informationModal.clickViewCart();
+		assertTrue(shoppingCartPage.isPageTitleDisplayed("Shopping cart"), "Page Title is Displayed");
+		
+		shoppingCartPage.clickApplyCoupon("DISCOUNT");
+		assertTrue(shoppingCartPage.isErrorMessageDisplayed("The coupon code \"DISCOUNT\" is not valid."), "The coupon code \"DISCOUNT\" is not valid.");
+		
+		logStep("Clear Shopping Cart");
+		shoppingCartPage.clearShoppingCart();
+		assertTrue(shoppingCartPage.validateEmptyCartMessage(), "You have no items in your shopping cart.");
+		
+		shoppingCartPage.clickCASA39Logo();
 		closeBrowser();
 	}
 }

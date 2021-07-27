@@ -23,6 +23,9 @@ public class InformationModal extends CommonPage {
 	@FindBy(css = "button.button.am-btn-right")
 	WebElement quoteButton_by;
 	
+	@FindBy(css = "button.button.am-btn-right")
+	WebElement viewCartButton_by;
+	
 	/************ actions ****************/
 	
 	public ProductDescriptionPage clickCross() {
@@ -33,6 +36,11 @@ public class InformationModal extends CommonPage {
 	public CartQuotesPage clickQuoteCart() {
 		click(quoteButton_by);
 		return new CartQuotesPage(driver);
+	}
+	
+	public ShoppingCartPage clickViewCart() {
+		click(viewCartButton_by);
+		return new ShoppingCartPage(driver);
 	}
 	
 	/************ accessors **************/
