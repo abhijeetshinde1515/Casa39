@@ -5,12 +5,14 @@ import baseTestScripts.TestData;
 import baseTestScripts.TestNGBaseTest;
 import framework.TestDocumentation;
 import pages.catalogue.ProductDescriptionPage;
+import pages.home.BuyersProtectionModal;
 import pages.home.CustomerRegisterPage;
 import pages.home.CustomerSignInPage;
 import pages.home.HomePage;
 import pages.home.InformationLinksPage;
 import pages.home.MyAccountPage;
 import pages.home.SearchResultsPage;
+import pages.home.WhyChooseUsSection;
 import utils.GeneratorUtils;
 import utils.ProductUtils;
 
@@ -318,6 +320,73 @@ public class TestHomePage extends TestNGBaseTest {
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "BATHTUBS", "Recessed", "Bathtubs Recessed");
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "SHOWER ENCLOSURES", "Single door opening", "Single door opening");
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "BRANDS", "RELAX", "Relax");
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies buyer's protection information badge from homepage.", 
+			CreateDate = "27/07/2021")
+	@Test()
+	public void testBuyersProtectionInformationBadge() throws Exception {
+		HomePage homePage = navigateToCasa39Website(true);
+		
+		logStep("Open Buyer's Protection Information Badge");
+		BuyersProtectionModal buyersProtectionModal = homePage.clickBuyersProtection();
+		
+		assertTrue(buyersProtectionModal.validateKeySummary("Shopping is secure here"), "Shopping is secure here");
+		assertTrue(buyersProtectionModal.validateKeySummary("Independent guarantee"), "Independent guarantee");
+		assertTrue(buyersProtectionModal.validateKeySummary("Rating score: Excellent"), "Rating score: Excellent");
+		
+		logStep("Close Buyer's Protection Information Badge");
+		buyersProtectionModal.closeBadge();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "", 
+			Coverage = "Verifies why use us section of home page page.",
+			CreateDate = "27/07/2021")
+	@Test()
+	public void testWhyChooseUsSection() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(true);
+		
+		String samples = "CASA39 gives you also the possibility to request the sample of your selected tile. "
+				+ "We offer a wide range of products in order to direct the customer to an aware choice. "
+				+ "The sample has only demonstrative purposes, therefore it could have a different size compared with the required one. "
+				+ "The mosaic samples will always size 10x10 cm. After the delivery our professional will "
+				+ "contact you for receiving feedback and possibly carrying on with the purchase of the quantity of tiles you need.";
+		
+		logStep("Validate Samples Section");
+		WhyChooseUsSection whychooseUsSection = homePage.clickWhyChooseSection("SAMPLES");
+		assertTrue(whychooseUsSection.isPageSectionDisplayed("SAMPLES SERVICE"), "SAMPLES SERVICE section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(samples), "SAMPLES SERVICE content is Displayed");
+		whychooseUsSection.clickHome();
+		
+		String bestPriceGuaranteed = "The ‘Best Price Guarantee’ initiative applies to all articles on our website www.casa39.com";
+		
+		logStep("Validate Best Price Guaranteed Section");
+		whychooseUsSection = homePage.clickWhyChooseSection("BEST PRICE GUARANTEE");
+		assertTrue(whychooseUsSection.isPageTitleDisplayed("BEST PRICE GUARANTEE"), "BEST PRICE GUARANTEE section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(bestPriceGuaranteed), "BEST PRICE GUARANTEE content is Displayed");
+		whychooseUsSection.clickHome();
+		
+		String buyerProtection = "Casa39 is a certified shop using the Trusted Shops trustmark, valid in the European trade for 15 years by now";
+		
+		logStep("Validate BUYER PROTECTION Section");
+		whychooseUsSection = homePage.clickWhyChooseSection("BUYER PROTECTION");
+		assertTrue(whychooseUsSection.isPageSectionDisplayed("BUYER PROTECTION"), "BUYER PROTECTION section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(buyerProtection), "BUYER PROTECTION content is Displayed");
+		whychooseUsSection.clickHome();
+		
+		String quotes = "The best way to save money";
+		
+		logStep("Validate QUOTES Section");
+		whychooseUsSection = homePage.clickWhyChooseSection("QUOTES");
+		assertTrue(whychooseUsSection.isPageSectionDisplayed("QUOTES"), "QUOTES section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(quotes), "QUOTES content is Displayed");
+		whychooseUsSection.clickHome();
 		closeBrowser();
 	}
 }

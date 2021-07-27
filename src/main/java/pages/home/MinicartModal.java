@@ -1,10 +1,16 @@
 package pages.home;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Reporter;
+
 import framework.BaseFragment;
 import framework.CommonModal;
+import pages.catalogue.CartQuotesPage;
 import pages.catalogue.ShoppingCartPage;
 
 public class MinicartModal extends BaseFragment {
@@ -37,6 +43,9 @@ public class MinicartModal extends BaseFragment {
 	@FindBy(css = "a.action.delete")
 	WebElement removeItem_by;
 	
+	@FindBy(id = "top-quotecart-button")
+	WebElement askQuoteButton_by;
+	
 	/************ actions ****************/
 	
 	public void closeMyCart() {
@@ -51,6 +60,11 @@ public class MinicartModal extends BaseFragment {
 	public CommonModal clickRemoveItemFromList() {
 		click(removeItem_by);
 		return new CommonModal(driver);
+	}
+	
+	public CartQuotesPage clickAskForQuotes() {
+		click(askQuoteButton_by);
+		return new CartQuotesPage(driver);
 	}
 	
 	/************ accessors **************/
@@ -68,6 +82,16 @@ public class MinicartModal extends BaseFragment {
 	
 	public String getAmountPrice() {
 		return amountPrice_by.getText();
+	}
+	
+	public boolean getItemPrice(String price) {
+		Reporter.log("Validating '" + price + "' from Summary...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("span.price"));
+		for (WebElement listItem : listItems)
+			if (listItem.getText().contains(price)) {
+				return true;
+			}
+		return false;
 	}
 	
 	/************ validations ************/

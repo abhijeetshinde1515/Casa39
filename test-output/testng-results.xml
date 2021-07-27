@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
     <line>
       <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -11,100 +11,294 @@
       <![CDATA[STEP - Accepting Cookies...]]>
     </line>
     <line>
-      <![CDATA[STEP - Search for a Available Product as Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
+      <![CDATA[STEP - Log In with Valid username and Password]]>
     </line>
     <line>
-      <![CDATA[Selecting product from suggested item list...]]>
+      <![CDATA[Click - SIGN IN]]>
     </line>
     <line>
-      <![CDATA[Click - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
+      <![CDATA[Click - Login]]>
     </line>
     <line>
-      <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 as Searched Product is Correctly Displayed]]>
+      <![CDATA[STEP - Validate Minicart Modal]]>
     </line>
     <line>
-      <![CDATA[STEP - Select Quantity and add to cart]]>
-    </line>
-    <line>
-      <![CDATA[Set - 30]]>
-    </line>
-    <line>
-      <![CDATA[Click - Add to Cart]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
-    </line>
-    <line>
-      <![CDATA[Verified - has been added to your cart]]>
-    </line>
-    <line>
-      <![CDATA[Click - Continue]]>
-    </line>
-    <line>
-      <![CDATA[STEP - Validate Non-Empty Cart and Close]]>
-    </line>
-    <line>
-      <![CDATA[Click - My Cart
-€687.85]]>
-    </line>
-    <line>
-      <![CDATA[Verified - Item Prices are Correct]]>
+      <![CDATA[Click - MY QUOTE]]>
     </line>
     <line>
       <![CDATA[Verified - Total Items are Correct]]>
     </line>
     <line>
-      <![CDATA[STEP - View Shopping Cart]]>
+      <![CDATA[Verified - Cart subtotal price is Correct]]>
     </line>
     <line>
-      <![CDATA[Click - View and edit cart]]>
+      <![CDATA[Click - Ask for a quote]]>
     </line>
     <line>
-      <![CDATA[Verified - Page Title is Displayed]]>
+      <![CDATA[Verified - Cart Quotes Page is Displayed]]>
     </line>
     <line>
-      <![CDATA[Validating '€687.85' from Summary...]]>
+      <![CDATA[Validating '€24.59' from Summary...]]>
     </line>
     <line>
-      <![CDATA[Verified - Sub Total is Correct]]>
+      <![CDATA[Verified - Items Price is Correct]]>
     </line>
     <line>
-      <![CDATA[Validating '€50.00' from Summary...]]>
+      <![CDATA[Validating '€210.66' from Summary...]]>
     </line>
     <line>
-      <![CDATA[Verified - Shipping Price is Correct]]>
+      <![CDATA[Verified - Items Price is Correct]]>
     </line>
     <line>
-      <![CDATA[Validating '€160.33' from Summary...]]>
+      <![CDATA[Validating '€103.28' from Summary...]]>
     </line>
     <line>
-      <![CDATA[Verified - Tax Amount is Correct]]>
+      <![CDATA[Verified - Items Price is Correct]]>
     </line>
     <line>
-      <![CDATA[Validating '€889.16' from Summary...]]>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
     </line>
     <line>
-      <![CDATA[Verified - Order Total is Correct]]>
+      <![CDATA[Click - ]]>
     </line>
     <line>
-      <![CDATA[STEP - Proceed To Checkout]]>
+      <![CDATA[Click - SIGN OUT]]>
     </line>
     <line>
-      <![CDATA[Click - Proceed to Checkout]]>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
     </line>
     <line>
-      <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 is Displayed]]>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Accepting Cookies...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Log In with Valid username and Password]]>
+    </line>
+    <line>
+      <![CDATA[Click - SIGN IN]]>
+    </line>
+    <line>
+      <![CDATA[Click - Login]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate Minicart Modal]]>
+    </line>
+    <line>
+      <![CDATA[Click - MY QUOTE]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Total Items are Correct]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Cart subtotal price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Click - Ask for a quote]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Cart Quotes Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€24.59' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Items Price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€210.66' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Items Price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€103.28' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Items Price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Click - SIGN OUT]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Accepting Cookies...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Log In with Valid username and Password]]>
+    </line>
+    <line>
+      <![CDATA[Click - SIGN IN]]>
+    </line>
+    <line>
+      <![CDATA[Click - Login]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate Minicart Modal]]>
+    </line>
+    <line>
+      <![CDATA[Click - MY QUOTE]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Total Items are Correct]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Cart subtotal price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Click - Ask for a quote]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Cart Quotes Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€24.59' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Items Price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€210.66' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Items Price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€103.28' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Items Price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Click - SIGN OUT]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Closing Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Accepting Cookies...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Log In with Valid username and Password]]>
+    </line>
+    <line>
+      <![CDATA[Click - SIGN IN]]>
+    </line>
+    <line>
+      <![CDATA[Click - Login]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate Minicart Modal]]>
+    </line>
+    <line>
+      <![CDATA[Click - MY QUOTE]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Total Items are Correct]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Launch Browser Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Accepting Cookies...]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Log In with Valid username and Password]]>
+    </line>
+    <line>
+      <![CDATA[Click - SIGN IN]]>
+    </line>
+    <line>
+      <![CDATA[Click - Login]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Validate Minicart Modal]]>
+    </line>
+    <line>
+      <![CDATA[Click - MY QUOTE]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Total Items are Correct]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Cart subtotal price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Click - Ask for a quote]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Cart Quotes Page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€24.59' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Items Price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€210.66' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Items Price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[Validating '€103.28' from Summary...]]>
+    </line>
+    <line>
+      <![CDATA[Verified - Items Price is Correct]]>
+    </line>
+    <line>
+      <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+    </line>
+    <line>
+      <![CDATA[Click - ]]>
+    </line>
+    <line>
+      <![CDATA[Click - SIGN OUT]]>
     </line>
     <line>
       <![CDATA[STEP - Closing Browser Successfully...]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57528" started-at="2021-07-26T16:26:54 IST" finished-at="2021-07-26T16:27:52 IST">
+  <suite name="Default suite" duration-ms="188920" started-at="2021-07-27T13:16:45 IST" finished-at="2021-07-27T13:19:54 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57528" started-at="2021-07-26T16:26:54 IST" finished-at="2021-07-26T16:27:52 IST">
+    <test name="Default test" duration-ms="188920" started-at="2021-07-27T13:16:45 IST" finished-at="2021-07-27T13:19:54 IST">
       <class name="tests.home.MyTestHomePage">
-        <test-method status="PASS" signature="testSecureCheckOutForProducts()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testSecureCheckOutForProducts" duration-ms="57449" started-at="2021-07-26T16:26:54 IST" finished-at="2021-07-26T16:27:52 IST">
+        <test-method status="PASS" signature="testMinicartModalFromHomePage()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testMinicartModalFromHomePage" duration-ms="42761" started-at="2021-07-27T13:16:45 IST" finished-at="2021-07-27T13:17:28 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -116,95 +310,347 @@
               <![CDATA[STEP - Accepting Cookies...]]>
             </line>
             <line>
-              <![CDATA[STEP - Search for a Available Product as Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
+              <![CDATA[STEP - Log In with Valid username and Password]]>
             </line>
             <line>
-              <![CDATA[Selecting product from suggested item list...]]>
+              <![CDATA[Click - SIGN IN]]>
             </line>
             <line>
-              <![CDATA[Click - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
+              <![CDATA[Click - Login]]>
             </line>
             <line>
-              <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 as Searched Product is Correctly Displayed]]>
+              <![CDATA[STEP - Validate Minicart Modal]]>
             </line>
             <line>
-              <![CDATA[STEP - Select Quantity and add to cart]]>
-            </line>
-            <line>
-              <![CDATA[Set - 30]]>
-            </line>
-            <line>
-              <![CDATA[Click - Add to Cart]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2]]>
-            </line>
-            <line>
-              <![CDATA[Verified - has been added to your cart]]>
-            </line>
-            <line>
-              <![CDATA[Click - Continue]]>
-            </line>
-            <line>
-              <![CDATA[STEP - Validate Non-Empty Cart and Close]]>
-            </line>
-            <line>
-              <![CDATA[Click - My Cart
-€687.85]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Item Prices are Correct]]>
+              <![CDATA[Click - MY QUOTE]]>
             </line>
             <line>
               <![CDATA[Verified - Total Items are Correct]]>
             </line>
             <line>
-              <![CDATA[STEP - View Shopping Cart]]>
+              <![CDATA[Verified - Cart subtotal price is Correct]]>
             </line>
             <line>
-              <![CDATA[Click - View and edit cart]]>
+              <![CDATA[Click - Ask for a quote]]>
             </line>
             <line>
-              <![CDATA[Verified - Page Title is Displayed]]>
+              <![CDATA[Verified - Cart Quotes Page is Displayed]]>
             </line>
             <line>
-              <![CDATA[Validating '€687.85' from Summary...]]>
+              <![CDATA[Validating '€24.59' from Summary...]]>
             </line>
             <line>
-              <![CDATA[Verified - Sub Total is Correct]]>
+              <![CDATA[Verified - Items Price is Correct]]>
             </line>
             <line>
-              <![CDATA[Validating '€50.00' from Summary...]]>
+              <![CDATA[Validating '€210.66' from Summary...]]>
             </line>
             <line>
-              <![CDATA[Verified - Shipping Price is Correct]]>
+              <![CDATA[Verified - Items Price is Correct]]>
             </line>
             <line>
-              <![CDATA[Validating '€160.33' from Summary...]]>
+              <![CDATA[Validating '€103.28' from Summary...]]>
             </line>
             <line>
-              <![CDATA[Verified - Tax Amount is Correct]]>
+              <![CDATA[Verified - Items Price is Correct]]>
             </line>
             <line>
-              <![CDATA[Validating '€889.16' from Summary...]]>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
             </line>
             <line>
-              <![CDATA[Verified - Order Total is Correct]]>
+              <![CDATA[Click - ]]>
             </line>
             <line>
-              <![CDATA[STEP - Proceed To Checkout]]>
-            </line>
-            <line>
-              <![CDATA[Click - Proceed to Checkout]]>
-            </line>
-            <line>
-              <![CDATA[Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 is Displayed]]>
+              <![CDATA[Click - SIGN OUT]]>
             </line>
             <line>
               <![CDATA[STEP - Closing Browser Successfully...]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testSecureCheckOutForProducts -->
+        </test-method> <!-- testMinicartModalFromHomePage -->
+        <test-method status="PASS" signature="testMinicartModalFromHomePage()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testMinicartModalFromHomePage" duration-ms="40767" started-at="2021-07-27T13:17:28 IST" finished-at="2021-07-27T13:18:09 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Accepting Cookies...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Log In with Valid username and Password]]>
+            </line>
+            <line>
+              <![CDATA[Click - SIGN IN]]>
+            </line>
+            <line>
+              <![CDATA[Click - Login]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate Minicart Modal]]>
+            </line>
+            <line>
+              <![CDATA[Click - MY QUOTE]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Total Items are Correct]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Cart subtotal price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Click - Ask for a quote]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Cart Quotes Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€24.59' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Items Price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€210.66' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Items Price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€103.28' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Items Price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Click - SIGN OUT]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMinicartModalFromHomePage -->
+        <test-method status="PASS" signature="testMinicartModalFromHomePage()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testMinicartModalFromHomePage" duration-ms="38983" started-at="2021-07-27T13:18:09 IST" finished-at="2021-07-27T13:18:48 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Accepting Cookies...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Log In with Valid username and Password]]>
+            </line>
+            <line>
+              <![CDATA[Click - SIGN IN]]>
+            </line>
+            <line>
+              <![CDATA[Click - Login]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate Minicart Modal]]>
+            </line>
+            <line>
+              <![CDATA[Click - MY QUOTE]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Total Items are Correct]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Cart subtotal price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Click - Ask for a quote]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Cart Quotes Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€24.59' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Items Price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€210.66' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Items Price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€103.28' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Items Price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Click - SIGN OUT]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMinicartModalFromHomePage -->
+        <test-method status="FAIL" signature="testMinicartModalFromHomePage()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testMinicartModalFromHomePage" duration-ms="27186" started-at="2021-07-27T13:18:48 IST" finished-at="2021-07-27T13:19:15 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at utils.AssertUtil.assertTrue(AssertUtil.java:10)
+at tests.home.MyTestHomePage.testMinicartModalFromHomePage(MyTestHomePage.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Accepting Cookies...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Log In with Valid username and Password]]>
+            </line>
+            <line>
+              <![CDATA[Click - SIGN IN]]>
+            </line>
+            <line>
+              <![CDATA[Click - Login]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate Minicart Modal]]>
+            </line>
+            <line>
+              <![CDATA[Click - MY QUOTE]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Total Items are Correct]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMinicartModalFromHomePage -->
+        <test-method status="PASS" signature="testMinicartModalFromHomePage()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testMinicartModalFromHomePage" duration-ms="39163" started-at="2021-07-27T13:19:15 IST" finished-at="2021-07-27T13:19:54 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[STEP - Launch Browser Successfully...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Navigate to Casa39 English Website Home Page.]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Accepting Cookies...]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Log In with Valid username and Password]]>
+            </line>
+            <line>
+              <![CDATA[Click - SIGN IN]]>
+            </line>
+            <line>
+              <![CDATA[Click - Login]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Validate Minicart Modal]]>
+            </line>
+            <line>
+              <![CDATA[Click - MY QUOTE]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Total Items are Correct]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Cart subtotal price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Click - Ask for a quote]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Cart Quotes Page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€24.59' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Items Price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€210.66' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Items Price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[Validating '€103.28' from Summary...]]>
+            </line>
+            <line>
+              <![CDATA[Verified - Items Price is Correct]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Clicking CASA39 Logo to Return On Home Page...]]>
+            </line>
+            <line>
+              <![CDATA[Click - ]]>
+            </line>
+            <line>
+              <![CDATA[Click - SIGN OUT]]>
+            </line>
+            <line>
+              <![CDATA[STEP - Closing Browser Successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testMinicartModalFromHomePage -->
       </class> <!-- tests.home.MyTestHomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

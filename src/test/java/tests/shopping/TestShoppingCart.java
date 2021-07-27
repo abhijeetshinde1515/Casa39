@@ -1,12 +1,16 @@
 package tests.shopping;
 
 import org.testng.annotations.Test;
+
+import baseTestScripts.TestData;
 import baseTestScripts.TestNGBaseTest;
 import framework.TestDocumentation;
+import pages.catalogue.CartQuotesPage;
 import pages.catalogue.CheckOutPage;
 import pages.catalogue.InformationModal;
 import pages.catalogue.ProductDescriptionPage;
 import pages.catalogue.ShoppingCartPage;
+import pages.home.CustomerSignInPage;
 import pages.home.HomePage;
 import pages.home.MinicartModal;
 import pages.home.SearchResultsPage;
@@ -56,6 +60,38 @@ public class TestShoppingCart extends TestNGBaseTest {
 		logStep("Proceed To Checkout");
 		CheckOutPage checkOutPage = shoppingCartPage.clickProceedToCheckOut();
 		assertTrue(checkOutPage.getProductName(productName), productName+" is Displayed");
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies that logged in user can access quotes mini cart section from home page.", 
+			CreateDate = "27/07/2021")
+	@Test()
+	public void testMinicartQuotesModalFromHomePage() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+		
+		logStep("Log In with Valid username and Password");
+		CustomerSignInPage customerSignInPage = homePage.clickSignIn();
+		customerSignInPage.setEmail(TestData.testEmail);
+		customerSignInPage.setPassword(TestData.testPassword);
+		homePage = customerSignInPage.clickSignIn();
+		
+		logStep("Validate Minicart Modal");
+		MinicartModal minicartModal = homePage.clickMyQuote();
+		assertTrue(minicartModal.getTotalItems().contains("3"), "Total Items are Correct");
+		assertTrue(minicartModal.getAmountPrice().contains("€338.53"), "Cart subtotal price is Correct");
+		
+		CartQuotesPage cartQuotesPage = minicartModal.clickAskForQuotes();
+		assertTrue(cartQuotesPage.isPageTitleDisplayed("Cart Quotes"), "Cart Quotes Page is Displayed");
+		
+		assertTrue(minicartModal.getItemPrice("€24.59"), "Items Price is Correct");
+		assertTrue(minicartModal.getItemPrice("€210.66"), "Items Price is Correct");
+		assertTrue(minicartModal.getItemPrice("€103.28"), "Items Price is Correct");
+		
+		cartQuotesPage.clickCASA39Logo();
+		homePage.clickSignOut();
 		closeBrowser();
 	}
 }

@@ -23,10 +23,17 @@ public class CommonPage extends BaseFragment {
 	
 	@FindBy(css = "div.message.notice.notice.message")
 	WebElement notice_message_by;
-
+	
+	@FindBy(id = "maincontent")
+	WebElement content_by;
 	
 	/************ actions ****************/
 	/************ accessors **************/
+	
+	public boolean getPageContent(String content) {
+		return content_by.getText().contains(content);
+	}
+	
 	/************ validations ************/
 	
 	public boolean isPageTitleDisplayed(String title) {

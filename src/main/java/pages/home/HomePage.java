@@ -78,6 +78,12 @@ public class HomePage extends CommonPage {
 	
 	@FindBy(linkText = "MY ACCOUNT")
 	WebElement myAccount_by;
+	
+	@FindBy(css = "img._qoy2qn")
+	WebElement buyersProtection_by;
+	
+	@FindBy(css = ".amquote-showcart.action")
+	WebElement quoteCart_by;
 
 	/************ actions ***************/
 
@@ -130,6 +136,11 @@ public class HomePage extends CommonPage {
 	
 	public MinicartModal clickMyCart() {
 		click(minicart_by);
+		return new MinicartModal(driver);
+	}
+	
+	public MinicartModal clickMyQuote() {
+		clickUsingJSExecutor(quoteCart_by);
 		return new MinicartModal(driver);
 	}
 	
@@ -228,6 +239,11 @@ public class HomePage extends CommonPage {
 		
 	}
 	
+	public BuyersProtectionModal clickBuyersProtection() {
+		clickUsingJSExecutor(buyersProtection_by);
+		return new BuyersProtectionModal(driver);
+	}
+	
 	/************ accessors ***************/
 	
 	public String getSelectedLanguage() {
@@ -240,6 +256,12 @@ public class HomePage extends CommonPage {
 	
 	public String getSelectedCurrency() {
 		return currency_switch.getText();
+	}
+	
+	public WhyChooseUsSection clickWhyChooseSection(String partialLinkText) {
+		WebElement webElement = findElement(By.partialLinkText(partialLinkText));
+		clickUsingJSExecutor(webElement);
+		return new WhyChooseUsSection(driver);
 	}
 
 	/************ validations ***************/
