@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.home.MyTestHomePage">
         <methods>
-          <include name="testSecureCheckOutForProducts"/>
+          <include name="testMinicartModalFromHomePage"/>
         </methods>
       </class> <!-- tests.home.MyTestHomePage -->
     </classes>
