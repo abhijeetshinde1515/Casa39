@@ -11,33 +11,42 @@
       <![CDATA[STEP - Accepting Cookies...]]>
     </line>
     <line>
-      <![CDATA[STEP - List all social media platforms associated with it's navigation link]]>
+      <![CDATA[STEP - List Offer For You section associated with it's navigation link]]>
     </line>
     <line>
-      <![CDATA[Verified - facebook - https://www.facebook.com/casa39shop/]]>
+      <![CDATA[Verified - FLOOR TILES - https://www.casa39.com/tiles]]>
     </line>
     <line>
-      <![CDATA[Verified - pinterest - https://www.pinterest.com/casa39_com/]]>
+      <![CDATA[Verified - WALL TILES - https://www.casa39.com/wall-tiles]]>
     </line>
     <line>
-      <![CDATA[Verified - twitter - https://twitter.com/bathroom39]]>
+      <![CDATA[Verified - WELLNESS & SPA - https://www.casa39.com/shower-enclosures]]>
     </line>
     <line>
-      <![CDATA[Verified - instagram - https://www.instagram.com/casa39.it]]>
+      <![CDATA[Verified - FURNITURE - https://www.casa39.com/furniture]]>
     </line>
     <line>
-      <![CDATA[Verified - youtube - https://www.youtube.com/user/casaebagno]]>
+      <![CDATA[Verified - SANITARY WARES - https://www.casa39.com/toilet]]>
+    </line>
+    <line>
+      <![CDATA[Verified - TAPS - https://www.casa39.com/taps]]>
+    </line>
+    <line>
+      <![CDATA[Verified - ACCESSORIES - https://www.casa39.com/bathroom-accessories]]>
+    </line>
+    <line>
+      <![CDATA[Verified - BRANDS - https://www.casa39.com/brands]]>
     </line>
     <line>
       <![CDATA[STEP - Closing Browser Successfully...]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21219" started-at="2021-07-28T13:12:43 IST" finished-at="2021-07-28T13:13:04 IST">
+  <suite name="Default suite" duration-ms="19343" started-at="2021-07-28T14:52:13 IST" finished-at="2021-07-28T14:52:32 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21219" started-at="2021-07-28T13:12:43 IST" finished-at="2021-07-28T13:13:04 IST">
+    <test name="Default test" duration-ms="19343" started-at="2021-07-28T14:52:13 IST" finished-at="2021-07-28T14:52:32 IST">
       <class name="tests.home.MyTestHomePage">
-        <test-method status="PASS" signature="testAllSocialMediaPlatformAvailabilityLinks()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testAllSocialMediaPlatformAvailabilityLinks" duration-ms="21181" started-at="2021-07-28T13:12:43 IST" finished-at="2021-07-28T13:13:04 IST">
+        <test-method status="PASS" signature="testOffersForYouSectionLinks()[pri:0, instance:tests.home.MyTestHomePage@307f6b8c]" name="testOffersForYouSectionLinks" duration-ms="19290" started-at="2021-07-28T14:52:13 IST" finished-at="2021-07-28T14:52:32 IST">
           <reporter-output>
             <line>
               <![CDATA[STEP - Launch Browser Successfully...]]>
@@ -49,28 +58,37 @@
               <![CDATA[STEP - Accepting Cookies...]]>
             </line>
             <line>
-              <![CDATA[STEP - List all social media platforms associated with it's navigation link]]>
+              <![CDATA[STEP - List Offer For You section associated with it's navigation link]]>
             </line>
             <line>
-              <![CDATA[Verified - facebook - https://www.facebook.com/casa39shop/]]>
+              <![CDATA[Verified - FLOOR TILES - https://www.casa39.com/tiles]]>
             </line>
             <line>
-              <![CDATA[Verified - pinterest - https://www.pinterest.com/casa39_com/]]>
+              <![CDATA[Verified - WALL TILES - https://www.casa39.com/wall-tiles]]>
             </line>
             <line>
-              <![CDATA[Verified - twitter - https://twitter.com/bathroom39]]>
+              <![CDATA[Verified - WELLNESS & SPA - https://www.casa39.com/shower-enclosures]]>
             </line>
             <line>
-              <![CDATA[Verified - instagram - https://www.instagram.com/casa39.it]]>
+              <![CDATA[Verified - FURNITURE - https://www.casa39.com/furniture]]>
             </line>
             <line>
-              <![CDATA[Verified - youtube - https://www.youtube.com/user/casaebagno]]>
+              <![CDATA[Verified - SANITARY WARES - https://www.casa39.com/toilet]]>
+            </line>
+            <line>
+              <![CDATA[Verified - TAPS - https://www.casa39.com/taps]]>
+            </line>
+            <line>
+              <![CDATA[Verified - ACCESSORIES - https://www.casa39.com/bathroom-accessories]]>
+            </line>
+            <line>
+              <![CDATA[Verified - BRANDS - https://www.casa39.com/brands]]>
             </line>
             <line>
               <![CDATA[STEP - Closing Browser Successfully...]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testAllSocialMediaPlatformAvailabilityLinks -->
+        </test-method> <!-- testOffersForYouSectionLinks -->
       </class> <!-- tests.home.MyTestHomePage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
