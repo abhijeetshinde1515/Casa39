@@ -519,4 +519,26 @@ public class TestHomePage extends TestNGBaseTest {
 		ProductUtils.selectAndValidateAllSocialMediaPlatforms(homePage);
 		closeBrowser();
 	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies CASA footer information links.", 
+			CreateDate = "28/07/2021")
+	@Test()
+	public void testAllFooterInformationLinks() throws Exception {
+		HomePage homePage = navigateToCasa39Website(false);
+		ProductUtils.selectAndValidateAllFooterLinks(homePage);
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies CASA Our Offers for you section.", 
+			CreateDate = "28/07/2021")
+	@Test()
+	public void testOffersForYouSectionLinks() throws Exception {
+		HomePage homePage = navigateToCasa39Website(false);
+		ProductUtils.selectAndValidateOfferForYou(homePage);
+		closeBrowser();
+	}
 }

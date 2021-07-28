@@ -60,5 +60,15 @@ public class ProductUtils extends AssertUtil {
 		logStep("List all social media platforms associated with it's navigation link");
 		homePage.selectSocialMediaPlatforms();
 	}
+	
+	public static void selectAndValidateAllFooterLinks(HomePage homePage) {
+		logStep("List all footer information section associated with it's navigation link");
+		homePage.selectAllFooterLinks();
+	}
+	
+	public static void selectAndValidateOfferForYou(HomePage homePage) {
+		logStep("List Offer For You section associated with it's navigation link");
+		homePage.selectAllOfferForYou();
+	}
 
 }

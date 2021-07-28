@@ -260,6 +260,22 @@ public class HomePage extends CommonPage {
 			ReportUtils.logVerify(listItems.get(i).getAttribute("class") + " - " + urls.get(i).getAttribute("href"));
 		}
 	}
+	
+	public void selectAllFooterLinks() {
+		List<WebElement> listItems = driver.findElements(By.cssSelector("li.nav.item a"));
+		for (WebElement listItem : listItems) {
+				ReportUtils.logVerify(listItem.getText() + " - " + listItem.getAttribute("href"));
+				
+		}
+	}
+	
+	public void selectAllOfferForYou() {
+		List<WebElement> listItems = driver.findElements(By.cssSelector("a.box-images div.item-text"));
+		List<WebElement> urls = driver.findElements(By.cssSelector("div.box-main a"));
+		for (int i = 0; i < listItems.size(); ++i) {
+			ReportUtils.logVerify(listItems.get(i).getText() + " - " + urls.get(i).getAttribute("href"));
+		}
+	}
 
 	public MyAccountPage clickMyAccount() {
 		clickUsingJSExecutor(myAccount_by);
