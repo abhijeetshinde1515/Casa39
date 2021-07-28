@@ -10,6 +10,8 @@ public class TestData {
 	public static final String password = "Ajay@123";
 	public static final String user_fullname = "Ajay Sikarwar";
 	
+	
+	// Test User 2
 	public static final String testEmail = "Testmail123@gmail.com";
 	public static final String testPassword = "Test@123";
 ;}

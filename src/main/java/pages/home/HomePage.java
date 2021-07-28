@@ -85,6 +85,9 @@ public class HomePage extends CommonPage {
 	
 	@FindBy(css = ".amquote-showcart.action")
 	WebElement quoteCart_by;
+	
+	@FindBy(linkText = "All our service")
+	WebElement allOurServices_by;
 
 	/************ actions ***************/
 
@@ -237,8 +240,24 @@ public class HomePage extends CommonPage {
 	public void selectProductAllSubCategory() {
 		List<WebElement> listItems = driver.findElements(By.cssSelector("a.ammenu-link.-level2"));
 		for (WebElement listItem : listItems) {
-				ReportUtils.logStep(listItem.getAttribute("title") + " - " + listItem.getAttribute("href"));
+				ReportUtils.logVerify(listItem.getAttribute("title") + " - " + listItem.getAttribute("href"));
 				
+		}
+	}
+	
+	public void selectPlatforms() {
+		List<WebElement> listItems = driver.findElements(By.cssSelector("div.row ul li a"));
+		for (WebElement listItem : listItems) {
+				ReportUtils.logVerify(listItem.getAttribute("title") + " - " + listItem.getAttribute("href"));
+				
+		}
+	}
+	
+	public void selectSocialMediaPlatforms() {
+		List<WebElement> listItems = driver.findElements(By.cssSelector("ul.social-list li"));
+		List<WebElement> urls = driver.findElements(By.cssSelector("ul.social-list li a"));
+		for (int i = 0; i < listItems.size(); ++i) {
+			ReportUtils.logVerify(listItems.get(i).getAttribute("class") + " - " + urls.get(i).getAttribute("href"));
 		}
 	}
 
@@ -251,6 +270,17 @@ public class HomePage extends CommonPage {
 	public BuyersProtectionModal clickBuyersProtection() {
 		clickUsingJSExecutor(buyersProtection_by);
 		return new BuyersProtectionModal(driver);
+	}
+	
+	public WhyChooseUsSection clickWhyChooseSection(String partialLinkText) {
+		WebElement webElement = findElement(By.partialLinkText(partialLinkText));
+		clickUsingJSExecutor(webElement);
+		return new WhyChooseUsSection(driver);
+	}
+	
+	public AllOurServicesPage clickAllOurServices() {
+		clickUsingJSExecutor(allOurServices_by);
+		return new AllOurServicesPage(driver);
 	}
 	
 	/************ accessors ***************/
@@ -267,12 +297,6 @@ public class HomePage extends CommonPage {
 		return currency_switch.getText();
 	}
 	
-	public WhyChooseUsSection clickWhyChooseSection(String partialLinkText) {
-		WebElement webElement = findElement(By.partialLinkText(partialLinkText));
-		clickUsingJSExecutor(webElement);
-		return new WhyChooseUsSection(driver);
-	}
-
 	/************ validations ***************/
 
 	public boolean validateNotLoggedInUser() {

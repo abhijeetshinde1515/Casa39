@@ -113,13 +113,13 @@ public class BaseFragment {
 
 	public HomePage clickCASA39Logo() {
 		Reporter.log("STEP - Clicking CASA39 Logo to Return On Home Page...", true);
-		click(findElement(By.cssSelector(".logo")));
+		findElement(By.cssSelector(".logo")).click();
 		return new HomePage(driver);
 	}
 	
 	public HomePage clickHome() {
-		Reporter.log("NEXT STEP - Returning back to Home Page...", true);
-		click(findElement(By.cssSelector(".item.home a")));
+		Reporter.log("STEP - Returning back to Home Page...", true);
+		findElement(By.cssSelector(".item.home a")).click();
 		return new HomePage(driver);
 	}
 

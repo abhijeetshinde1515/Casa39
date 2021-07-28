@@ -5,6 +5,7 @@ import baseTestScripts.TestData;
 import baseTestScripts.TestNGBaseTest;
 import framework.TestDocumentation;
 import pages.catalogue.ProductDescriptionPage;
+import pages.home.AllOurServicesPage;
 import pages.home.BuyersProtectionModal;
 import pages.home.CustomerRegisterPage;
 import pages.home.CustomerSignInPage;
@@ -398,6 +399,124 @@ public class TestHomePage extends TestNGBaseTest {
 	public void testAllProductSubCategoryLinks() throws Exception {
 		HomePage homePage = navigateToCasa39Website(false);
 		ProductUtils.selectAndValidateAllProductSubCategories(homePage);
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "", 
+			Coverage = "Verifies all our Services Section of Home Page.",
+			CreateDate = "28/07/2021")
+	@Test()
+	public void testAllOurServicesSection() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+				
+		String samples = "CASA39 gives you also the possibility to request the sample of your selected tile. "
+				+ "We offer a wide range of products in order to direct the customer to an aware choice. "
+				+ "The sample has only demonstrative purposes, therefore it could have a different size compared with the required one. "
+				+ "The mosaic samples will always size 10x10 cm. After the delivery our professional will "
+				+ "contact you for receiving feedback and possibly carrying on with the purchase of the quantity of tiles you need.";
+		
+		logStep("Validate All Our Services Section");
+		AllOurServicesPage allOurServicesPage = homePage.clickAllOurServices();
+		assertTrue(allOurServicesPage.isPageTitleDisplayed("ALL OUR SERVICES"), "All Our Services Page is Displayed");
+		
+		logStep("Validate SAMPLES Section");
+		WhyChooseUsSection whychooseUsSection = homePage.clickWhyChooseSection("SAMPLES");
+		assertTrue(whychooseUsSection.isPageSectionDisplayed("SAMPLES SERVICE"), "SAMPLES SERVICE section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(samples), "SAMPLES SERVICE content is Displayed");
+		whychooseUsSection.clickHome();
+		
+		String bestPriceGuaranteed = "The ‘Best Price Guarantee’ initiative applies to all articles on our website www.casa39.com";
+		
+		logStep("Validate Best Price Guaranteed Section");
+		allOurServicesPage = homePage.clickAllOurServices();
+		assertTrue(allOurServicesPage.isPageTitleDisplayed("ALL OUR SERVICES"), "All Our Services Page is Displayed");
+		whychooseUsSection = homePage.clickWhyChooseSection("BEST PRICE GUARANTEE");
+		assertTrue(whychooseUsSection.isPageTitleDisplayed("BEST PRICE GUARANTEE"), "BEST PRICE GUARANTEE section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(bestPriceGuaranteed), "BEST PRICE GUARANTEE content is Displayed");
+		whychooseUsSection.clickHome();
+		
+		String buyerProtection = "Casa39 is a certified shop using the Trusted Shops trustmark, valid in the European trade for 15 years by now";
+		
+		logStep("Validate BUYER PROTECTION Section");
+		allOurServicesPage = homePage.clickAllOurServices();
+		assertTrue(allOurServicesPage.isPageTitleDisplayed("ALL OUR SERVICES"), "All Our Services Page is Displayed");
+		whychooseUsSection = homePage.clickWhyChooseSection("BUYER PROTECTION");
+		assertTrue(whychooseUsSection.isPageSectionDisplayed("BUYER PROTECTION"), "BUYER PROTECTION section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(buyerProtection), "BUYER PROTECTION content is Displayed");
+		whychooseUsSection.clickHome();
+		
+		String quotes = "The best way to save money";
+		
+		logStep("Validate QUOTES Section");
+		allOurServicesPage = homePage.clickAllOurServices();
+		assertTrue(allOurServicesPage.isPageTitleDisplayed("ALL OUR SERVICES"), "All Our Services Page is Displayed");
+		whychooseUsSection = homePage.clickWhyChooseSection("QUOTES");
+		assertTrue(whychooseUsSection.isPageSectionDisplayed("QUOTES"), "QUOTES section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(quotes), "QUOTES content is Displayed");
+		whychooseUsSection.clickHome();
+		
+		String visitOurShop = "We will be glad to accommodate you and we will guide you to discover the beauty of South of Italy.";
+		
+		logStep("Validate VISIT OUR SHOP Section");
+		allOurServicesPage = homePage.clickAllOurServices();
+		assertTrue(allOurServicesPage.isPageTitleDisplayed("ALL OUR SERVICES"), "All Our Services Page is Displayed");
+		whychooseUsSection = homePage.clickWhyChooseSection("VISIT OUR SHOP");
+		assertTrue(whychooseUsSection.isPageTitleDisplayed("VISIT OUR STORE"), "VISIT OUR STORE section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(visitOurShop), "VISIT OUR STORE content is Displayed");
+		whychooseUsSection.clickHome();
+		
+		String free3DProject = "Design is our strenght. It is not a simple design. Enjoy a sensorial experience in a parallel but tangible world. "
+				+ "Set out on a virtual trip, you will find a so realistic situation that it seems true.";
+		
+		logStep("Validate FREE 3D PROJECTS Section");
+		allOurServicesPage = homePage.clickAllOurServices();
+		assertTrue(allOurServicesPage.isPageTitleDisplayed("ALL OUR SERVICES"), "All Our Services Page is Displayed");
+		whychooseUsSection = homePage.clickWhyChooseSection("FREE 3D-PROJECTS");
+		assertTrue(whychooseUsSection.isPageSectionDisplayed("FREE 3D PROJECTS"), "FREE 3D PROJECTS section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(free3DProject), "FREE 3D PROJECTS content is Displayed");
+		whychooseUsSection.clickHome();
+		
+		logStep("Validate SHIPPING Section");
+		allOurServicesPage = homePage.clickAllOurServices();
+		assertTrue(allOurServicesPage.isPageTitleDisplayed("ALL OUR SERVICES"), "All Our Services Page is Displayed");
+		whychooseUsSection = homePage.clickWhyChooseSection("SHIPPING");
+		assertTrue(whychooseUsSection.isPageSectionDisplayed("SHIPPING"), "SHIPPING section is Displayed");
+		allOurServicesPage.getShippingCountries();
+		allOurServicesPage.clickHome();
+		
+		String orderCheck = "To guarantee the compatibility of the combined products each order will be carefully checked.";
+		
+		logStep("Validate ORDER CHECK Section");
+		allOurServicesPage = homePage.clickAllOurServices();
+		assertTrue(allOurServicesPage.isPageTitleDisplayed("ALL OUR SERVICES"), "All Our Services Page is Displayed");
+		whychooseUsSection = homePage.clickWhyChooseSection("ORDER CHECK");
+		assertTrue(whychooseUsSection.isPageSectionDisplayed("ORDER CHECK"), "ORDER CHECK section is Displayed");
+		assertTrue(whychooseUsSection.getPageContent(orderCheck), "ORDER CHECK content is Displayed");
+		whychooseUsSection.clickHome();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies CASA platform availability.", 
+			CreateDate = "28/07/2021")
+	@Test()
+	public void testAllPlatformAvailabilityLinks() throws Exception {
+		HomePage homePage = navigateToCasa39Website(false);
+		ProductUtils.selectAndValidateAllPlatforms(homePage);
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies CASA social media platform availability.", 
+			CreateDate = "28/07/2021")
+	@Test()
+	public void testAllSocialMediaPlatformAvailabilityLinks() throws Exception {
+		HomePage homePage = navigateToCasa39Website(false);
+		ProductUtils.selectAndValidateAllSocialMediaPlatforms(homePage);
 		closeBrowser();
 	}
 }
