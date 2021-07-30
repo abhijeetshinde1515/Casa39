@@ -1,8 +1,5 @@
 package tests.home;
 
-import baseTestScripts.TestNGBaseTest;
-
-public class MyTestHomePage extends TestNGBaseTest {
-
-	
+public class MyTestHomePage {
+		
 }

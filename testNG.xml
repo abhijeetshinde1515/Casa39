@@ -1,11 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-  
-<suite name="TestSuite" verbose="1" >
 
-  <test name="Tests">
-    <packages>
-    	<package name=".*" />
-    </packages>
-  </test>
+<suite name="TestSuite" verbose="1">
+
+	<listeners>
+		<listener class-name="reports.TestListener" />
+	</listeners>
+	<parameter name="browserType" value="chrome" />
+
+	<test name="Tests">
+		<packages>
+			<package name=".*" />
+		</packages>
+	</test>
 
 </suite>

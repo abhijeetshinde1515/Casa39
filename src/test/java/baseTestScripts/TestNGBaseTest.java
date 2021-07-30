@@ -7,8 +7,12 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
+import com.aventstack.extentreports.Status;
 import pages.home.HomePage;
+import reports.ExtentTestManager;
 import utils.AssertUtil;
+import utils.ReportUtils;
 
 public class TestNGBaseTest extends AssertUtil {
 
@@ -53,5 +57,11 @@ public class TestNGBaseTest extends AssertUtil {
 	public void closeBrowser() {
 		logStep("Closing Browser Successfully...");
 		driver.quit();
+	}
+	
+	public static String logStep(String logs) {
+		ExtentTestManager.getTest().log(Status.INFO, "STEP - "+logs);
+		Reporter.log("STEP - "+logs, true);
+		return null;
 	}
 }
