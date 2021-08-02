@@ -1,4 +1,4 @@
-package tests.myProfile;
+package tests.shopping;
 
 import org.testng.annotations.Test;
 import baseTestScripts.TestData;
@@ -9,8 +9,17 @@ import pages.home.HomePage;
 import pages.home.MyAccountPage;
 import utils.ProductUtils;
 
-public class TestMyProfile  extends TestNGBaseTest{
+public class TestUserProfile  extends TestNGBaseTest{
 
+	@Test()
+	public void testAutomationSetUpForCasa39English() throws Exception {
+		
+		logStep("Check connection to Casa39 English Website...");
+		navigateToCasa39Website(false);
+		assertEquals(driver.getTitle(), TestData.casa39English_HomepageTitle, "Connection Established Successfully...");
+		closeBrowser();
+	}
+	
 	@TestDocumentation(
 			TestNumber = "",
 			Coverage = "Verifies that logged in user can access all account related information  through My Account Section.", 

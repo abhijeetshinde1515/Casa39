@@ -77,5 +77,23 @@ public class ShoppingCartPage extends CommonPage {
 		return false;
 	}
 		
+	public boolean validateCartPriceDetails(String price) {
+		Reporter.log("Validating '" + price + "' from Shopping Cart Page...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("span.cart-price"));
+		for (WebElement listItem : listItems)
+			if (listItem.getText().contains(price)) {
+				return true;
+			}
+		return false;
+	}
 	
+	public boolean validateCartQuantityDetails(String quantity) {
+		Reporter.log("Validating '" + quantity + "' from Shopping Cart Page...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector(".input-text.qty"));
+		for (int i = 0; i < listItems.size(); ++i)
+			if (listItems.get(i).getAttribute("value").contains(quantity)) {
+				return true;
+			}
+		return false;
+	}
 }

@@ -85,7 +85,7 @@ public class MinicartModal extends BaseFragment {
 	}
 	
 	public boolean getItemPrice(String price) {
-		Reporter.log("Validating '" + price + "' from Summary...");
+		logStep("Validating '" + price + "' from Summary...");
 		List<WebElement> listItems = driver.findElements(By.cssSelector("span.price"));
 		for (WebElement listItem : listItems)
 			if (listItem.getText().contains(price)) {

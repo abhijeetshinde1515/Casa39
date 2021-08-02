@@ -131,4 +131,52 @@ public class TestShoppingCart extends TestNGBaseTest {
 		shoppingCartPage.clickCASA39Logo();
 		closeBrowser();
 	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies user can add group products to card by selecting quantity.", 
+			CreateDate = "02/08/2021")
+	@Test()
+	public void testAddGroupProductsToCart() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+		
+		String productName = "Simas Vignoni suspended toilet Rimless, bidet and WC-seat";
+		String searchText = "Simas Vignoni suspended toilet Rimless";
+
+		logStep("Search for a Available Product as " + productName);
+		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
+		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText, productName);
+		assertTrue(descriptionPage.isPageTitleDisplayed(productName), productName +" as Searched Product is Correctly Displayed");
+
+		logStep("Select Quantity for all product groups");
+		descriptionPage.selectGroupQuantityAs("5");
+		
+		logStep("Add to Cart");
+		InformationModal informationModal = descriptionPage.clickAddToCart();
+		assertTrue(informationModal.isSuccessMessageDisplayed(productName), productName);
+		assertTrue(informationModal.isSuccessMessageDisplayed("has been added to your cart"),
+				"has been added to your cart");
+		
+		logStep("View Shopping Cart");
+		ShoppingCartPage shoppingCartPage = informationModal.clickViewCart();
+		
+		logStep("Validate Group Product Price Details");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€160.66"), "Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€67.21"), "Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€147.54"), "Price is Correct");
+		
+		logStep("Validate Group Product Sub Total Details");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€803.30"), "Subtotal Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€336.05"), "Subtotal Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€737.70"), "Subtotal Price is Correct");
+		
+		logStep("Validate Group Product Quantity Details");
+		assertTrue(shoppingCartPage.validateCartQuantityDetails("5"), "Quantity is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("5"), "Quantity is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("5"), "Quantity is Correct");
+		
+		shoppingCartPage.clickCASA39Logo();
+		closeBrowser();
+	}
 }

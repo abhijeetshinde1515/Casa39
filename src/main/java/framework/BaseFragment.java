@@ -17,7 +17,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
+import com.aventstack.extentreports.Status;
+
 import pages.home.HomePage;
+import reports.ExtentTestManager;
 
 public class BaseFragment {
 
@@ -49,35 +52,35 @@ public class BaseFragment {
 	}
 
 	public void click(WebElement webElement) {
-		Reporter.log("Click - "+webElement.getText(), true);
+		logStep("Click - "+webElement.getText());
 		webElement.click();
 	}
 	
 	public void clickUsingJSExecutor(WebElement webElement) {
-		Reporter.log("Click - "+webElement.getText(), true);
+		logStep("Click - "+webElement.getText());
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", webElement);
 	}
 	
 	public void sendKeys(WebElement webElement, String text) {
-		Reporter.log("Set - "+ text);
+		logStep("Set - "+ text);
 		webElement.sendKeys(text);
 	}
 	
 	public void clickWhenClickable(WebElement element) {
-		Reporter.log("Click - "+element.getText(), true);
+		logStep("Click - "+element.getText());
 		Actions actions = new Actions(driver);
 		actions.moveToElement(new WebDriverWait(driver, 30).until(
 				ExpectedConditions.elementToBeClickable(element))).click().build().perform();
 	}
 	
 	public void clickLink(String linkText) {
-		Reporter.log("Click Link As - "+linkText);
+		logStep("Click Link As - "+linkText);
 		findElement(By.linkText(linkText)).click();
 	}
 	
 	public void clickPartialLink(String partialLinkText) {
-		Reporter.log("Click Partial Link As - "+partialLinkText);
+		logStep("Click Partial Link As - "+partialLinkText);
 		findElement(By.partialLinkText(partialLinkText)).click();
 	}
 
@@ -85,7 +88,7 @@ public class BaseFragment {
 		try {
 			return driver.findElement(by);
 		} catch (NoSuchElementException e) {
-			Reporter.log("Unable to find Element '{}'", true);
+			logStep("Unable to find Element '{}'");
 			throw e;
 		}
 	}
@@ -112,13 +115,13 @@ public class BaseFragment {
 	}
 
 	public HomePage clickCASA39Logo() {
-		Reporter.log("STEP - Clicking CASA39 Logo to Return On Home Page...", true);
+		logStep("STEP - Clicking CASA39 Logo to Return On Home Page...");
 		findElement(By.cssSelector(".logo")).click();
 		return new HomePage(driver);
 	}
 	
 	public HomePage clickHome() {
-		Reporter.log("STEP - Returning back to Home Page...", true);
+		logStep("STEP - Returning back to Home Page...");
 		findElement(By.cssSelector(".item.home a")).click();
 		return new HomePage(driver);
 	}
@@ -130,5 +133,11 @@ public class BaseFragment {
 	public static String generateUniqueId() {
 		SimpleDateFormat format = new SimpleDateFormat("MMddkkmmssSSS");
 		return format.format(new Date());
+	}
+	
+	public static String logStep(String logs) {
+		ExtentTestManager.getTest().log(Status.INFO, "STEP - "+logs);
+		Reporter.log("STEP - "+logs, true);
+		return null;
 	}
 }

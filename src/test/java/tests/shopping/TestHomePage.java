@@ -1,4 +1,4 @@
-package tests.home;
+package tests.shopping;
 
 import org.testng.annotations.Test;
 import baseTestScripts.TestData;
@@ -351,7 +351,7 @@ public class TestHomePage extends TestNGBaseTest {
 	@Test()
 	public void testWhyChooseUsSection() throws Exception {
 
-		HomePage homePage = navigateToCasa39Website(true);
+		HomePage homePage = navigateToCasa39Website(false);
 		
 		String samples = "CASA39 gives you also the possibility to request the sample of your selected tile. "
 				+ "We offer a wide range of products in order to direct the customer to an aware choice. "

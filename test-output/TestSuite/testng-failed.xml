@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="reports.TestListener"/>
+  </listeners>
   <test thread-count="5" name="Tests(failed)">
     <classes>
-      <class name="tests.home.TestHomePage">
+      <class name="tests.shopping.TestHomePage">
         <methods>
-          <include name="testSearchProductsFromHomePage"/>
-          <include name="testUserProfileNavigationLinks"/>
-          <include name="testRegisterUserByUniqueEmailId"/>
+          <include name="testEmailSubscription"/>
         </methods>
-      </class> <!-- tests.home.TestHomePage -->
+      </class> <!-- tests.shopping.TestHomePage -->
       <class name="tests.shopping.TestShoppingCart">
         <methods>
-          <include name="testSecureCheckOutForProducts"/>
+          <include name="testMinicartQuotesModalFromHomePage"/>
         </methods>
       </class> <!-- tests.shopping.TestShoppingCart -->
-      <class name="tests.shopping.TestProductShopping">
-        <methods>
-          <include name="testAddProductToWishList"/>
-        </methods>
-      </class> <!-- tests.shopping.TestProductShopping -->
     </classes>
   </test> <!-- Tests(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

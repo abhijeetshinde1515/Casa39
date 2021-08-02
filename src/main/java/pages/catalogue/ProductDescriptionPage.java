@@ -10,7 +10,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
-
 import framework.CommonPage;
 import utils.GeneratorUtils;
 
@@ -114,6 +113,9 @@ public class ProductDescriptionPage extends CommonPage {
 	@FindBy(id = "product-addtoquote")
 	WebElement addToQuote_by;
 	
+	@FindBy(id = "flooring_input")
+	WebElement flooringInput_by;
+	
 	/************ actions *****************/
 
 	public void selectSizeOptionAs(String sizeOption) {
@@ -142,6 +144,43 @@ public class ProductDescriptionPage extends CommonPage {
 	public void selectFlooringQtyAs(String quantity) {
 		flooringQty_by.clear();
 		sendKeys(flooringQty_by, quantity);
+	}
+	
+	public void selectGroupQuantityAs(String quantity) {
+		List<WebElement> group = driver.findElements(By.cssSelector("input.input-text.qty.txt"));
+		for (int i = 0; i < group.size(); ++i) {
+			group.get(i).clear();
+			group.get(i).sendKeys(quantity);
+			
+		}
+	}
+	
+	public void selectIncreaseQuantityPerMeters() {
+		logStep("Increase Quantity using Meters (+)");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("a.qty-plus.btn.btn-default"));
+			clickUsingJSExecutor(listItems.get(1));
+			waituntilPageLoads();
+	}
+	
+	public void selectReduceQuantityPerMeters() {
+		logStep("Reduce Quantity using Meters (-)");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("a.qty-minus.btn.btn-default"));
+			clickUsingJSExecutor(listItems.get(1));
+			waituntilPageLoads();
+	}
+	
+	public void selectIncreaseQuantityPerBoxes() {
+		logStep("Increase Quantity using Boxes (+)");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("a.qty-plus.btn.btn-default"));
+			clickUsingJSExecutor(listItems.get(2));
+			waituntilPageLoads();
+	}
+	
+	public void selectReduceQuantityPerBoxes() {
+		logStep("Reduce Quantity using Boxes (-)");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("a.qty-minus.btn.btn-default"));
+		clickUsingJSExecutor(listItems.get(2));
+			waituntilPageLoads();
 	}
 	
 	public InformationModal clickAddToCart() {
@@ -259,6 +298,15 @@ public class ProductDescriptionPage extends CommonPage {
 	public String getSuccessMessage() {
 		return successMessage_by.getText();
 	}
+	
+	public boolean getQuantityInSquares(String quantitySqaures) {
+		return flooringInput_by.getAttribute("value").contains(quantitySqaures);
+	}
+	
+	public boolean getQuantityInBoxes(String  flooringQuantityBoxes) {
+		return flooringQty_by.getAttribute("value").contains(flooringQuantityBoxes);
+	}
+
 	
 	/************ validations *************/
 

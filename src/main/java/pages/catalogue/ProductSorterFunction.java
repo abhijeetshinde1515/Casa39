@@ -1,14 +1,13 @@
 package pages.catalogue;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.Reporter;
 import framework.CommonPage;
+import utils.ReportUtils;
 
 public class ProductSorterFunction extends CommonPage {
 
@@ -51,18 +50,20 @@ public class ProductSorterFunction extends CommonPage {
 	}
 
 	public void sortByOptionAs(String option) {
-		Reporter.log("Select Sorting Option As - "+option);
+		logStep("Select Sorting Option As - "+option);
 		click(sortBySelect_by);
 		Select sortOptions = new Select(sortBySelect_by);
 		sortOptions.selectByValue(option);
 		waituntilPageLoads();
+		ReportUtils.logVerify("Selected Sorting Option As - "+option);
 	}
 	
 	public void setShowProductsPerPage(String limit) {
-		Reporter.log("Select Products Per Page As - "+limit);
+		logStep("Select Products Per Page As - "+limit);
 		Select sortOptions = new Select(limitSelect_by);
 		sortOptions.selectByValue(limit);
 		waituntilPageLoads();
+		ReportUtils.logVerify("Select Products Per Page As - "+limit);
 	}
 	
 	public void sortByAscendingOrder() {

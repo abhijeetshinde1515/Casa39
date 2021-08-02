@@ -1,5 +1,8 @@
 package pages.catalogue;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -98,5 +101,36 @@ public class CartQuotesPage extends CommonPage {
 	/************ accessors **************/
 	
 	/************ validations ************/
+	
+	public boolean validateCartQuotesPriceDetails(String price) {
+		logStep("Validating '" + price + "' from Shopping Cart Quotes Page...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector("span.cart-price"));
+		for (WebElement listItem : listItems)
+			if (listItem.getText().contains(price)) {
+				return true;
+			}
+		return false;
+	}
+	
+	public boolean validateCartQuotesQuantityDetails(String quantity) {
+		logStep("Validating '" + quantity + "' from Shopping Cart Quotes Page...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector(".input-text.qty"));
+		for (int i = 0; i < listItems.size(); ++i)
+			if (listItems.get(i).getAttribute("value").contains(quantity)) {
+				return true;
+			}
+		return false;
+	}
+	
+	public boolean validateCartQuotePriceDetails(String price) {
+		logStep("Validating '" + price + "' from Shopping Cart Quotes Page...");
+		List<WebElement> listItems = driver.findElements(By.cssSelector(".price-including-tax"));
+		for (WebElement listItem : listItems)
+			if (listItem.getText().contains(price)) {
+				return true;
+			}
+		return false;
+	}
+
 	
 }

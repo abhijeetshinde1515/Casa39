@@ -6,52 +6,12 @@ import framework.TestDocumentation;
 import pages.catalogue.CartQuotesPage;
 import pages.catalogue.InformationModal;
 import pages.catalogue.ProductDescriptionPage;
-import pages.catalogue.ProductListPage;
-import pages.catalogue.ProductSorterFunction;
 import pages.home.HomePage;
 import pages.home.SearchResultsPage;
 import utils.GeneratorUtils;
 
-public class TestProductShopping extends TestNGBaseTest {
-
-	@TestDocumentation(
-			TestNumber = "",
-			Coverage = "Verifies that user can select product by applying filters and sorting options and products per page.", 
-			CreateDate = "22/07/2021")
-	@Test()
-	public void testApplySortingOptionsFiltersAndPriceRange() throws Exception {
-		HomePage homePage = navigateToCasa39Website(false);
+public class TestProductDetails extends TestNGBaseTest {
 		
-		String category = "FLOOR TILES";
-		String subcategory = "Cleansers";
-		
-		logStep("Choose and Select Category As "+category+" From Product Categories");
-		ProductListPage productListPage = homePage.selectProductSubCategory(category, subcategory);
-		assertTrue(productListPage.isPageTitleDisplayed(subcategory), subcategory +" - Sub Category Opened Successfully...");
-		
-		logStep("Validate Sorting Options");
-		ProductSorterFunction productSorterFunction = productListPage.getProductSorterFunction();
-		productSorterFunction.sortByOptionAs("bestsellers");
-		productSorterFunction.sortByOptionAs("is_hot");
-		productSorterFunction.sortByOptionAs("most_viewed");
-		productSorterFunction.sortByOptionAs("new");
-		productSorterFunction.sortByOptionAs("price");
-		
-		logStep("Apply all filters one by one.");
-		productSorterFunction.applyFiltersOneByOne();
-		
-		logStep("Set price range.");
-		productSorterFunction.setPriceRange("0", "22");
-		
-		logStep("Change Products Per Page");
-		productSorterFunction.setShowProductsPerPage("48");
-		productSorterFunction.setShowProductsPerPage("72");
-		productSorterFunction.setShowProductsPerPage("24");
-		
-		productSorterFunction.clickCASA39Logo();
-		closeBrowser();
-	}
-	
 	@TestDocumentation(
 			TestNumber = "",
 			Coverage = "Verifies user can add product to card by selecting quantity.", 
@@ -188,6 +148,56 @@ public class TestProductShopping extends TestNGBaseTest {
 		cartQuotesPage.setRemarks("Remarks");
 		cartQuotesPage.clickRequestQuote();
 		assertTrue(homePage.isPageTitleDisplayed("Your quote request has been received!"), "Your quote request has been received!");
+		
+		cartQuotesPage.clickCASA39Logo();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies user can add configurable products to quote by selecting quantity.", 
+			CreateDate = "02/08/2021")
+	@Test()
+	public void testAddConfigurableProductsToQuotes() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+		
+		String productName = "Ragno Woodtale Miele 30x120 cm R4TH";
+		String searchText = "R4TH";
+
+		logStep("Search for a Available Product as " + productName);
+		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
+		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText, productName);
+		assertTrue(descriptionPage.isPageTitleDisplayed(productName), productName +" as Searched Product is Correctly Displayed");
+		
+		logStep("Select Quantity for all product groups");
+		assertTrue(descriptionPage.getQuantityInSquares("1,08"), "Quantity per Squares is Correct");
+		assertTrue(descriptionPage.getQuantityInBoxes("1"), "Quantity per Boxes is Correct");
+		
+		descriptionPage.selectIncreaseQuantityPerMeters();
+		descriptionPage.selectReduceQuantityPerBoxes();
+		descriptionPage.selectIncreaseQuantityPerBoxes();
+		descriptionPage.selectReduceQuantityPerMeters();
+		
+		assertTrue(descriptionPage.getQuantityInSquares("1,08"), "Quantity per Squares is Correct");
+		assertTrue(descriptionPage.getQuantityInBoxes("1"), "Quantity per Boxes is Correct");
+		
+		descriptionPage.selectIncreaseQuantityPerBoxes();
+		assertTrue(descriptionPage.getQuantityInBoxes("2"), "Quantity per Boxes is Correct");
+		
+		logStep("Add to Quote");
+		InformationModal informationModal = descriptionPage.clickAddToQuote();
+		assertTrue(informationModal.isSuccessMessageDisplayed(productName), productName);
+		assertTrue(informationModal.isSuccessMessageDisplayed("has been added to your quote cart"), "has been added to your cart");
+	
+		logStep("Navigate to Cart Quotes Page");
+		CartQuotesPage cartQuotesPage = informationModal.clickQuoteCart();
+		assertTrue(cartQuotesPage.isPageTitleDisplayed("Cart Quotes"), "Cart Quotes Page is Displayed");
+		
+		logStep("Validate Product Details");
+		assertTrue(cartQuotesPage.validateCartQuotesQuantityDetails("3"), "Quantity is Correct");
+		assertTrue(cartQuotesPage.validateCartQuotesPriceDetails("€73.53"), "SubTotal is Correct");
+		assertTrue(cartQuotesPage.validateCartQuotePriceDetails("29.90"), "Product Price is Correct");
 		
 		cartQuotesPage.clickCASA39Logo();
 		closeBrowser();

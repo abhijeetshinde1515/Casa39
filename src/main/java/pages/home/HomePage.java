@@ -168,7 +168,7 @@ public class HomePage extends CommonPage {
 	}
 
 	public SearchResultsPage searchFor(String searchText) {
-		searchBox_by.sendKeys(searchText);
+		sendKeys(searchBox_by, searchText);
 		return new SearchResultsPage(driver);
 	}
 
@@ -179,7 +179,7 @@ public class HomePage extends CommonPage {
 
 	public HomePage selectLanguageAs(String language) {
 		click(website_switch);
-		Reporter.log("Selecting " + language + " from list...");
+		logStep("Selecting " + language + " from list...");
 		List<WebElement> listItems = driver.findElements(By.cssSelector("li.switcher-option a"));
 		for (WebElement listItem : listItems)
 			if (listItem.getText().contains(language)) {
@@ -191,7 +191,7 @@ public class HomePage extends CommonPage {
 
 	public HomePage selectCountryAs(String country) {
 		click(country_switch);
-		Reporter.log("Selecting " + country + " from list...");
+		logStep("Selecting " + country + " from list...");
 		List<WebElement> listItems = driver.findElements(By.cssSelector("li.switcher-option a"));
 		for (WebElement listItem : listItems)
 			if (listItem.getText().equals(country)) {
@@ -203,7 +203,7 @@ public class HomePage extends CommonPage {
 
 	public HomePage selectCurrencyAs(String currency) {
 		click(currency_switch);
-		Reporter.log("Selecting " + currency + " from list...");
+		logStep("Selecting " + currency + " from list...");
 		List<WebElement> listItems = driver.findElements(By.cssSelector("li.switcher-option a"));
 		for (WebElement listItem : listItems)
 			if (listItem.getText().contains(currency)) {
@@ -214,7 +214,7 @@ public class HomePage extends CommonPage {
 	}
 
 	public ProductListPage selectProductCategory(String category) {
-		Reporter.log("Selecting " + category + " from list...");
+		logStep("Selecting " + category + " from list...");
 		List<WebElement> listItems = driver.findElements(By.cssSelector("a.ammenu-link.-main.-parent"));
 		for (WebElement listItem : listItems)
 			if (listItem.getText().equals(category)) {
@@ -225,7 +225,7 @@ public class HomePage extends CommonPage {
 	}
 
 	public ProductListPage selectProductSubCategory(String category, String subcategory) {
-		Reporter.log("Selecting " + category + " from list...");
+		logStep("Selecting " + category + " from list...");
 		List<WebElement> listItems = driver.findElements(By.cssSelector("a.ammenu-link.-main.-parent"));
 		for (WebElement listItem : listItems)
 			if (listItem.getText().equals(category)) {

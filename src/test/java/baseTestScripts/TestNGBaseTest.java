@@ -12,7 +12,6 @@ import com.aventstack.extentreports.Status;
 import pages.home.HomePage;
 import reports.ExtentTestManager;
 import utils.AssertUtil;
-import utils.ReportUtils;
 
 public class TestNGBaseTest extends AssertUtil {
 
