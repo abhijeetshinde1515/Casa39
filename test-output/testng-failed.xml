@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="reports.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Tests(failed)">
     <classes>
+      <class name="tests.shopping.TestHomePage">
+        <methods>
+          <include name="testUserSelectLanguageCountryAndCurrency"/>
+        </methods>
+      </class> <!-- tests.shopping.TestHomePage -->
+      <class name="tests.shopping.TestProductDetails">
+        <methods>
+          <include name="testProductAddToQuote"/>
+        </methods>
+      </class> <!-- tests.shopping.TestProductDetails -->
       <class name="tests.shopping.TestShoppingCart">
         <methods>
           <include name="testMinicartQuotesModalFromHomePage"/>
         </methods>
       </class> <!-- tests.shopping.TestShoppingCart -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

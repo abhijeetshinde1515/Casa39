@@ -6,6 +6,7 @@ import framework.TestDocumentation;
 import pages.catalogue.CartQuotesPage;
 import pages.catalogue.InformationModal;
 import pages.catalogue.ProductDescriptionPage;
+import pages.catalogue.ShoppingCartPage;
 import pages.home.HomePage;
 import pages.home.SearchResultsPage;
 import utils.GeneratorUtils;
@@ -200,6 +201,61 @@ public class TestProductDetails extends TestNGBaseTest {
 		assertTrue(cartQuotesPage.validateCartQuotePriceDetails("29.90"), "Product Price is Correct");
 		
 		cartQuotesPage.clickCASA39Logo();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies prduct details on product desciption page.", 
+			CreateDate = "03/08/2021")
+	@Test()
+	public void testProductSpecifications() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+
+		String productName = "Novellini panelled bathtub Vogue";
+		String searchText = "Novellini panelled bathtub Vogue";
+
+		logStep("Search for a Available Product as " + productName);
+		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
+		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText,
+				productName);
+		assertTrue(descriptionPage.isPageTitleDisplayed(productName),
+				productName + " as Searched Product is Correctly Displayed");
+
+		logStep("Validate Product Specifications");
+		assertTrue(descriptionPage.getSpecificationDetails("Novellini"), "Brand Name is Correct");
+		assertTrue(descriptionPage.getSpecificationDetails("Does not apply"), "EAN is Correct");
+		assertTrue(descriptionPage.getSpecificationDetails("Acrylic"), "Material is Correct");
+
+		String brandInformation = "With enthusiasm, team work and values, we wish to improve the lives of everyone in the world in search of excellence for their homes and families, and aim to do so by using the best in technology, further enhanced by passion and intellectual involvement, born from a quest for beauty in all that we do. To be the reference point for excellence in bathroom furnishings and the most innovative company, proposing better products and better services. To thus grow and become a leader throughout the world, creating value for the resources involved in our activity and for our country. Our core values are a passion for excellence - meaning a love of beauty and fine workmanship - and ethics - meaning long-term worth through sustainability, transparency and valuing people. We want to put mankind and quality of life at the centre of all our choices, ever driven by a passion for what we do.";
+
+		assertTrue(descriptionPage.getManufacturerDetails(brandInformation), "Brand Information is Correct");
+
+		logStep("Select Parameters");
+		descriptionPage.setDimension("150x85 cm");
+		descriptionPage.setVersion("Senza idromassaggio");
+		descriptionPage.selectQuantityAs("5");
+
+		logStep("Add to Cart");
+		InformationModal informationModal = descriptionPage.clickAddToCart();
+		assertTrue(informationModal.isSuccessMessageDisplayed(productName), productName);
+		assertTrue(informationModal.isSuccessMessageDisplayed("has been added to your cart"),
+				"has been added to your cart");
+
+		logStep("View Shopping Cart");
+		ShoppingCartPage shoppingCartPage = informationModal.clickViewCart();
+
+		logStep("Validate Group Product Price Details");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€778.69"), "Price is Correct");
+
+		logStep("Validate Group Product Sub Total Details");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€3,893.45"), "Subtotal Price is Correct");
+
+		logStep("Validate Group Product Quantity Details");
+		assertTrue(shoppingCartPage.validateCartQuantityDetails("5"), "Quantity is Correct");
+
+		shoppingCartPage.clickCASA39Logo();
 		closeBrowser();
 	}
 }

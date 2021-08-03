@@ -1,13 +1,10 @@
 package pages.home;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Reporter;
-
 import framework.BaseFragment;
 import framework.CommonModal;
 import pages.catalogue.CartQuotesPage;

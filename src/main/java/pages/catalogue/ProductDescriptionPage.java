@@ -116,6 +116,15 @@ public class ProductDescriptionPage extends CommonPage {
 	@FindBy(id = "flooring_input")
 	WebElement flooringInput_by;
 	
+	@FindBy(id = "attribute224")
+	WebElement dimention_by;
+	
+	@FindBy(id = "attribute225")
+	WebElement version_by;
+	
+	@FindBy(css = "div.brand-description")
+	WebElement manufacturerDetails_by;
+	
 	/************ actions *****************/
 
 	public void selectSizeOptionAs(String sizeOption) {
@@ -277,6 +286,20 @@ public class ProductDescriptionPage extends CommonPage {
 		return new InformationModal(driver);
 	}
 	
+	public void setDimension(String dimention)  {
+		logStep("Select Dimention As - "+dimention);
+		Select sortOptions = new Select(dimention_by);
+		sortOptions.selectByVisibleText(dimention);
+		waituntilPageLoads();
+	}
+	
+	public void setVersion(String version)  {
+		logStep("Select Dimention As - "+version);
+		Select sortOptions = new Select(version_by);
+		sortOptions.selectByVisibleText(version);
+		waituntilPageLoads();
+	}
+	
 	/************ accessors ***************/
 
 	public String getItemPrice() {
@@ -307,6 +330,19 @@ public class ProductDescriptionPage extends CommonPage {
 		return flooringQty_by.getAttribute("value").contains(flooringQuantityBoxes);
 	}
 
+	public boolean getSpecificationDetails(String specification) {
+		List<WebElement> listItems = driver.findElements(By.cssSelector("span.col.data"));
+		for (WebElement listItem : listItems) {
+			if(listItem.getText().contains(specification)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public boolean getManufacturerDetails(String details) {
+		return manufacturerDetails_by.getText().contains(details);
+	}
 	
 	/************ validations *************/
 
