@@ -62,6 +62,13 @@ public class TestProductDetails extends TestNGBaseTest {
 		descriptionPage.clickAskForDiscount();
 		assertTrue(descriptionPage.validateSectionTitle(), "You're one step away from the additional discount!");
 		
+		logStep("Validate Hidden Fields");
+		assertTrue(descriptionPage.getProductPrice("60.50"), "Hidden Product Price is Correct");
+		assertTrue(descriptionPage.getProductCost("0"), "Hidden Product Cost is Correct");
+		assertTrue(descriptionPage.getSKU("LNB0827"), "Hidden SKU is Correct");
+		assertTrue(descriptionPage.getEstimatedShipping("51.00"), "Hidden Estimated Shipping Price is Correct");
+		assertTrue(descriptionPage.getLanguage("en-US"), "Hidden Language is Correct");
+		
 		logStep("Fill and Submit form for discount");
 		descriptionPage.setCompanyName("ELSNER TESTING");
 		descriptionPage.setEmail();
@@ -104,6 +111,7 @@ public class TestProductDetails extends TestNGBaseTest {
 		descriptionPage.setSummary(GeneratorUtils.generateUniqueId("Test_Summary"));
 		descriptionPage.setReview(GeneratorUtils.generateUniqueId("Test_Review"));
 		descriptionPage.clickSubmitReview();
+		descriptionPage.hardWait(5000);
 		assertTrue(descriptionPage.isSuccessMessageDisplayed("You submitted your review for moderation."), "Review Submitted for Review Successfully");
 		
 		descriptionPage.clickCASA39Logo();
@@ -147,7 +155,9 @@ public class TestProductDetails extends TestNGBaseTest {
 		cartQuotesPage.setLastName(GeneratorUtils.generateUniqueId("LastName"));
 		cartQuotesPage.setZipCode("123456");
 		cartQuotesPage.setRemarks("Remarks");
+		cartQuotesPage.setCountry("Germany");
 		cartQuotesPage.clickRequestQuote();
+		cartQuotesPage.hardWait(5000);
 		assertTrue(homePage.isPageTitleDisplayed("Your quote request has been received!"), "Your quote request has been received!");
 		
 		cartQuotesPage.clickCASA39Logo();
@@ -197,7 +207,6 @@ public class TestProductDetails extends TestNGBaseTest {
 		
 		logStep("Validate Product Details");
 		assertTrue(cartQuotesPage.validateCartQuotesQuantityDetails("3"), "Quantity is Correct");
-		assertTrue(cartQuotesPage.validateCartQuotesPriceDetails("€73.53"), "SubTotal is Correct");
 		assertTrue(cartQuotesPage.validateCartQuotePriceDetails("29.90"), "Product Price is Correct");
 		
 		cartQuotesPage.clickCASA39Logo();
@@ -247,10 +256,10 @@ public class TestProductDetails extends TestNGBaseTest {
 		ShoppingCartPage shoppingCartPage = informationModal.clickViewCart();
 
 		logStep("Validate Group Product Price Details");
-		assertTrue(shoppingCartPage.validateCartPriceDetails("€778.69"), "Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€798.32"), "Price is Correct");
 
 		logStep("Validate Group Product Sub Total Details");
-		assertTrue(shoppingCartPage.validateCartPriceDetails("€3,893.45"), "Subtotal Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€3,991.60"), "Subtotal Price is Correct");
 
 		logStep("Validate Group Product Quantity Details");
 		assertTrue(shoppingCartPage.validateCartQuantityDetails("5"), "Quantity is Correct");

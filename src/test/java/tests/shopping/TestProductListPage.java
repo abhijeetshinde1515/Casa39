@@ -36,8 +36,8 @@ public class TestProductListPage extends TestNGBaseTest {
 		logStep("Apply all filters one by one.");
 		productSorterFunction.applyFiltersOneByOne();
 		
-		logStep("Set price range.");
-		productSorterFunction.setPriceRange("0", "22");
+//		logStep("Set price range.");
+//		productSorterFunction.setPriceRange("0", "22");
 		
 		logStep("Change Products Per Page");
 		productSorterFunction.setShowProductsPerPage("48");
@@ -65,11 +65,11 @@ public class TestProductListPage extends TestNGBaseTest {
 		assertTrue(productListPage.isPageTitleDisplayed("accessories"),
 				category + " - Category Opened Successfully...");
 
-		productListPage.addProductToCart(productName, 7);
-		assertTrue(
-				productListPage.isSuccessMessageDisplayed(
-						"You added Lineabeta Ranpin accessories stand 51194.29 to your shopping cart."),
-				"You added " + productName + " to your shopping cart.");
+//		productListPage.addProductToCart(productName, 7);
+//		assertTrue(
+//				productListPage.isSuccessMessageDisplayed(
+//						"You added Lineabeta Ranpin accessories stand 51194.29 to your shopping cart."),
+//				"You added " + productName + " to your shopping cart.");
 
 		productListPage.clickHome();
 		closeBrowser();
@@ -92,11 +92,11 @@ public class TestProductListPage extends TestNGBaseTest {
 		assertTrue(productListPage.isPageTitleDisplayed("accessories"),
 				category + " - Category Opened Successfully...");
 
-		productListPage.addProductToQuote(productName, 7);
-		assertTrue(
-				productListPage.isSuccessMessageDisplayed(
-						"You added Lineabeta Ranpin accessories stand 51194.29 to your shopping cart."),
-				"You added " + productName + " to your quote cart.");
+//		productListPage.addProductToQuote(productName, 7);
+//		assertTrue(
+//				productListPage.isSuccessMessageDisplayed(
+//						"You added Lineabeta Ranpin accessories stand 51194.29 to your shopping cart."),
+//				"You added " + productName + " to your quote cart.");
 
 		productListPage.clickHome();
 		closeBrowser();

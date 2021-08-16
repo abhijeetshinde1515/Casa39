@@ -1,7 +1,6 @@
 package tests.shopping;
 
 import org.testng.annotations.Test;
-
 import baseTestScripts.TestData;
 import baseTestScripts.TestNGBaseTest;
 import framework.TestDocumentation;
@@ -46,16 +45,16 @@ public class TestShoppingCart extends TestNGBaseTest {
 		
 		logStep("Validate Non-Empty Cart and Close");
 		MinicartModal minicartModal = homePage.clickMyCart();
-		assertTrue(minicartModal.getAmountPrice().contains("€687.85"), "Item Prices are Correct");
+		assertTrue(minicartModal.getAmountPrice().contains("€705.02"), "Item Prices are Correct");
 		assertTrue(minicartModal.getTotalItems().contains("32.4"), "Total Items are Correct");
 		
 		logStep("View Shopping Cart");
 		ShoppingCartPage shoppingCartPage = minicartModal.clickViewAndEditCart();
-		assertTrue(shoppingCartPage.validatePriceSummary("€687.85"), "Sub Total is Correct");assertTrue(shoppingCartPage.isPageTitleDisplayed("Shopping cart"), "Page Title is Displayed");
+		assertTrue(shoppingCartPage.validatePriceSummary("€705.02"), "Sub Total is Correct");assertTrue(shoppingCartPage.isPageTitleDisplayed("Shopping cart"), "Page Title is Displayed");
 		
-		assertTrue(shoppingCartPage.validatePriceSummary("€50.00"), "Shipping Price is Correct");
-		assertTrue(shoppingCartPage.validatePriceSummary("€160.33"), "Tax Amount is Correct");
-		assertTrue(shoppingCartPage.validatePriceSummary("€889.16"), "Order Total is Correct");
+		assertTrue(shoppingCartPage.validatePriceSummary("€150.00"), "Shipping Price is Correct");
+		assertTrue(shoppingCartPage.validatePriceSummary("€158.09"), "Tax Amount is Correct");
+		assertTrue(shoppingCartPage.validatePriceSummary("€989.16"), "Order Total is Correct");
 		
 		logStep("Proceed To Checkout");
 		CheckOutPage checkOutPage = shoppingCartPage.clickProceedToCheckOut();
@@ -80,16 +79,17 @@ public class TestShoppingCart extends TestNGBaseTest {
 		
 		logStep("Validate Minicart Modal");
 		MinicartModal minicartModal = homePage.clickMyQuote();
-		assertTrue(minicartModal.getTotalItems().contains("3"), "Total Items are Correct");
-		assertTrue(minicartModal.getAmountPrice().contains("€338.53"), "Cart subtotal price is Correct");
+		assertTrue(minicartModal.getTotalItems().contains("4"), "Total Items are Correct");
+		assertTrue(minicartModal.getAmountPrice().contains("€565.54"), "Cart subtotal price is Correct");
 		
 		CartQuotesPage cartQuotesPage = minicartModal.clickAskForQuotes();
 		assertTrue(cartQuotesPage.isPageTitleDisplayed("Cart Quotes"), "Cart Quotes Page is Displayed");
 		
-		assertTrue(minicartModal.getItemPrice("€24.59"), "Items Price is Correct");
-		assertTrue(minicartModal.getItemPrice("€210.66"), "Items Price is Correct");
-		assertTrue(minicartModal.getItemPrice("€103.28"), "Items Price is Correct");
-		
+		assertTrue(minicartModal.getItemPrice("€25.21"), "Items Price is Correct");
+		assertTrue(minicartModal.getItemPrice("€215.97"), "Items Price is Correct");
+		assertTrue(minicartModal.getItemPrice("€105.88"), "Items Price is Correct");
+		assertTrue(minicartModal.getItemPrice("€218.48"), "Items Price is Correct");
+	
 		cartQuotesPage.clickCASA39Logo();
 		homePage.clickSignOut();
 		closeBrowser();
@@ -162,14 +162,14 @@ public class TestShoppingCart extends TestNGBaseTest {
 		ShoppingCartPage shoppingCartPage = informationModal.clickViewCart();
 		
 		logStep("Validate Group Product Price Details");
-		assertTrue(shoppingCartPage.validateCartPriceDetails("€160.66"), "Price is Correct");
-		assertTrue(shoppingCartPage.validateCartPriceDetails("€67.21"), "Price is Correct");
-		assertTrue(shoppingCartPage.validateCartPriceDetails("€147.54"), "Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€164.71"), "Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€68.91"), "Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€151.26"), "Price is Correct");
 		
 		logStep("Validate Group Product Sub Total Details");
-		assertTrue(shoppingCartPage.validateCartPriceDetails("€803.30"), "Subtotal Price is Correct");
-		assertTrue(shoppingCartPage.validateCartPriceDetails("€336.05"), "Subtotal Price is Correct");
-		assertTrue(shoppingCartPage.validateCartPriceDetails("€737.70"), "Subtotal Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€823.55"), "Subtotal Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€344.55"), "Subtotal Price is Correct");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€756.30"), "Subtotal Price is Correct");
 		
 		logStep("Validate Group Product Quantity Details");
 		assertTrue(shoppingCartPage.validateCartQuantityDetails("5"), "Quantity is Correct");

@@ -3,11 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.shopping.TestShoppingCart">
+      <class name="tests.shopping.TestProductDetails">
         <methods>
-          <include name="testMinicartQuotesModalFromHomePage"/>
+          <include name="testAddConfigurableProductsToQuotes"/>
+          <include name="testAddProductReviewByUser"/>
+          <include name="testAddProductToCart"/>
+          <include name="testProductAddToQuote"/>
+          <include name="testProductSpecifications"/>
+          <include name="testAskForDiscount"/>
         </methods>
-      </class> <!-- tests.shopping.TestShoppingCart -->
+      </class> <!-- tests.shopping.TestProductDetails -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

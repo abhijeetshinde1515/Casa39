@@ -125,6 +125,22 @@ public class ProductDescriptionPage extends CommonPage {
 	@FindBy(css = "div.brand-description")
 	WebElement manufacturerDetails_by;
 	
+	@FindBy(id = "productprice")
+	WebElement productPrice_by;
+	
+	@FindBy(id = "productcost")
+	WebElement productCost_by;
+	
+	@FindBy(id = "sku")
+	WebElement sku_by;
+	
+	@FindBy(id = "estimated_shipping")
+	WebElement estimatedShipping_by;
+	
+	@FindBy(id = "language")
+	WebElement language_by;
+	
+	
 	/************ actions *****************/
 
 	public void selectSizeOptionAs(String sizeOption) {
@@ -301,6 +317,26 @@ public class ProductDescriptionPage extends CommonPage {
 	}
 	
 	/************ accessors ***************/
+
+	public boolean getProductPrice(String productPrice) {
+		return productPrice_by.getAttribute("value").contains(productPrice);
+	}
+	
+	public boolean getSKU(String sku) {
+		return sku_by.getAttribute("value").contains(sku);
+	}
+	
+	public boolean getProductCost(String productCost) {
+		return productCost_by.getAttribute("value").contains(productCost);
+	}
+	
+	public boolean getEstimatedShipping(String estimatedShipping) {
+		return estimatedShipping_by.getAttribute("value").contains(estimatedShipping);
+	}
+	
+	public boolean getLanguage(String language) {
+		return language_by.getAttribute("value").contains(language);
+	}
 
 	public String getItemPrice() {
 		return itemPrice_by.getText();

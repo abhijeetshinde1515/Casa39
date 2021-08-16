@@ -7,16 +7,6 @@
   </listeners>
   <test thread-count="5" name="Tests(failed)">
     <classes>
-      <class name="tests.shopping.TestHomePage">
-        <methods>
-          <include name="testUserSelectLanguageCountryAndCurrency"/>
-        </methods>
-      </class> <!-- tests.shopping.TestHomePage -->
-      <class name="tests.shopping.TestProductDetails">
-        <methods>
-          <include name="testProductAddToQuote"/>
-        </methods>
-      </class> <!-- tests.shopping.TestProductDetails -->
       <class name="tests.shopping.TestShoppingCart">
         <methods>
           <include name="testMinicartQuotesModalFromHomePage"/>

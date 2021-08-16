@@ -39,7 +39,7 @@ public class CartQuotesPage extends CommonPage {
 	@FindBy(name = "zip_code")
 	WebElement zipCode_by;
 	
-	@FindBy(name = "country_id")
+	@FindBy(xpath = "//*[@id=\"quote-details\"]/form/fieldset/div[4]/div/select")
 	WebElement country_by;
 	
 	@FindBy(name = "quote_remark")
@@ -80,11 +80,9 @@ public class CartQuotesPage extends CommonPage {
 	}
 	
 	public void setCountry(String country)  {
-		click(country_by);
 		Reporter.log("Select Option As - "+country);
 		Select sortOptions = new Select(country_by);
 		sortOptions.selectByVisibleText(country);
-		waituntilPageLoads();
 		hardWait(5000);
 	}
 	

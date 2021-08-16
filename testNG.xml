@@ -1,7 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="TestSuite" verbose="1">
-
 	<listeners>
 		<listener class-name="reports.TestListener" />
 	</listeners>
@@ -12,5 +11,4 @@
 			<package name=".*" />
 		</packages>
 	</test>
-
 </suite>

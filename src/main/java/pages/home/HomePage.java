@@ -3,7 +3,6 @@ package pages.home;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -14,9 +13,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
+import com.aventstack.extentreports.Status;
+
 import framework.CommonPage;
 import pages.catalogue.CategoryPage;
 import pages.catalogue.ProductListPage;
+import reports.ExtentTestManager;
 import utils.ReportUtils;
 
 public class HomePage extends CommonPage {
@@ -85,7 +87,7 @@ public class HomePage extends CommonPage {
 	@FindBy(css = "img._qoy2qn")
 	WebElement buyersProtection_by;
 
-	@FindBy(css = ".amquote-showcart.action")
+	@FindBy(css = "a.amquote-showcart.action")
 	WebElement quoteCart_by;
 
 	@FindBy(linkText = "All our service")
@@ -146,7 +148,7 @@ public class HomePage extends CommonPage {
 	}
 
 	public MinicartModal clickMyQuote() {
-		clickUsingJSExecutor(quoteCart_by);
+		clickUsingJSExecutor(new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(quoteCart_by)));
 		return new MinicartModal(driver);
 	}
 
@@ -357,7 +359,8 @@ public class HomePage extends CommonPage {
 			httpURLConnect.setConnectTimeout(5000);
 			httpURLConnect.connect();
 			if (httpURLConnect.getResponseCode() >= 400) {
-				Reporter.log(linkUrl + " - " + httpURLConnect.getResponseMessage() + "<font color='red'>IS A BROKEN LINK...</font>");
+				ExtentTestManager.getTest().log(Status.FAIL, linkUrl + " - " + httpURLConnect.getResponseMessage() + " IS A BROKEN LINK...");
+				Reporter.log(linkUrl + " - " + httpURLConnect.getResponseMessage() + " IS A BROKEN LINK...");
 			}
 
 			// Fetching and Printing the response code obtained

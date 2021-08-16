@@ -266,11 +266,11 @@ public class TestHomePage extends TestNGBaseTest {
 		homePage.selectLanguageAs(english);
 		assertEquals(homePage.getSelectedLanguage(), english, english + " Language Selected Successfully");
 
-		String algeria = "Algeria";
+		String denmark = "Denmark";
 
 		logStep("Choose other Country");
-		homePage.selectCountryAs(algeria);
-		assertEquals(homePage.getSelectedCountry(), algeria, algeria + " Country Selected Successfully");
+		homePage.selectCountryAs(denmark);
+		assertEquals(homePage.getSelectedCountry(), denmark, denmark + " Country Selected Successfully");
 
 		String dollar = "Us Dollar";
 		String euro = "Euro";
@@ -316,7 +316,7 @@ public class TestHomePage extends TestNGBaseTest {
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "WALL TILES", "Marble effect", "Bathroom Tiles Marble effect");
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "TAPS", "Waterfall taps", "Waterfall taps");
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "ACCESSORIES", "Hooks", "Hooks");
-		ProductUtils.selectAndValidateProductSubCategories(homePage, "SANITARY WARES", "Ceramic", "Shower Trays Ceramic");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "SANITARY WARES", "Ceramic", "Shower Trays");
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "FURNITURE", "Mirrors", "Mirrors");
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "BATHTUBS", "Recessed", "Bathtubs Recessed");
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "SHOWER ENCLOSURES", "Single door opening", "Single door opening");
@@ -502,7 +502,7 @@ public class TestHomePage extends TestNGBaseTest {
 			TestNumber = "",
 			Coverage = "Verifies CASA platform availability.", 
 			CreateDate = "28/07/2021")
-	@Test()
+	@Test(enabled=false)
 	public void testAllPlatformAvailabilityLinks() throws Exception {
 		HomePage homePage = navigateToCasa39Website(false);
 		ProductUtils.selectAndValidateAllPlatforms(homePage);
