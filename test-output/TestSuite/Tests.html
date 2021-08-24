@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>31/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 16 17:14:34 IST 2021</td>
+<td>Started on:</td><td>Tue Aug 24 16:23:23 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>190 seconds (190996 ms)</td>
+<tr><td>Total time:</td><td>2062 seconds (2062435 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,144 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.shopping.TestProductDetails.testAskForDiscount()'><b>testAskForDiscount</b><br>Test class: tests.shopping.TestProductDetails<br/>
+<a href="#Output-763260044" onClick='toggleBox("Output-763260044", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-763260044" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-763260044">
+STEP - *** Running test method testAskForDiscount...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as Lineabeta Atlantica shower platform 50x50 cm 7224.08<br/>
+STEP - Set - Lineabeta Atlantica shower<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Lineabeta Atlantica shower platform 50x50 cm 7224.08<br/>
+Verified - Lineabeta Atlantica shower platform 50x50 cm 7224.08 as Searched Product is Correctly Displayed<br/>
+STEP - Ask For Discount<br/>
+STEP - Click - ASK FOR DISCOUNT<br/>
+Verified - You're one step away from the additional discount!<br/>
+STEP - Validate Hidden Fields<br/>
+Verified - Hidden Product Price is Correct<br/>
+Verified - Hidden Product Cost is Correct<br/>
+Verified - Hidden SKU is Correct<br/>
+Verified - Hidden Estimated Shipping Price is Correct<br/>
+STEP - *** Test execution testAskForDiscount failed...<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at utils.AssertUtil.assertTrue(AssertUtil.java:10)
+	at tests.shopping.TestProductDetails.testAskForDiscount(TestProductDetails.java:69)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace763260044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace763260044'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at utils.AssertUtil.assertTrue(AssertUtil.java:10)
+	at tests.shopping.TestProductDetails.testAskForDiscount(TestProductDetails.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>tests.shopping.TestProductDetails@51c8530f</td></tr>
+<tr>
+<td title='tests.shopping.TestShoppingCart.testMinicartQuotesModalFromHomePage()'><b>testMinicartQuotesModalFromHomePage</b><br>Test class: tests.shopping.TestShoppingCart<br/>
+<a href="#Output-1409773698" onClick='toggleBox("Output-1409773698", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1409773698" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1409773698">
+STEP - *** Running test method testMinicartQuotesModalFromHomePage...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Log In with Valid username and Password<br/>
+STEP - Click - SIGN IN<br/>
+STEP - Click - Login<br/>
+STEP - Validate Minicart Modal<br/>
+STEP - Click - MY QUOTE<br/>
+Verified - Total Items are Correct<br/>
+Verified - Cart subtotal price is Correct<br/>
+STEP - *** Test execution testMinicartQuotesModalFromHomePage failed...<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at utils.AssertUtil.assertTrue(AssertUtil.java:10)
+	at tests.shopping.TestShoppingCart.testMinicartQuotesModalFromHomePage(TestShoppingCart.java:36)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409773698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409773698'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at utils.AssertUtil.assertTrue(AssertUtil.java:10)
+	at tests.shopping.TestShoppingCart.testMinicartQuotesModalFromHomePage(TestShoppingCart.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>tests.shopping.TestShoppingCart@43738a82</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,11 +213,238 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.shopping.TestShoppingCart.testAddGroupProductsToCart()'><b>testAddGroupProductsToCart</b><br>Test class: tests.shopping.TestShoppingCart<br/>
-<a href="#Output-667346055" onClick='toggleBox("Output-667346055", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.shopping.TestHomePage.testSelectProductCategory()'><b>testSelectProductCategory</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-1846842261" onClick='toggleBox("Output-1846842261", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-667346055" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-667346055">
+<a href="#Output-1846842261" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1846842261">
+STEP - *** Running test method testSelectProductCategory...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Choose and Select Category As FLOOR TILES From Product Categories<br/>
+STEP - Selecting FLOOR TILES from list...<br/>
+STEP - Click - FLOOR TILES<br/>
+Verified - FLOOR TILES - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As WALL TILES From Product Categories<br/>
+STEP - Selecting WALL TILES from list...<br/>
+STEP - Click - WALL TILES<br/>
+Verified - WALL TILES - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As TAPS From Product Categories<br/>
+STEP - Selecting TAPS from list...<br/>
+STEP - Click - TAPS<br/>
+Verified - TAPS - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As ACCESSORIES From Product Categories<br/>
+STEP - Selecting ACCESSORIES from list...<br/>
+STEP - Click - ACCESSORIES<br/>
+Verified - ACCESSORIES - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As SANITARY WARES From Product Categories<br/>
+STEP - Selecting SANITARY WARES from list...<br/>
+STEP - Click - SANITARY WARES<br/>
+Verified - SANITARY WARES - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As FURNITURE From Product Categories<br/>
+STEP - Selecting FURNITURE from list...<br/>
+STEP - Click - FURNITURE<br/>
+Verified - FURNITURE - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As BATHTUBS From Product Categories<br/>
+STEP - Selecting BATHTUBS from list...<br/>
+STEP - Click - BATHTUBS<br/>
+Verified - BATHTUBS - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As SHOWER ENCLOSURES From Product Categories<br/>
+STEP - Selecting SHOWER ENCLOSURES from list...<br/>
+STEP - Click - SHOWER ENCLOSURES<br/>
+Verified - SHOWER ENCLOSURES - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As BRANDS From Product Categories<br/>
+STEP - Selecting BRANDS from list...<br/>
+STEP - Click - BRANDS<br/>
+Verified - BRANDS - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As OFFERS From Product Categories<br/>
+STEP - Selecting OFFERS from list...<br/>
+STEP - Click - OFFERS<br/>
+Verified - OFFERS - Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testSelectProductCategory test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>102</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testAllSocialMediaPlatformAvailabilityLinks()'><b>testAllSocialMediaPlatformAvailabilityLinks</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-146316090" onClick='toggleBox("Output-146316090", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-146316090" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-146316090">
+STEP - *** Running test method testAllSocialMediaPlatformAvailabilityLinks...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - List all social media platforms associated with it's navigation link<br/>
+Verified - facebook - https://www.facebook.com/casa39shop/<br/>
+Verified - https://www.facebook.com/casa39shop/ - OK<br/>
+Verified - pinterest - https://www.pinterest.com/casa39_com/<br/>
+Verified - https://www.pinterest.com/casa39_com/ - OK<br/>
+Verified - twitter - https://twitter.com/bathroom39<br/>
+Verified - https://twitter.com/bathroom39 - OK<br/>
+Verified - instagram - https://www.instagram.com/casa39.it<br/>
+Verified - https://www.instagram.com/casa39.it - OK<br/>
+Verified - youtube - https://www.youtube.com/user/casaebagno<br/>
+Verified - https://www.youtube.com/user/casaebagno - OK<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAllSocialMediaPlatformAvailabilityLinks test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestProductListPage.testApplySortingOptionsFiltersAndPriceRange()'><b>testApplySortingOptionsFiltersAndPriceRange</b><br>Test class: tests.shopping.TestProductListPage<br/>
+<a href="#Output-1395676084" onClick='toggleBox("Output-1395676084", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1395676084" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1395676084">
+STEP - *** Running test method testApplySortingOptionsFiltersAndPriceRange...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Choose and Select Category As FLOOR TILES From Product Categories<br/>
+STEP - Selecting FLOOR TILES from list...<br/>
+STEP - Click - Cleansers<br/>
+Verified - Cleansers - Sub Category Opened Successfully...<br/>
+STEP - Validate Sorting Options<br/>
+STEP - Select Sorting Option As - bestsellers<br/>
+STEP - Click -  Price
+ Best Sellers
+ Highlights
+ Most Viewed
+ New<br/>
+Verified - Selected Sorting Option As - bestsellers<br/>
+STEP - Select Sorting Option As - is_hot<br/>
+STEP - Click -  Price
+ Best Sellers
+ Highlights
+ Most Viewed
+ New<br/>
+Verified - Selected Sorting Option As - is_hot<br/>
+STEP - Select Sorting Option As - most_viewed<br/>
+STEP - Click -  Price
+ Best Sellers
+ Highlights
+ Most Viewed
+ New<br/>
+Verified - Selected Sorting Option As - most_viewed<br/>
+STEP - Select Sorting Option As - new<br/>
+STEP - Click -  Price
+ Best Sellers
+ Highlights
+ Most Viewed
+ New<br/>
+Verified - Selected Sorting Option As - new<br/>
+STEP - Select Sorting Option As - price<br/>
+STEP - Click -  Price
+ Best Sellers
+ Highlights
+ Most Viewed
+ New<br/>
+Verified - Selected Sorting Option As - price<br/>
+STEP - Apply all filters one by one.<br/>
+STEP - Click - <br/>
+STEP - Click - <br/>
+STEP - Click - <br/>
+STEP - Click - <br/>
+STEP - Click - <br/>
+STEP - Click - <br/>
+STEP - Change Products Per Page<br/>
+STEP - Select Products Per Page As - 48<br/>
+Verified - Select Products Per Page As - 48<br/>
+STEP - Select Products Per Page As - 72<br/>
+Verified - Select Products Per Page As - 72<br/>
+STEP - Select Products Per Page As - 24<br/>
+Verified - Select Products Per Page As - 24<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testApplySortingOptionsFiltersAndPriceRange test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>tests.shopping.TestProductListPage@7403c468</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testHomePageInformationLinks()'><b>testHomePageInformationLinks</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-916437402" onClick='toggleBox("Output-916437402", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-916437402" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-916437402">
+STEP - *** Running test method testHomePageInformationLinks...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Go to Our story<br/>
+STEP - Click - our story<br/>
+Verified - Our story Page is Displayed.<br/>
+Verified - Our story Content is Displayed<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Go to Legal Information<br/>
+STEP - Click - legal information<br/>
+Verified - LEGAL INFORMATION Page is Displayed.<br/>
+Verified - LEGAL INFORMATION Content is Displayed<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Go to Promotions<br/>
+STEP - Click - promotions<br/>
+Verified - Sale Page is Displayed.<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Go to Terms and Conditions<br/>
+STEP - Click - terms and conditions<br/>
+Verified - TERMS AND CONDITIONS Page is Displayed.<br/>
+Verified - TERMS AND CONDITIONS Content is Displayed<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Go to Brands<br/>
+STEP - Click - brands<br/>
+Verified - OUR BRANDS Page is Displayed.<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Go to SHIPPING<br/>
+STEP - Click - shipping<br/>
+Verified - SHIPPING Page is Displayed.<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Go to BUYER PROTECTION<br/>
+STEP - Click - buyer protection<br/>
+Verified - BUYER PROTECTION Page is Displayed.<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Go to 3D projects<br/>
+STEP - Click - 3D projects<br/>
+Verified - FREE 3D PROJECTS Page is Displayed.<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Go to Quotes<br/>
+STEP - Click - quotes<br/>
+Verified - QUOTES Page is Displayed.<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Go to VISIT US<br/>
+STEP - Click - all our services<br/>
+Verified - ALL OUR SERVICES Page is Displayed.<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testHomePageInformationLinks test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>99</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestShoppingCart.testAddGroupProductsToCart()'><b>testAddGroupProductsToCart</b><br>Test class: tests.shopping.TestShoppingCart<br/>
+<a href="#Output-1980134912" onClick='toggleBox("Output-1980134912", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1980134912" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1980134912">
 STEP - *** Running test method testAddGroupProductsToCart...<br/>
 STEP - Launch Browser Successfully...<br/>
 STEP - Navigate to Casa39 English Website Home Page.<br/>
@@ -123,14 +488,1109 @@ STEP - *** Executed testAddGroupProductsToCart test successfully...<br/>
 </div>
 </td>
 <td></td>
-<td>48</td>
-<td>tests.shopping.TestShoppingCart@b7dd107</td></tr>
+<td>39</td>
+<td>tests.shopping.TestShoppingCart@43738a82</td></tr>
 <tr>
-<td title='tests.shopping.TestShoppingCart.testSecureCheckOutForProducts()'><b>testSecureCheckOutForProducts</b><br>Test class: tests.shopping.TestShoppingCart<br/>
-<a href="#Output-2024945312" onClick='toggleBox("Output-2024945312", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.shopping.TestHomePage.testOffersForYouSectionLinks()'><b>testOffersForYouSectionLinks</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-1710518520" onClick='toggleBox("Output-1710518520", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2024945312" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2024945312">
+<a href="#Output-1710518520" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1710518520">
+STEP - *** Running test method testOffersForYouSectionLinks...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - List Offer For You section associated with it's navigation link<br/>
+Verified - FLOOR TILES - https://www.casa39.com/tiles<br/>
+Verified - https://www.casa39.com/tiles - OK<br/>
+Verified - WALL TILES - https://www.casa39.com/wall-tiles<br/>
+Verified - https://www.casa39.com/wall-tiles - OK<br/>
+Verified - WELLNESS & SPA - https://www.casa39.com/shower-enclosures<br/>
+Verified - https://www.casa39.com/shower-enclosures - OK<br/>
+Verified - FURNITURE - https://www.casa39.com/furniture<br/>
+Verified - SANITARY WARES - https://www.casa39.com/toilet<br/>
+Verified - https://www.casa39.com/toilet - OK<br/>
+Verified - TAPS - https://www.casa39.com/taps<br/>
+Verified - https://www.casa39.com/taps - OK<br/>
+Verified - ACCESSORIES - https://www.casa39.com/bathroom-accessories<br/>
+Verified - https://www.casa39.com/bathroom-accessories - OK<br/>
+Verified - BRANDS - https://www.casa39.com/brands<br/>
+Verified - https://www.casa39.com/brands - OK<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testOffersForYouSectionLinks test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testAllProductSubCategoryLinks()'><b>testAllProductSubCategoryLinks</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-301205240" onClick='toggleBox("Output-301205240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-301205240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-301205240">
+STEP - *** Running test method testAllProductSubCategoryLinks...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - List all subcategories associated with it's navigation link<br/>
+Verified - wood effect - https://www.casa39.com/tiles/wood-effect<br/>
+Verified - https://www.casa39.com/tiles/wood-effect - OK<br/>
+Verified - cement effect - https://www.casa39.com/tiles/concrete-effect<br/>
+Verified - https://www.casa39.com/tiles/concrete-effect - OK<br/>
+Verified - resin effect - https://www.casa39.com/tiles/resin-effect<br/>
+Verified - https://www.casa39.com/tiles/resin-effect - OK<br/>
+Verified - marble effect - https://www.casa39.com/tiles/marble-effect<br/>
+Verified - https://www.casa39.com/tiles/marble-effect - OK<br/>
+Verified - metal effect - https://www.casa39.com/tiles/metal-effect<br/>
+Verified - https://www.casa39.com/tiles/metal-effect - OK<br/>
+Verified - cotto effect - https://www.casa39.com/tiles/terracotta-effect<br/>
+Verified - https://www.casa39.com/tiles/terracotta-effect - OK<br/>
+Verified - stone effect - https://www.casa39.com/tiles/stone-effect<br/>
+Verified - https://www.casa39.com/tiles/stone-effect - OK<br/>
+Verified - stone effect - https://www.casa39.com/outdoor-floor-tiles/stone-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/stone-effect - OK<br/>
+Verified - cotto effect - https://www.casa39.com/outdoor-floor-tiles/cotto-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/cotto-effect - OK<br/>
+Verified - marble effect - https://www.casa39.com/outdoor-floor-tiles/marble-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/marble-effect - OK<br/>
+Verified - wood effect - https://www.casa39.com/outdoor-floor-tiles/wood-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/wood-effect - OK<br/>
+Verified - cement effect - https://www.casa39.com/outdoor-floor-tiles/concrete-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/concrete-effect - OK<br/>
+Verified - sand effect - https://www.casa39.com/outdoor-floor-tiles/sand-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/sand-effect - OK<br/>
+Verified - resin effect - https://www.casa39.com/outdoor-floor-tiles/resin-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/resin-effect - OK<br/>
+Verified - wood effect - https://www.casa39.com/2-cm-thickness/wood-effect<br/>
+Verified - https://www.casa39.com/2-cm-thickness/wood-effect - OK<br/>
+Verified - marble effect - https://www.casa39.com/2-cm-thickness/marble-effect<br/>
+Verified - https://www.casa39.com/2-cm-thickness/marble-effect - OK<br/>
+Verified - stone effect - https://www.casa39.com/2-cm-thickness/stone-effect<br/>
+Verified - https://www.casa39.com/2-cm-thickness/stone-effect - OK<br/>
+Verified - cement effect - https://www.casa39.com/2-cm-thickness/cement-effect<br/>
+Verified - https://www.casa39.com/2-cm-thickness/cement-effect - OK<br/>
+Verified - cotto effect - https://www.casa39.com/2-cm-thickness/cotto-effect<br/>
+Verified - https://www.casa39.com/2-cm-thickness/cotto-effect - OK<br/>
+Verified - resin effect - https://www.casa39.com/2-cm-thickness/resin-effect<br/>
+Verified - https://www.casa39.com/2-cm-thickness/resin-effect - OK<br/>
+Verified - metal effect - https://www.casa39.com/2-cm-thickness/metal-effect<br/>
+Verified - https://www.casa39.com/2-cm-thickness/metal-effect - OK<br/>
+Verified - Preparation and screeds - https://www.casa39.com/tiles-laying-materials/preparation-and-screeds<br/>
+Verified - https://www.casa39.com/tiles-laying-materials/preparation-and-screeds - OK<br/>
+Verified - Adhesives - https://www.casa39.com/tiles-laying-materials/adhesives<br/>
+Verified - https://www.casa39.com/tiles-laying-materials/adhesives - OK<br/>
+Verified - Sealants - https://www.casa39.com/tiles-laying-materials/sealants<br/>
+Verified - https://www.casa39.com/tiles-laying-materials/sealants - OK<br/>
+Verified - Cleansers - https://www.casa39.com/tiles-laying-materials/cleansers<br/>
+Verified - https://www.casa39.com/tiles-laying-materials/cleansers - OK<br/>
+Verified - encaustic effect - https://www.casa39.com/wall-tiles/bathroom-tiles/encaustic-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/bathroom-tiles/encaustic-effect - OK<br/>
+Verified - wood effect - https://www.casa39.com/wall-tiles/bathroom-tiles/wood-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/bathroom-tiles/wood-effect - OK<br/>
+Verified - brick effect - https://www.casa39.com/wall-tiles/bathroom-tiles/brick-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/bathroom-tiles/brick-effect - OK<br/>
+Verified - stone effect - https://www.casa39.com/wall-tiles/bathroom-tiles/stone-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/bathroom-tiles/stone-effect - OK<br/>
+Verified - marble effect - https://www.casa39.com/wall-tiles/bathroom-tiles/marble-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/bathroom-tiles/marble-effect - OK<br/>
+Verified - cement effect - https://www.casa39.com/wall-tiles/bathroom-tiles/concrete-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/bathroom-tiles/concrete-effect - OK<br/>
+Verified - wall effect - https://www.casa39.com/wall-tiles/bathroom-tiles/wall-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/bathroom-tiles/wall-effect - OK<br/>
+Verified - patchwork effect - https://www.casa39.com/wall-tiles/bathroom-tiles/patchwork-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/bathroom-tiles/patchwork-effect - OK<br/>
+Verified - cement effect - https://www.casa39.com/wall-tiles/kitchen-tiles/concrete-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/kitchen-tiles/concrete-effect - OK<br/>
+Verified - stone effect - https://www.casa39.com/wall-tiles/kitchen-tiles/stone-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/kitchen-tiles/stone-effect - OK<br/>
+Verified - wood effect - https://www.casa39.com/wall-tiles/kitchen-tiles/wood-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/kitchen-tiles/wood-effect - OK<br/>
+Verified - marble effect - https://www.casa39.com/wall-tiles/kitchen-tiles/marble-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/kitchen-tiles/marble-effect - OK<br/>
+Verified - brick effect - https://www.casa39.com/wall-tiles/kitchen-tiles/brick-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/kitchen-tiles/brick-effect - OK<br/>
+Verified - wall effect - https://www.casa39.com/wall-tiles/kitchen-tiles/wall-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/kitchen-tiles/wall-effect - OK<br/>
+Verified - encaustic effect - https://www.casa39.com/wall-tiles/kitchen-tiles/encaustic-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/kitchen-tiles/encaustic-effect - OK<br/>
+Verified - patchwork effect - https://www.casa39.com/wall-tiles/kitchen-tiles/patchwork-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/kitchen-tiles/patchwork-effect - OK<br/>
+Verified - stone effect - https://www.casa39.com/wall-tiles/indoor-covering/stone-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/indoor-covering/stone-effect - OK<br/>
+Verified - wood effect - https://www.casa39.com/wall-tiles/indoor-covering/patchwork-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/indoor-covering/patchwork-effect - OK<br/>
+Verified - marble effect - https://www.casa39.com/wall-tiles/indoor-covering/marble-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/indoor-covering/marble-effect - OK<br/>
+Verified - cement effect - https://www.casa39.com/wall-tiles/indoor-covering/concrete-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/indoor-covering/concrete-effect - OK<br/>
+Verified - large wall tiles - https://www.casa39.com/wall-tiles/indoor-covering/large-wall-tiles<br/>
+Verified - https://www.casa39.com/wall-tiles/indoor-covering/large-wall-tiles - OK<br/>
+Verified - brick effect - https://www.casa39.com/wall-tiles/indoor-covering/brick-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/indoor-covering/brick-effect - OK<br/>
+Verified - encaustic effect - https://www.casa39.com/wall-tiles/indoor-covering/encaustic-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/indoor-covering/encaustic-effect - OK<br/>
+Verified - patchwork effect - https://www.casa39.com/wall-tiles/indoor-covering/patchwork-effect<br/>
+Verified - https://www.casa39.com/wall-tiles/indoor-covering/patchwork-effect - OK<br/>
+Verified - stone effect - https://www.casa39.com/outdoor-floor-tiles/stone-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/stone-effect - OK<br/>
+Verified - cotto effect - https://www.casa39.com/outdoor-floor-tiles/terracotta-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/terracotta-effect - OK<br/>
+Verified - marble effect - https://www.casa39.com/outdoor-floor-tiles/marble-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/marble-effect - OK<br/>
+Verified - wood effect - https://www.casa39.com/outdoor-floor-tiles/wood-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/wood-effect - OK<br/>
+Verified - cement effect - https://www.casa39.com/outdoor-floor-tiles/concrete-effect<br/>
+Verified - https://www.casa39.com/outdoor-floor-tiles/concrete-effect - OK<br/>
+Verified - pocelain stoneware - https://www.casa39.com/<br/>
+Verified - https://www.casa39.com/ - OK<br/>
+Verified - glass 1989 - https://www.casa39.com/glass-1989<br/>
+Verified - https://www.casa39.com/glass-1989 - OK<br/>
+Verified - bisazza - https://www.casa39.com/bisazza<br/>
+Verified - https://www.casa39.com/bisazza - OK<br/>
+Verified - sicis - https://www.casa39.com/sicis<br/>
+Verified - https://www.casa39.com/sicis - OK<br/>
+Verified - Basin mixer taps - https://www.casa39.com/taps/basin-mixer-taps<br/>
+Verified - https://www.casa39.com/taps/basin-mixer-taps - OK<br/>
+Verified - 2 handle basin mixer taps - https://www.casa39.com/taps/2-handle-basin-mixer-taps<br/>
+Verified - https://www.casa39.com/taps/2-handle-basin-mixer-taps - OK<br/>
+Verified - 3 holes basin taps - https://www.casa39.com/taps/3-holes-basin-taps<br/>
+Verified - https://www.casa39.com/taps/3-holes-basin-taps - OK<br/>
+Verified - Wall mounted taps - https://www.casa39.com/taps/wall-mounted-taps<br/>
+Verified - https://www.casa39.com/taps/wall-mounted-taps - OK<br/>
+Verified - Waterfall taps - https://www.casa39.com/taps/waterfall-taps<br/>
+Verified - https://www.casa39.com/taps/waterfall-taps - OK<br/>
+Verified - Sensor taps - https://www.casa39.com/taps/sensor-taps<br/>
+Verified - https://www.casa39.com/taps/sensor-taps - OK<br/>
+Verified - Freestanding mixers - https://www.casa39.com/taps/freestanding-mixers<br/>
+Verified - https://www.casa39.com/taps/freestanding-mixers - OK<br/>
+Verified - Showerheads - https://www.casa39.com/taps/shower-heads<br/>
+Verified - https://www.casa39.com/taps/shower-heads - OK<br/>
+Verified - Concealed showerheads - https://www.casa39.com/taps/concealed-shower-heads<br/>
+Verified - https://www.casa39.com/taps/concealed-shower-heads - OK<br/>
+Verified - Shower column - https://www.casa39.com/taps/shower-column<br/>
+Verified - https://www.casa39.com/taps/shower-column - OK<br/>
+Verified - Shower slide bar - https://www.casa39.com/taps/shower-slide-bar<br/>
+Verified - https://www.casa39.com/taps/shower-slide-bar - OK<br/>
+Verified - Thermostatic shower - https://www.casa39.com/taps/thermostatic-shower<br/>
+Verified - https://www.casa39.com/taps/thermostatic-shower - OK<br/>
+Verified - Concealed shower mixer - https://www.casa39.com/taps/concealed-shower-sets<br/>
+Verified - https://www.casa39.com/taps/concealed-shower-sets - OK<br/>
+Verified - Shower mixer taps - https://www.casa39.com/taps/shower-mixer-taps<br/>
+Verified - https://www.casa39.com/taps/shower-mixer-taps - OK<br/>
+Verified - Deck mounted taps - https://www.casa39.com/taps/deck-mounted-bath-shower-mixer<br/>
+Verified - https://www.casa39.com/taps/deck-mounted-bath-shower-mixer - OK<br/>
+Verified - Floor standing taps - https://www.casa39.com/taps/free-standing-bath-spout-with-mixer<br/>
+Verified - https://www.casa39.com/taps/free-standing-bath-spout-with-mixer - OK<br/>
+Verified - Wall mounted taps - https://www.casa39.com/taps/wall-mounted-bath-shower-mixer<br/>
+Verified - https://www.casa39.com/taps/wall-mounted-bath-shower-mixer - OK<br/>
+Verified - Thermostatic taps - https://www.casa39.com/taps/thermostatic-bath-shower-mixer<br/>
+Verified - https://www.casa39.com/taps/thermostatic-bath-shower-mixer - OK<br/>
+Verified - Bath taps - https://www.casa39.com/taps/bath-taps<br/>
+Verified - https://www.casa39.com/taps/bath-taps - OK<br/>
+Verified - Waterfall bath taps - https://www.casa39.com/taps/waterfall-bath-taps<br/>
+Verified - https://www.casa39.com/taps/waterfall-bath-taps - OK<br/>
+Verified - Mixers - https://www.casa39.com/kitchen-taps/kitchen-mixer-taps<br/>
+Verified - https://www.casa39.com/kitchen-taps/kitchen-mixer-taps - OK<br/>
+Verified - With pullout spray - https://www.casa39.com/kitchen-taps/pull-out-kitchen-taps<br/>
+Verified - https://www.casa39.com/kitchen-taps/pull-out-kitchen-taps - OK<br/>
+Verified - Wall mounted taps - https://www.casa39.com/kitchen-taps/wall-mounted-kitchen-taps<br/>
+Verified - https://www.casa39.com/kitchen-taps/wall-mounted-kitchen-taps - OK<br/>
+Verified - Under window taps - https://www.casa39.com/kitchen-taps/under-window-kitchen-taps<br/>
+Verified - https://www.casa39.com/kitchen-taps/under-window-kitchen-taps - OK<br/>
+Verified - Toothbrush holder - https://www.casa39.com/bathroom-accessories/toothbrush-holder<br/>
+Verified - https://www.casa39.com/bathroom-accessories/toothbrush-holder - OK<br/>
+Verified - Soap dispensers - https://www.casa39.com/bathroom-accessories/soap-dispensers<br/>
+Verified - https://www.casa39.com/bathroom-accessories/soap-dispensers - OK<br/>
+Verified - Soap holders - https://www.casa39.com/bathroom-accessories/soap-holders<br/>
+Verified - https://www.casa39.com/bathroom-accessories/soap-holders - OK<br/>
+Verified - Towel holder - https://www.casa39.com/bathroom-accessories/towel-holders<br/>
+Verified - https://www.casa39.com/bathroom-accessories/towel-holders - OK<br/>
+Verified - Organizers - https://www.casa39.com/bathroom-accessories/organizers<br/>
+Verified - https://www.casa39.com/bathroom-accessories/organizers - OK<br/>
+Verified - Laundry baskets - https://www.casa39.com/bathroom-accessories/laundry-baskets<br/>
+Verified - https://www.casa39.com/bathroom-accessories/laundry-baskets - OK<br/>
+Verified - Shower curtains - https://www.casa39.com/bathroom-accessories/shower-curtains<br/>
+Verified - https://www.casa39.com/bathroom-accessories/shower-curtains - OK<br/>
+Verified - Hooks - https://www.casa39.com/bathroom-accessories/hooks<br/>
+Verified - https://www.casa39.com/bathroom-accessories/hooks - OK<br/>
+Verified - Shower platforms - https://www.casa39.com/bathroom-accessories/shower-platforms<br/>
+Verified - https://www.casa39.com/bathroom-accessories/shower-platforms - OK<br/>
+Verified - Bath accessories - https://www.casa39.com/bathroom-accessories/bath-accessories<br/>
+Verified - https://www.casa39.com/bathroom-accessories/bath-accessories - OK<br/>
+Verified - Free standing toilet roll holder - https://www.casa39.com/bathroom-accessories/free-standing-toilet-roll-holder<br/>
+Verified - https://www.casa39.com/bathroom-accessories/free-standing-toilet-roll-holder - OK<br/>
+Verified - Toilet brush holders - https://www.casa39.com/bathroom-accessories/toilet-brush-holders<br/>
+Verified - https://www.casa39.com/bathroom-accessories/toilet-brush-holders - OK<br/>
+Verified - Waste bins - https://www.casa39.com/bathroom-accessories/waste-bins<br/>
+Verified - https://www.casa39.com/bathroom-accessories/waste-bins - OK<br/>
+Verified - Toilet seats - https://www.casa39.com/bathroom-accessories/toilet-seats<br/>
+Verified - https://www.casa39.com/bathroom-accessories/toilet-seats - OK<br/>
+Verified - Toilet paper holder - https://www.casa39.com/bathroom-accessories/toilet-paper-holder<br/>
+Verified - https://www.casa39.com/bathroom-accessories/toilet-paper-holder - OK<br/>
+Verified - Towel holders for bidet - https://www.casa39.com/bathroom-accessories/towel-holders-for-bidet<br/>
+Verified - https://www.casa39.com/bathroom-accessories/towel-holders-for-bidet - OK<br/>
+Verified - Stools - https://www.casa39.com/bathroom-accessories/stools<br/>
+Verified - https://www.casa39.com/bathroom-accessories/stools - OK<br/>
+Verified - Hair dryers - https://www.casa39.com/bathroom-accessories/hair-dryers<br/>
+Verified - https://www.casa39.com/bathroom-accessories/hair-dryers - OK<br/>
+Verified - Magnifying mirrors - https://www.casa39.com/bathroom-accessories/magnifying-mirrors<br/>
+Verified - https://www.casa39.com/bathroom-accessories/magnifying-mirrors - OK<br/>
+Verified - Shelves - https://www.casa39.com/bathroom-accessories/shelves<br/>
+Verified - https://www.casa39.com/bathroom-accessories/shelves - OK<br/>
+Verified - Disabled accessories - https://www.casa39.com/bathroom-accessories/disabled-accessories<br/>
+Verified - https://www.casa39.com/bathroom-accessories/disabled-accessories - OK<br/>
+Verified - Hotellerie - https://www.casa39.com/bathroom-accessories/hotellerie<br/>
+Verified - https://www.casa39.com/bathroom-accessories/hotellerie - OK<br/>
+Verified - Tissue box covers - https://www.casa39.com/bathroom-accessories/tissue-box-covers<br/>
+Verified - https://www.casa39.com/bathroom-accessories/tissue-box-covers - OK<br/>
+Verified - Countertop basins - https://www.casa39.com/wash-basins/countertop-basins<br/>
+Verified - https://www.casa39.com/wash-basins/countertop-basins - OK<br/>
+Verified - Wallhunging basins - https://www.casa39.com/wash-basins/wall-hung-basin<br/>
+Verified - https://www.casa39.com/wash-basins/wall-hung-basin - OK<br/>
+Verified - Washbasins with structure - https://www.casa39.com/wash-basins/washbasins-with-structure<br/>
+Verified - https://www.casa39.com/wash-basins/washbasins-with-structure - OK<br/>
+Verified - Freestanding basins - https://www.casa39.com/wash-basins/freestanding-basins<br/>
+Verified - https://www.casa39.com/wash-basins/freestanding-basins - OK<br/>
+Verified - Recessed basins - https://www.casa39.com/wash-basins/recessed-basins<br/>
+Verified - https://www.casa39.com/wash-basins/recessed-basins - OK<br/>
+Verified - Corner basins - https://www.casa39.com/wash-basins/corner-basins<br/>
+Verified - https://www.casa39.com/wash-basins/corner-basins - OK<br/>
+Verified - Wall hung toilets - https://www.casa39.com/toilet/wall-hung-toilet<br/>
+Verified - https://www.casa39.com/toilet/wall-hung-toilet - OK<br/>
+Verified - Floor standing back to wall - https://www.casa39.com/toilet/back-to-wall-toilets<br/>
+Verified - https://www.casa39.com/toilet/back-to-wall-toilets - OK<br/>
+Verified - Floor standing traditional mounted - https://www.casa39.com/toilet/floor-toilets<br/>
+Verified - https://www.casa39.com/toilet/floor-toilets - OK<br/>
+Verified - Rimfree - https://www.casa39.com/toilet/rimless-toilets<br/>
+Verified - https://www.casa39.com/toilet/rimless-toilets - OK<br/>
+Verified - Acrylic - https://www.casa39.com/shower-trays?materiale=764<br/>
+Verified - https://www.casa39.com/shower-trays?materiale=764 - OK<br/>
+Verified - Ceramic - https://www.casa39.com/shower-trays?materiale=707<br/>
+Verified - https://www.casa39.com/shower-trays?materiale=707 - OK<br/>
+Verified - Customizable and cuttable - https://www.casa39.com/shower-trays/customizable-and-cuttable<br/>
+Verified - https://www.casa39.com/shower-trays/customizable-and-cuttable - OK<br/>
+Verified - Washbasin accessories - https://www.casa39.com/wash-basins/washbasin-accessories<br/>
+Verified - https://www.casa39.com/wash-basins/washbasin-accessories - OK<br/>
+Verified - Cistern - https://www.casa39.com/toilet/accessories/cistern<br/>
+Verified - https://www.casa39.com/toilet/accessories/cistern - OK<br/>
+Verified - Brackets - https://www.casa39.com/toilet/accessories/brackets<br/>
+Verified - https://www.casa39.com/toilet/accessories/brackets - OK<br/>
+Verified - Suspended - https://www.casa39.com/furnitures/wall-mounted-furnitures<br/>
+Verified - https://www.casa39.com/furnitures/wall-mounted-furnitures - OK<br/>
+Verified - Top - https://www.casa39.com/furnitures/tops<br/>
+Verified - https://www.casa39.com/furnitures/tops - OK<br/>
+Verified - Floor standing - https://www.casa39.com/furnitures/floor-standing-furnitures<br/>
+Verified - https://www.casa39.com/furnitures/floor-standing-furnitures - OK<br/>
+Verified - Modern - https://www.casa39.com/furnitures?stile=1043<br/>
+Verified - https://www.casa39.com/furnitures?stile=1043 - OK<br/>
+Verified - Antique - https://www.casa39.com/furnitures?stile=1046<br/>
+Verified - https://www.casa39.com/furnitures?stile=1046 - OK<br/>
+Verified - Retrò - https://www.casa39.com/furnitures?stile=3609<br/>
+Verified - https://www.casa39.com/furnitures?stile=3609 - OK<br/>
+Verified - Easy - https://www.casa39.com/furnitures?stile=1040<br/>
+Verified - https://www.casa39.com/furnitures?stile=1040 - OK<br/>
+Verified - Up to 70 cm - https://www.casa39.com/furnitures/floor-standing-furnitures/from-61-to-70-cm<br/>
+Verified - https://www.casa39.com/furnitures/floor-standing-furnitures/from-61-to-70-cm - OK<br/>
+Verified - From 80 to 90 cm - https://www.casa39.com/furnitures/floor-standing-furnitures/from-81-to-90-cm<br/>
+Verified - https://www.casa39.com/furnitures/floor-standing-furnitures/from-81-to-90-cm - OK<br/>
+Verified - From 100 to 120 cm - https://www.casa39.com/furnitures/floor-standing-furnitures/from-101-to-120-cm<br/>
+Verified - https://www.casa39.com/furnitures/floor-standing-furnitures/from-101-to-120-cm - OK<br/>
+Verified - Over 120 cm - https://www.casa39.com/furnitures/floor-standing-furnitures/from-120-cm-up<br/>
+Verified - https://www.casa39.com/furnitures/floor-standing-furnitures/from-120-cm-up - OK<br/>
+Verified - Mirrors - https://www.casa39.com/furnitures/mirrors<br/>
+Verified - https://www.casa39.com/furnitures/mirrors - OK<br/>
+Verified - Column cabinets - https://www.casa39.com/furnitures/cabinet<br/>
+Verified - https://www.casa39.com/furnitures/cabinet - OK<br/>
+Verified - Panelled bathtubs - https://www.casa39.com/bathtubs/panelled<br/>
+Verified - https://www.casa39.com/bathtubs/panelled - OK<br/>
+Verified - Recessed - https://www.casa39.com/bathtubs/recessed<br/>
+Verified - https://www.casa39.com/bathtubs/recessed - OK<br/>
+Verified - Freestanding - https://www.casa39.com/bathtubs/freestanding<br/>
+Verified - https://www.casa39.com/bathtubs/freestanding - OK<br/>
+Verified - Whirlpool bathtub - https://www.casa39.com/bathtubs/whirlpool<br/>
+Verified - https://www.casa39.com/bathtubs/whirlpool - OK<br/>
+Verified - Bathtubs combined with shower - https://www.casa39.com/bathtubs/bathtubs-combined-with-shower<br/>
+Verified - https://www.casa39.com/bathtubs/bathtubs-combined-with-shower - OK<br/>
+Verified - Epoque - https://www.casa39.com/bathtubs?stile=1046<br/>
+Verified - https://www.casa39.com/bathtubs?stile=1046 - OK<br/>
+Verified - Shower panels - https://www.casa39.com/bathtubs<br/>
+Verified - https://www.casa39.com/bathtubs - OK<br/>
+Verified - Slidings bathtub panels - https://www.casa39.com/bathtubs<br/>
+Verified - https://www.casa39.com/bathtubs - OK<br/>
+Verified - Fixed bathtub panels - https://www.casa39.com/bathtubs<br/>
+Verified - https://www.casa39.com/bathtubs - OK<br/>
+Verified - Folding bathtub panels - https://www.casa39.com/bathtubs<br/>
+Verified - https://www.casa39.com/bathtubs - OK<br/>
+Verified - Sliding doors - https://www.casa39.com/shower-enclosures/corner-boxes/sliding-doors<br/>
+Verified - https://www.casa39.com/shower-enclosures/corner-boxes/sliding-doors - OK<br/>
+Verified - Sliding door with side panel - https://www.casa39.com/shower-enclosures/corner-boxes/fixed-wing-with-sliding-door<br/>
+Verified - https://www.casa39.com/shower-enclosures/corner-boxes/fixed-wing-with-sliding-door - OK<br/>
+Verified - Swinging door with side panel - https://www.casa39.com/shower-enclosures/corner-boxes/fixed-wing-with-overhead-door<br/>
+Verified - https://www.casa39.com/shower-enclosures/corner-boxes/fixed-wing-with-overhead-door - OK<br/>
+Verified - Folding door and side panel - https://www.casa39.com/shower-enclosures/corner-boxes/fixed-wing-with-book-opening-door<br/>
+Verified - https://www.casa39.com/shower-enclosures/corner-boxes/fixed-wing-with-book-opening-door - OK<br/>
+Verified - Double door opening - https://www.casa39.com/shower-enclosures/semicircular/two-doors-opening<br/>
+Verified - https://www.casa39.com/shower-enclosures/semicircular/two-doors-opening - OK<br/>
+Verified - Sliding opening - https://www.casa39.com/shower-enclosures/semicircular/sliding-opening<br/>
+Verified - https://www.casa39.com/shower-enclosures/semicircular/sliding-opening - OK<br/>
+Verified - Single door opening - https://www.casa39.com/shower-enclosures/semicircular/single-door-opening<br/>
+Verified - https://www.casa39.com/shower-enclosures/semicircular/single-door-opening - OK<br/>
+Verified - Hinged door - https://www.casa39.com/shower-enclosures/niche/book-opening-door<br/>
+Verified - https://www.casa39.com/shower-enclosures/niche/book-opening-door - OK<br/>
+Verified - Folding door - https://www.casa39.com/shower-enclosures/niche/shutter-opening-door<br/>
+Verified - https://www.casa39.com/shower-enclosures/niche/shutter-opening-door - OK<br/>
+Verified - Sliding door - https://www.casa39.com/shower-enclosures/niche/sliding-door<br/>
+Verified - https://www.casa39.com/shower-enclosures/niche/sliding-door - OK<br/>
+Verified - Fixed bathtub panels - https://www.casa39.com/shower-enclosures/bathscreens/fixed-panel<br/>
+Verified - https://www.casa39.com/shower-enclosures/bathscreens/fixed-panel - OK<br/>
+Verified - Folding bathtub panels - https://www.casa39.com/shower-enclosures/bathscreens/book-opening-panel<br/>
+Verified - https://www.casa39.com/shower-enclosures/bathscreens/book-opening-panel - OK<br/>
+Verified - Sliding bathtub panels - https://www.casa39.com/shower-enclosures/bathscreens/sliding-panel<br/>
+Verified - https://www.casa39.com/shower-enclosures/bathscreens/sliding-panel - OK<br/>
+Verified - Shower panels - https://www.casa39.com/shower-enclosures/bathscreens/opening-panel<br/>
+Verified - https://www.casa39.com/shower-enclosures/bathscreens/opening-panel - OK<br/>
+Verified - ATLAS CONCORDE - https://www.casa39.com/atlas-concorde<br/>
+Verified - https://www.casa39.com/atlas-concorde - OK<br/>
+Verified - BISAZZA - https://www.casa39.com/bisazza<br/>
+Verified - https://www.casa39.com/bisazza - OK<br/>
+Verified - CAESAR - https://www.casa39.com/caesar<br/>
+Verified - https://www.casa39.com/caesar - OK<br/>
+Verified - CISA CERAMICHE - https://www.casa39.com/cisa<br/>
+Verified - https://www.casa39.com/cisa - OK<br/>
+Verified - EMILCERAMICA - https://www.casa39.com/emilceramica<br/>
+Verified - https://www.casa39.com/emilceramica - OK<br/>
+Verified - ITALGRANITI - https://www.casa39.com/italgraniti<br/>
+Verified - https://www.casa39.com/italgraniti - OK<br/>
+Verified - FLAVIKER - https://www.casa39.com/flaviker<br/>
+Verified - https://www.casa39.com/flaviker - OK<br/>
+Verified - MARAZZI - https://www.casa39.com/marazzi<br/>
+Verified - https://www.casa39.com/marazzi - OK<br/>
+Verified - RAGNO - https://www.casa39.com/ragno<br/>
+Verified - https://www.casa39.com/ragno - OK<br/>
+Verified - SETTECENTO - https://www.casa39.com/settecento<br/>
+Verified - https://www.casa39.com/settecento - OK<br/>
+Verified - SICIS - https://www.casa39.com/sicis<br/>
+Verified - https://www.casa39.com/sicis - OK<br/>
+Verified - SUPERGRES - https://www.casa39.com/supergres<br/>
+Verified - https://www.casa39.com/supergres - OK<br/>
+Verified - ANTONIO LUPI - https://www.casa39.com/antoniolupi<br/>
+Verified - https://www.casa39.com/antoniolupi - OK<br/>
+Verified - BOSSINI - https://www.casa39.com/bossini<br/>
+Verified - https://www.casa39.com/bossini - OK<br/>
+Verified - FANTINI - https://www.casa39.com/fantini<br/>
+Verified - https://www.casa39.com/fantini - OK<br/>
+Verified - GROHE - https://www.casa39.com/grohe<br/>
+Verified - https://www.casa39.com/grohe - OK<br/>
+Verified - POZZI GINORI - https://www.casa39.com/pozzi-ginori<br/>
+Verified - https://www.casa39.com/pozzi-ginori - OK<br/>
+Verified - SIMAS - https://www.casa39.com/simas<br/>
+Verified - https://www.casa39.com/simas - OK<br/>
+Verified - EFFEGIBI - https://www.casa39.com/effegibi<br/>
+Verified - https://www.casa39.com/effegibi - OK<br/>
+Verified - GLASS 1989 - https://www.casa39.com/glass-1989<br/>
+Verified - https://www.casa39.com/glass-1989 - OK<br/>
+Verified - NOVELLINI - https://www.casa39.com/novellini<br/>
+Verified - https://www.casa39.com/novellini - OK<br/>
+Verified - PROVEX - https://www.casa39.com/provex<br/>
+Verified - https://www.casa39.com/provex - OK<br/>
+Verified - RELAX - https://www.casa39.com/relax<br/>
+Verified - https://www.casa39.com/relax - OK<br/>
+Verified - ARDECO - https://www.casa39.com/ardeco<br/>
+Verified - https://www.casa39.com/ardeco - OK<br/>
+Verified - ARTESI - https://www.casa39.com/artesi<br/>
+Verified - https://www.casa39.com/artesi - OK<br/>
+Verified - AZZURRA - https://www.casa39.com/azzurra<br/>
+Verified - https://www.casa39.com/azzurra - OK<br/>
+Verified - EBAN - https://www.casa39.com/eban<br/>
+Verified - https://www.casa39.com/eban - OK<br/>
+Verified - GEBERIT - https://www.casa39.com/geberit<br/>
+Verified - https://www.casa39.com/geberit - OK<br/>
+Verified - KIOS - https://www.casa39.com/kios<br/>
+Verified - https://www.casa39.com/kios - OK<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAllProductSubCategoryLinks test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>136</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestUserProfile.testLoggedInUserMyAccountSection()'><b>testLoggedInUserMyAccountSection</b><br>Test class: tests.shopping.TestUserProfile<br/>
+<a href="#Output-1393078852" onClick='toggleBox("Output-1393078852", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1393078852" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1393078852">
+STEP - *** Running test method testLoggedInUserMyAccountSection...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Log In with Valid username and Password<br/>
+STEP - Click - SIGN IN<br/>
+STEP - Click - Login<br/>
+STEP - Go to My Account Section<br/>
+STEP - Click - MY ACCOUNT<br/>
+Verified - My Account Page is Displayed<br/>
+STEP - Validate Account Information<br/>
+Verified - User Name as 'Ajay Sikarwar' is Correct<br/>
+Verified - User Email Id as 'ajay@xhtmljunkies.com' is Correct<br/>
+Verified - You are subscribed to "General Subscription".<br/>
+STEP - Validate Address Book<br/>
+Verified - Billing Address is Correct<br/>
+Verified - Shipping Address is Correct<br/>
+STEP - Go to My orders<br/>
+STEP - Click Link As - My orders<br/>
+Verified - My orders Section is Displayed<br/>
+STEP - Validate Order Details<br/>
+Verified - Order ID as '000026948' Displayed correctly<br/>
+Verified - Order Date as '9/28/20' Displayed correctly<br/>
+Verified - Order Total as '€279.00' Displayed correctly<br/>
+Verified - Order ID as 'Canceled' Displayed correctly<br/>
+Verified - Order ID as '000027299' Displayed correctly<br/>
+Verified - Order Date as '1/19/21' Displayed correctly<br/>
+Verified - Order Total as '€169.00' Displayed correctly<br/>
+Verified - Order ID as 'Canceled' Displayed correctly<br/>
+Verified - Order ID as '000026914' Displayed correctly<br/>
+Verified - Order Date as '9/21/20' Displayed correctly<br/>
+Verified - Order Total as '€518.00' Displayed correctly<br/>
+Verified - Order ID as 'Canceled' Displayed correctly<br/>
+Verified - Order ID as '000027677' Displayed correctly<br/>
+Verified - Order Date as '5/24/21' Displayed correctly<br/>
+Verified - Order Total as '€727.16' Displayed correctly<br/>
+Verified - Order ID as 'Canceled' Displayed correctly<br/>
+Verified - Order ID as '3000036324' Displayed correctly<br/>
+Verified - Order Date as '5/19/21' Displayed correctly<br/>
+Verified - Order Total as '€526.91' Displayed correctly<br/>
+Verified - Order ID as 'Canceled' Displayed correctly<br/>
+STEP - Go to Addresses<br/>
+STEP - Click Link As - Addresses<br/>
+Verified - Addresses Section is Displayed<br/>
+STEP - Validate Additional Address Book<br/>
+Verified - First Name as 'Ajay' Displayed correctly<br/>
+Verified - Last Name as 'Sikarwar' Displayed correctly<br/>
+Verified - street Address as '7242 Atlantic Street' Displayed correctly<br/>
+Verified - City as 'check' Displayed correctly<br/>
+Verified - Country as 'Italy' Displayed correctly<br/>
+Verified - Country as '' Displayed correctly<br/>
+Verified - Zip/Postal code as '73057' Displayed correctly<br/>
+Verified - Phone as '9033855585' Displayed correctly<br/>
+Verified - First Name as 'Ajay' Displayed correctly<br/>
+Verified - Last Name as 'Sikarwar' Displayed correctly<br/>
+Verified - street Address as 'farrari' Displayed correctly<br/>
+Verified - City as 'check' Displayed correctly<br/>
+Verified - Country as 'Italy' Displayed correctly<br/>
+Verified - Country as '' Displayed correctly<br/>
+Verified - Zip/Postal code as '73057' Displayed correctly<br/>
+Verified - Phone as '9033855585' Displayed correctly<br/>
+STEP - Go to Account information<br/>
+STEP - Click Link As - Account information<br/>
+Verified - Account information Section is Displayed<br/>
+STEP - Go to Newsletter<br/>
+STEP - Click Link As - Newsletter<br/>
+Verified - Newsletter Section is Displayed<br/>
+STEP - Go to My quotes<br/>
+STEP - Click Link As - My quotes<br/>
+Verified - My quotes Section is Displayed<br/>
+STEP - Validate My Quotes Details<br/>
+Verified - Order ID as '1000459434' Displayed correctly<br/>
+Verified - Order Date as '5/19/21' Displayed correctly<br/>
+Verified - Order Total as '€727.16' Displayed correctly<br/>
+Verified - Order ID as 'Complete' Displayed correctly<br/>
+Verified - Order ID as '2000455214' Displayed correctly<br/>
+Verified - Order Date as '5/4/21' Displayed correctly<br/>
+Verified - Order Total as '€32.29' Displayed correctly<br/>
+Verified - Order ID as 'Pending' Displayed correctly<br/>
+Verified - Order ID as '1000455205' Displayed correctly<br/>
+Verified - Order Date as '5/4/21' Displayed correctly<br/>
+Verified - Order Total as '€104.28' Displayed correctly<br/>
+Verified - Order ID as 'Pending' Displayed correctly<br/>
+Verified - Order ID as '9000446208' Displayed correctly<br/>
+Verified - Order Date as '4/6/21' Displayed correctly<br/>
+Verified - Order Total as '€0.00' Displayed correctly<br/>
+Verified - Order ID as 'Pending' Displayed correctly<br/>
+Verified - Order ID as '2000424146' Displayed correctly<br/>
+Verified - Order Date as '1/27/21' Displayed correctly<br/>
+Verified - Order Total as '€613.55' Displayed correctly<br/>
+Verified - Order ID as 'Pending' Displayed correctly<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Click - SIGN OUT<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testLoggedInUserMyAccountSection test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>535</td>
+<td>tests.shopping.TestUserProfile@c81cdd1</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testRegisterNewUserByUniqueEmailId()'><b>testRegisterNewUserByUniqueEmailId</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-336737503" onClick='toggleBox("Output-336737503", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-336737503" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-336737503">
+STEP - *** Running test method testRegisterNewUserByUniqueEmailId...<br/>
+STEP - Navigate to Magento Website Home Page.<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Go to Customer Register Page<br/>
+STEP - Click - SIGN IN<br/>
+STEP - Click - New account<br/>
+STEP - Set required fields<br/>
+STEP - Set - First<br/>
+STEP - Set - Last<br/>
+STEP - Set - email_0824163225998@test.com<br/>
+STEP - Set - password@123<br/>
+STEP - Create account<br/>
+STEP - Click - Create an Account<br/>
+STEP - Log In new username and Password<br/>
+STEP - Click - SIGN IN<br/>
+STEP - Click - Login<br/>
+STEP - Go to My Account Section<br/>
+STEP - Click - MY ACCOUNT<br/>
+Verified - My Account Page is Displayed<br/>
+STEP - Validate Account Information<br/>
+Verified - User Name as is Correct<br/>
+Verified - User Email Id as 'email_0824163225998@test.com' is Correct<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Click - SIGN OUT<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testRegisterNewUserByUniqueEmailId test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testWhyChooseUsSection()'><b>testWhyChooseUsSection</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-1008674385" onClick='toggleBox("Output-1008674385", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1008674385" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1008674385">
+STEP - *** Running test method testWhyChooseUsSection...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Validate Samples Section<br/>
+STEP - Click - SAMPLES
+Ask for a sample of your selected tiles to be sure of your choice.<br/>
+Verified - SAMPLES SERVICE section is Displayed<br/>
+Verified - SAMPLES SERVICE content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate Best Price Guaranteed Section<br/>
+STEP - Click - ? BEST PRICE GUARANTEE ?<br/>
+Verified - BEST PRICE GUARANTEE section is Displayed<br/>
+Verified - BEST PRICE GUARANTEE content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate BUYER PROTECTION Section<br/>
+STEP - Click - BUYER PROTECTION
+Buy safely by choosing the protection which suites your needs best.<br/>
+Verified - BUYER PROTECTION section is Displayed<br/>
+Verified - BUYER PROTECTION content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate QUOTES Section<br/>
+STEP - Click - QUOTES
+Many prices are imposed by the producers. Ask for a quote and receive special discounts.<br/>
+Verified - QUOTES section is Displayed<br/>
+Verified - QUOTES content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testWhyChooseUsSection test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>43</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestProductDetails.testAddProductToCart()'><b>testAddProductToCart</b><br>Test class: tests.shopping.TestProductDetails<br/>
+<a href="#Output-650657798" onClick='toggleBox("Output-650657798", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-650657798" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-650657798">
+STEP - *** Running test method testAddProductToCart...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as Lineabeta Basket waste bin 5346.29<br/>
+STEP - Set - Lineabeta Basket waste<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Lineabeta Basket waste bin 5346.29<br/>
+Verified - Lineabeta Basket waste bin 5346.29 as Searched Product is Correctly Displayed<br/>
+STEP - Select Quantity and add to cart<br/>
+STEP - Set - 3<br/>
+STEP - Click - Add to Cart<br/>
+Verified - Lineabeta Basket waste bin 5346.29<br/>
+Verified - has been added to your cart<br/>
+STEP - Click - Continue<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAddProductToCart test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>tests.shopping.TestProductDetails@51c8530f</td></tr>
+<tr>
+<td title='tests.shopping.TestProductListPage.testAddProductToCartFromProductListPage()'><b>testAddProductToCartFromProductListPage</b><br>Test class: tests.shopping.TestProductListPage<br/>
+<a href="#Output-39461258" onClick='toggleBox("Output-39461258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-39461258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-39461258">
+STEP - *** Running test method testAddProductToCartFromProductListPage...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Choose and Select Category As ACCESSORIES From Product Categories<br/>
+STEP - Selecting ACCESSORIES from list...<br/>
+STEP - Click - ACCESSORIES<br/>
+Verified - ACCESSORIES - Category Opened Successfully...<br/>
+STEP - Selecting Lineabeta Ranpin accessories stand 51194.29 from list...<br/>
+STEP - Click - <br/>
+Verified - You added Lineabeta Ranpin accessories stand 51194.29 to your shopping cart.<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAddProductToCartFromProductListPage test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>36</td>
+<td>tests.shopping.TestProductListPage@7403c468</td></tr>
+<tr>
+<td title='tests.shopping.TestUserProfile.testAutomationSetUpForCasa39English()'><b>testAutomationSetUpForCasa39English</b><br>Test class: tests.shopping.TestUserProfile<br/>
+<a href="#Output-2011904058" onClick='toggleBox("Output-2011904058", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2011904058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2011904058">
+STEP - *** Running test method testAutomationSetUpForCasa39English...<br/>
+STEP - Check connection to Casa39 English Website...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+Verified - Connection Established Successfully...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAutomationSetUpForCasa39English test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>tests.shopping.TestUserProfile@c81cdd1</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testAllFooterInformationLinks()'><b>testAllFooterInformationLinks</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-1089930529" onClick='toggleBox("Output-1089930529", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1089930529" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1089930529">
+STEP - *** Running test method testAllFooterInformationLinks...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - List all footer information section associated with it's navigation link<br/>
+Verified - our story - https://www.casa39.com/find-us<br/>
+Verified - https://www.casa39.com/find-us - OK<br/>
+Verified - legal information - https://www.casa39.com/legal-information<br/>
+Verified - https://www.casa39.com/legal-information - OK<br/>
+Verified - promotions - https://www.casa39.com/offers<br/>
+Verified - https://www.casa39.com/offers - OK<br/>
+Verified - terms and conditions - https://www.casa39.com/terms-and-conditions<br/>
+Verified - https://www.casa39.com/terms-and-conditions - OK<br/>
+Verified - brands - https://www.casa39.com/brands<br/>
+Verified - https://www.casa39.com/brands - OK<br/>
+Verified - shipping - https://www.casa39.com/shipping<br/>
+Verified - https://www.casa39.com/shipping - OK<br/>
+Verified - buyer protection - https://www.casa39.com/buyer-protection<br/>
+Verified - https://www.casa39.com/buyer-protection - OK<br/>
+Verified - 3D projects - https://www.casa39.com/free-3d-projects<br/>
+Verified - https://www.casa39.com/free-3d-projects - OK<br/>
+Verified - quotes - https://www.casa39.com/quotes<br/>
+Verified - https://www.casa39.com/quotes - OK<br/>
+Verified - visit us - https://www.casa39.com/visit-us<br/>
+Verified - https://www.casa39.com/visit-us - OK<br/>
+Verified - all our services - https://www.casa39.com/all-our-services<br/>
+Verified - https://www.casa39.com/all-our-services - OK<br/>
+Verified - login - https://www.casa39.com/#<br/>
+Verified - https://www.casa39.com/# - OK<br/>
+Verified - privacy - https://www.casa39.com/privacy-policy<br/>
+Verified - https://www.casa39.com/privacy-policy - OK<br/>
+Verified - right of withdrawal - https://www.casa39.com/right-of-withdrawal<br/>
+Verified - https://www.casa39.com/right-of-withdrawal - OK<br/>
+Verified - help - https://www.casa39.com/help<br/>
+Verified - https://www.casa39.com/help - OK<br/>
+Verified - faq - https://www.casa39.com/faq/<br/>
+Verified - https://www.casa39.com/faq/ - OK<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAllFooterInformationLinks test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testSelectProductSubCategory()'><b>testSelectProductSubCategory</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-202984526" onClick='toggleBox("Output-202984526", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-202984526" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-202984526">
+STEP - *** Running test method testSelectProductSubCategory...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Choose and Select Category As FLOOR TILES From Product Categories<br/>
+STEP - Selecting FLOOR TILES from list...<br/>
+STEP - Click - Cleansers<br/>
+Verified - Cleansers - Sub Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As WALL TILES From Product Categories<br/>
+STEP - Selecting WALL TILES from list...<br/>
+STEP - Click - Marble effect<br/>
+Verified - Bathroom Tiles Marble effect - Sub Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As TAPS From Product Categories<br/>
+STEP - Selecting TAPS from list...<br/>
+STEP - Click - Waterfall taps<br/>
+Verified - Waterfall taps - Sub Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As ACCESSORIES From Product Categories<br/>
+STEP - Selecting ACCESSORIES from list...<br/>
+STEP - Click - Hooks<br/>
+Verified - Hooks - Sub Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As SANITARY WARES From Product Categories<br/>
+STEP - Selecting SANITARY WARES from list...<br/>
+STEP - Click - Ceramic<br/>
+Verified - Shower Trays - Sub Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As FURNITURE From Product Categories<br/>
+STEP - Selecting FURNITURE from list...<br/>
+STEP - Click - Mirrors<br/>
+Verified - Mirrors - Sub Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As BATHTUBS From Product Categories<br/>
+STEP - Selecting BATHTUBS from list...<br/>
+STEP - Click - Recessed<br/>
+Verified - Bathtubs Recessed - Sub Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As SHOWER ENCLOSURES From Product Categories<br/>
+STEP - Selecting SHOWER ENCLOSURES from list...<br/>
+STEP - Click - Single door opening<br/>
+Verified - Single door opening - Sub Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Choose and Select Category As BRANDS From Product Categories<br/>
+STEP - Selecting BRANDS from list...<br/>
+STEP - Click - FLAVIKER<br/>
+Verified - Flaviker - Sub Category Opened Successfully...<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testSelectProductSubCategory test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>98</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testUserSelectLanguageCountryAndCurrency()'><b>testUserSelectLanguageCountryAndCurrency</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-325735794" onClick='toggleBox("Output-325735794", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-325735794" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-325735794">
+STEP - *** Running test method testUserSelectLanguageCountryAndCurrency...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Choose other language<br/>
+STEP - Click - English<br/>
+STEP - Selecting Italiano from list...<br/>
+STEP - Click - Italiano<br/>
+Verified - Italiano Language Selected Successfully<br/>
+STEP - Click - Accetto!<br/>
+STEP - Reset Language<br/>
+STEP - Click - Italiano<br/>
+STEP - Selecting English from list...<br/>
+STEP - Click - English<br/>
+Verified - English Language Selected Successfully<br/>
+STEP - Choose other Country<br/>
+STEP - Click - Other Countries<br/>
+STEP - Selecting Denmark from list...<br/>
+STEP - Click - Denmark<br/>
+Verified - Denmark Country Selected Successfully<br/>
+STEP - Choose other Currency<br/>
+STEP - Click - Euro<br/>
+STEP - Selecting Us Dollar from list...<br/>
+STEP - Click - Us Dollar<br/>
+Verified - Us Dollar Currency Selected Successfully<br/>
+STEP - Reset Currency<br/>
+STEP - Click - Us Dollar<br/>
+STEP - Selecting Euro from list...<br/>
+STEP - Click - Euro<br/>
+Verified - Euro Currency Selected Successfully<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testUserSelectLanguageCountryAndCurrency test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestProductDetails.testProductSpecifications()'><b>testProductSpecifications</b><br>Test class: tests.shopping.TestProductDetails<br/>
+<a href="#Output-899344442" onClick='toggleBox("Output-899344442", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-899344442" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-899344442">
+STEP - *** Running test method testProductSpecifications...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as Novellini panelled bathtub Vogue<br/>
+STEP - Set - Novellini panelled bathtub Vogue<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Novellini panelled bathtub Vogue<br/>
+Verified - Novellini panelled bathtub Vogue as Searched Product is Correctly Displayed<br/>
+STEP - Validate Product Specifications<br/>
+Verified - Brand Name is Correct<br/>
+Verified - EAN is Correct<br/>
+Verified - Material is Correct<br/>
+Verified - Brand Information is Correct<br/>
+STEP - Select Parameters<br/>
+STEP - Select Dimention As - 150x85 cm<br/>
+STEP - Select Dimention As - Senza idromassaggio<br/>
+STEP - Set - 5<br/>
+STEP - Add to Cart<br/>
+STEP - Click - Add to Cart<br/>
+Verified - Novellini panelled bathtub Vogue<br/>
+Verified - has been added to your cart<br/>
+STEP - View Shopping Cart<br/>
+STEP - Click - View cart<br/>
+STEP - Validate Group Product Price Details<br/>
+Validating '€798.32' from Shopping Cart Page...<br/>
+Verified - Price is Correct<br/>
+STEP - Validate Group Product Sub Total Details<br/>
+Validating '€3,991.60' from Shopping Cart Page...<br/>
+Verified - Subtotal Price is Correct<br/>
+STEP - Validate Group Product Quantity Details<br/>
+Validating '5' from Shopping Cart Page...<br/>
+Verified - Quantity is Correct<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testProductSpecifications test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>tests.shopping.TestProductDetails@51c8530f</td></tr>
+<tr>
+<td title='tests.shopping.TestShoppingCart.testRemoveProductFromCart()'><b>testRemoveProductFromCart</b><br>Test class: tests.shopping.TestShoppingCart<br/>
+<a href="#Output-1600356864" onClick='toggleBox("Output-1600356864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1600356864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1600356864">
+STEP - *** Running test method testRemoveProductFromCart...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as Pozzi Ginori Abele Square shower tray 90x90 cm 60141<br/>
+STEP - Set - Pozzi Ginori Abele Square<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Pozzi Ginori Abele Square shower tray 90x90 cm 60141<br/>
+Verified - Pozzi Ginori Abele Square shower tray 90x90 cm 60141 as Searched Product is Correctly Displayed<br/>
+STEP - Select Quantity and add to cart<br/>
+STEP - Set - 3<br/>
+STEP - Click - Add to Cart<br/>
+Verified - Pozzi Ginori Abele Square shower tray 90x90 cm 60141<br/>
+Verified - has been added to your cart<br/>
+STEP - View Shopping Cart<br/>
+STEP - Click - View cart<br/>
+STEP - Validate Group Product Price Details<br/>
+Validating '€294.12' from Shopping Cart Page...<br/>
+Verified - Price is Correct<br/>
+STEP - Validate Group Product Sub Total Details<br/>
+Validating '€882.36' from Shopping Cart Page...<br/>
+Verified - Subtotal Price is Correct<br/>
+STEP - Validate Group Product Quantity Details<br/>
+Validating '3' from Shopping Cart Page...<br/>
+Verified - Quantity is Correct<br/>
+STEP - Remove Item from Cart<br/>
+STEP - Click - Remove item<br/>
+Verified - You have no items in your shopping cart.<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testRemoveProductFromCart test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>tests.shopping.TestShoppingCart@43738a82</td></tr>
+<tr>
+<td title='tests.shopping.TestUserProfile.testMyAccountSection()'><b>testMyAccountSection</b><br>Test class: tests.shopping.TestUserProfile<br/>
+<a href="#Output-325478528" onClick='toggleBox("Output-325478528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-325478528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-325478528">
+STEP - *** Running test method testMyAccountSection...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Log In with Valid username and Password<br/>
+STEP - Click - SIGN IN<br/>
+STEP - Click - Login<br/>
+STEP - Go to My Account Section<br/>
+STEP - Click - MY ACCOUNT<br/>
+Verified - My Account Page is Displayed<br/>
+STEP - Validate Account Information<br/>
+Verified - User Name as 'Ajay Sikarwar' is Correct<br/>
+Verified - User Email Id as 'ajay@xhtmljunkies.com' is Correct<br/>
+Verified - You are subscribed to "General Subscription".<br/>
+STEP - Go to My Account Section<br/>
+STEP - Click - MY ACCOUNT<br/>
+Verified - My Account Page is Displayed<br/>
+STEP - Click - View Order<br/>
+Verified - Order Id as #3000036324 is Displayed<br/>
+STEP - Validate Order Details<br/>
+Verified - Emilceramica Be-Square Sand 80x80 cm 80KC3R ECXH is Displayed<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH is Displayed<br/>
+Verified - Emilceramica Be-Square Sand 80x80 cm 80KC3R ECXH Box Quantity is Displayed<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH Box Quantity is Displayed<br/>
+Verified - Emilceramica Be-Square Sand 80x80 cm 80KC3R ECXH Box Price is Displayed<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH Box Price is Displayed<br/>
+Verified - Emilceramica Be-Square Sand 80x80 cm 80KC3R ECXH SKU is Displayed<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH SKU is Displayed<br/>
+Verified - Emilceramica Be-Square Sand 80x80 cm 80KC3R ECXH Price is Displayed<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH Price is Displayed<br/>
+Verified - Emilceramica Be-Square Sand 80x80 cm 80KC3R ECXH Subtotal Price is Displayed<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH Subtotal Price is Displayed<br/>
+Verified - Emilceramica Be-Square Sand 80x80 cm 80KC3R ECXH Canceled Quantity is Displayed<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH Canceled Quantity is Displayed<br/>
+Verified - €476.91 Subtotal is Displayed<br/>
+Verified - €50.00 Shipping & Handling Charges is Displayed<br/>
+Verified - €431.88 Grand Total Excludinng Tax is Displayed<br/>
+Verified - €95.03 Tax is Displayed<br/>
+Verified - €526.91 Grand Final Total is Displayed<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Click - SIGN OUT<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testMyAccountSection test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>tests.shopping.TestUserProfile@c81cdd1</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testAllOurServicesSection()'><b>testAllOurServicesSection</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-467313213" onClick='toggleBox("Output-467313213", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-467313213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-467313213">
+STEP - *** Running test method testAllOurServicesSection...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Validate All Our Services Section<br/>
+STEP - Click - All our service<br/>
+Verified - All Our Services Page is Displayed<br/>
+STEP - Validate SAMPLES Section<br/>
+STEP - Click - SAMPLES
+Ask for a sample of your selected tiles
+to be sure of your choice.<br/>
+Verified - SAMPLES SERVICE section is Displayed<br/>
+Verified - SAMPLES SERVICE content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate Best Price Guaranteed Section<br/>
+STEP - Click - All our service<br/>
+Verified - All Our Services Page is Displayed<br/>
+STEP - Click - ? BEST PRICE GUARANTEE ?<br/>
+Verified - BEST PRICE GUARANTEE section is Displayed<br/>
+Verified - BEST PRICE GUARANTEE content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate BUYER PROTECTION Section<br/>
+STEP - Click - All our service<br/>
+Verified - All Our Services Page is Displayed<br/>
+STEP - Click - BUYER PROTECTION
+Buy safely by choosing the protection
+which suits your needs best.<br/>
+Verified - BUYER PROTECTION section is Displayed<br/>
+Verified - BUYER PROTECTION content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate QUOTES Section<br/>
+STEP - Click - All our service<br/>
+Verified - All Our Services Page is Displayed<br/>
+STEP - Click - QUOTES
+Many prices are imposed by the producers.
+Ask for a quote and receive special discounts.<br/>
+Verified - QUOTES section is Displayed<br/>
+Verified - QUOTES content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate VISIT OUR SHOP Section<br/>
+STEP - Click - All our service<br/>
+Verified - All Our Services Page is Displayed<br/>
+STEP - Click - VISIT OUR SHOP
+You are invited to convince yourself of our quality
+by visiting our showroom in beautiful South Italy.<br/>
+Verified - VISIT OUR STORE section is Displayed<br/>
+Verified - VISIT OUR STORE content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate FREE 3D PROJECTS Section<br/>
+STEP - Click - All our service<br/>
+Verified - All Our Services Page is Displayed<br/>
+STEP - Click - FREE 3D-PROJECTS
+With our photorealistic 3D creations we help you to visualize your final projects.<br/>
+Verified - FREE 3D PROJECTS section is Displayed<br/>
+Verified - FREE 3D PROJECTS content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate SHIPPING Section<br/>
+STEP - Click - All our service<br/>
+Verified - All Our Services Page is Displayed<br/>
+STEP - Click - SHIPPING
+Our deliveries are insured
+and get sent by express service.<br/>
+Verified - SHIPPING section is Displayed<br/>
+STEP - Products purchased on CASA39 can be delivered to the following countries:<br/>
+Verified - Austria<br/>
+Verified - Australia<br/>
+Verified - New Zealand<br/>
+Verified - Belgium<br/>
+Verified - Bulgaria<br/>
+Verified - Canada<br/>
+Verified - Switzerland<br/>
+Verified - Czech Republic<br/>
+Verified - Germany<br/>
+Verified - Denmark<br/>
+Verified - Spain<br/>
+Verified - Finland<br/>
+Verified - France<br/>
+Verified - United Kingdom<br/>
+Verified - Greece<br/>
+Verified - Croatia<br/>
+Verified - Hungary<br/>
+Verified - Ireland<br/>
+Verified - Italy<br/>
+Verified - Luxembourg<br/>
+Verified - Netherlands<br/>
+Verified - Norway<br/>
+Verified - Poland<br/>
+Verified - Portugal<br/>
+Verified - Romania<br/>
+Verified - Slovak Republic<br/>
+Verified - Slovenia<br/>
+Verified - U.S.A.<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Validate ORDER CHECK Section<br/>
+STEP - Click - All our service<br/>
+Verified - All Our Services Page is Displayed<br/>
+STEP - Click - ORDER CHECK
+All orders composed of multiple items
+get checked to ensure their compatibility.<br/>
+Verified - ORDER CHECK section is Displayed<br/>
+Verified - ORDER CHECK content is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAllOurServicesSection test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>92</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestCheckOutPage.testSecureCheckOutForProducts()'><b>testSecureCheckOutForProducts</b><br>Test class: tests.shopping.TestCheckOutPage<br/>
+<a href="#Output-37380050" onClick='toggleBox("Output-37380050", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-37380050" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-37380050">
 STEP - *** Running test method testSecureCheckOutForProducts...<br/>
 STEP - Launch Browser Successfully...<br/>
 STEP - Navigate to Casa39 English Website Home Page.<br/>
@@ -170,50 +1630,90 @@ STEP - *** Executed testSecureCheckOutForProducts test successfully...<br/>
 </div>
 </td>
 <td></td>
-<td>53</td>
-<td>tests.shopping.TestShoppingCart@b7dd107</td></tr>
+<td>55</td>
+<td>tests.shopping.TestCheckOutPage@33723e30</td></tr>
 <tr>
-<td title='tests.shopping.TestShoppingCart.testMinicartQuotesModalFromHomePage()'><b>testMinicartQuotesModalFromHomePage</b><br>Test class: tests.shopping.TestShoppingCart<br/>
-<a href="#Output-453671855" onClick='toggleBox("Output-453671855", this, "Show output", "Hide output");'>Show output</a>
+<td title='tests.shopping.TestHomePage.testBuyersProtectionInformationBadge()'><b>testBuyersProtectionInformationBadge</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-677696333" onClick='toggleBox("Output-677696333", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-453671855" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-453671855">
-STEP - *** Running test method testMinicartQuotesModalFromHomePage...<br/>
+<a href="#Output-677696333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-677696333">
+STEP - *** Running test method testBuyersProtectionInformationBadge...<br/>
 STEP - Launch Browser Successfully...<br/>
 STEP - Navigate to Casa39 English Website Home Page.<br/>
 STEP - Accepting Cookies...<br/>
-STEP - Log In with Valid username and Password<br/>
-STEP - Click - SIGN IN<br/>
-STEP - Click - Login<br/>
-STEP - Validate Minicart Modal<br/>
-STEP - Click - MY QUOTE<br/>
-Verified - Total Items are Correct<br/>
-Verified - Cart subtotal price is Correct<br/>
-STEP - Click - Ask for a quote<br/>
-Verified - Cart Quotes Page is Displayed<br/>
-STEP - Validating '€25.21' from Summary...<br/>
-Verified - Items Price is Correct<br/>
-STEP - Validating '€215.97' from Summary...<br/>
-Verified - Items Price is Correct<br/>
-STEP - Validating '€105.88' from Summary...<br/>
-Verified - Items Price is Correct<br/>
-STEP - Validating '€218.48' from Summary...<br/>
-Verified - Items Price is Correct<br/>
-STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
-STEP - Click - SIGN OUT<br/>
+STEP - Open Buyer's Protection Information Badge<br/>
+STEP - Click - <br/>
+Validating 'Shopping is secure here' from Buyer's Protection Information...<br/>
+Verified - Shopping is secure here<br/>
+Validating 'Independent guarantee' from Buyer's Protection Information...<br/>
+Verified - Independent guarantee<br/>
+Validating 'Rating score: Excellent' from Buyer's Protection Information...<br/>
+Verified - Rating score: Excellent<br/>
+STEP - Close Buyer's Protection Information Badge<br/>
+STEP - Click - <br/>
 STEP - Closing Browser Successfully...<br/>
-STEP - *** Executed testMinicartQuotesModalFromHomePage test successfully...<br/>
+STEP - *** Executed testBuyersProtectionInformationBadge test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testAllPlatformAvailabilityLinks()'><b>testAllPlatformAvailabilityLinks</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-59382310" onClick='toggleBox("Output-59382310", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-59382310" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-59382310">
+STEP - *** Running test method testAllPlatformAvailabilityLinks...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - List all platforms associated with it's navigation link<br/>
+Verified - Amazon - https://www.amazon.it/s?me=A1OMJHY09HD69I<br/>
+https://www.amazon.it/s?me=A1OMJHY09HD69I - Service Unavailable IS A BROKEN LINK...<br/>
+Verified - Ebay - https://www.ebay.it/str/casa39<br/>
+Verified - https://www.ebay.it/str/casa39 - OK<br/>
+Verified - Houzz - https://www.houzz.it/pro/info3429/casa39<br/>
+Verified - https://www.houzz.it/pro/info3429/casa39 - OK<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAllPlatformAvailabilityLinks test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestProductListPage.testAddProductToQuoteFromProductListPage()'><b>testAddProductToQuoteFromProductListPage</b><br>Test class: tests.shopping.TestProductListPage<br/>
+<a href="#Output-55665213" onClick='toggleBox("Output-55665213", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-55665213" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-55665213">
+STEP - *** Running test method testAddProductToQuoteFromProductListPage...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Choose and Select Category As ACCESSORIES From Product Categories<br/>
+STEP - Selecting ACCESSORIES from list...<br/>
+STEP - Click - ACCESSORIES<br/>
+Verified - ACCESSORIES - Category Opened Successfully...<br/>
+STEP - Selecting Lineabeta Ranpin accessories stand 51194.29 from list...<br/>
+STEP - Click - <br/>
+Verified - You added Lineabeta Ranpin accessories stand 51194.29 to your quote cart.<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAddProductToQuoteFromProductListPage test successfully...<br/>
 </div>
 </td>
 <td></td>
 <td>39</td>
-<td>tests.shopping.TestShoppingCart@b7dd107</td></tr>
+<td>tests.shopping.TestProductListPage@7403c468</td></tr>
 <tr>
 <td title='tests.shopping.TestShoppingCart.testApplyForDiscountOnShoppingCartPage()'><b>testApplyForDiscountOnShoppingCartPage</b><br>Test class: tests.shopping.TestShoppingCart<br/>
-<a href="#Output-1454026445" onClick='toggleBox("Output-1454026445", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1117388522" onClick='toggleBox("Output-1117388522", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1454026445" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1454026445">
+<a href="#Output-1117388522" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1117388522">
 STEP - *** Running test method testApplyForDiscountOnShoppingCartPage...<br/>
 STEP - Launch Browser Successfully...<br/>
 STEP - Navigate to Casa39 English Website Home Page.<br/>
@@ -242,8 +1742,218 @@ STEP - *** Executed testApplyForDiscountOnShoppingCartPage test successfully...<
 </div>
 </td>
 <td></td>
-<td>49</td>
-<td>tests.shopping.TestShoppingCart@b7dd107</td></tr>
+<td>45</td>
+<td>tests.shopping.TestShoppingCart@43738a82</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testEmailSubscription()'><b>testEmailSubscription</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-1940816602" onClick='toggleBox("Output-1940816602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1940816602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1940816602">
+STEP - *** Running test method testEmailSubscription...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Subscrition email without entering email.<br/>
+STEP - Click - SUBSCRIBE<br/>
+Verified - Email Required error Message is Displayed<br/>
+STEP - Subscrition email by entering existing email.<br/>
+STEP - Click - SUBSCRIBE<br/>
+Verified - This email address is already subscribed<br/>
+STEP - Subscrition email by entering new email.<br/>
+STEP - Click - SUBSCRIBE<br/>
+Verified - Success Message is Displayed<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testEmailSubscription test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestProductDetails.testAddConfigurableProductsToQuotes()'><b>testAddConfigurableProductsToQuotes</b><br>Test class: tests.shopping.TestProductDetails<br/>
+<a href="#Output-527732035" onClick='toggleBox("Output-527732035", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-527732035" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-527732035">
+STEP - *** Running test method testAddConfigurableProductsToQuotes...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as Ragno Woodtale Miele 30x120 cm R4TH<br/>
+STEP - Set - R4TH<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Ragno Woodtale Miele 30x120 cm R4TH<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH as Searched Product is Correctly Displayed<br/>
+STEP - Select Quantity for all product groups<br/>
+Verified - Quantity per Squares is Correct<br/>
+Verified - Quantity per Boxes is Correct<br/>
+STEP - Increase Quantity using Meters (+)<br/>
+STEP - Click - <br/>
+STEP - Reduce Quantity using Boxes (-)<br/>
+STEP - Click - <br/>
+STEP - Increase Quantity using Boxes (+)<br/>
+STEP - Click - <br/>
+STEP - Reduce Quantity using Meters (-)<br/>
+STEP - Click - <br/>
+Verified - Quantity per Squares is Correct<br/>
+Verified - Quantity per Boxes is Correct<br/>
+STEP - Increase Quantity using Boxes (+)<br/>
+STEP - Click - <br/>
+Verified - Quantity per Boxes is Correct<br/>
+STEP - Add to Quote<br/>
+STEP - Click - Add to Quote<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH<br/>
+Verified - has been added to your cart<br/>
+STEP - Navigate to Cart Quotes Page<br/>
+STEP - Click - Quote Cart<br/>
+Verified - Cart Quotes Page is Displayed<br/>
+STEP - Validate Product Details<br/>
+STEP - Validating '3' from Shopping Cart Quotes Page...<br/>
+Verified - Quantity is Correct<br/>
+STEP - Validating '29.90' from Shopping Cart Quotes Page...<br/>
+Verified - Product Price is Correct<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAddConfigurableProductsToQuotes test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>tests.shopping.TestProductDetails@51c8530f</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testSearchProductsFromHomePage()'><b>testSearchProductsFromHomePage</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-280362829" onClick='toggleBox("Output-280362829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-280362829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-280362829">
+STEP - *** Running test method testSearchProductsFromHomePage...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Not Available Product as ABC<br/>
+STEP - Set - ABC<br/>
+Verified - Your search returned no products.<br/>
+Verified - Search Results is Displayed<br/>
+Verified - No Search Results Message is Displayed<br/>
+STEP - STEP - Returning back to Home Page...<br/>
+STEP - Search for a Available Product as Lineabeta Basket waste bin 5346.29<br/>
+STEP - Set - Lineabeta Basket waste<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Lineabeta Basket waste bin 5346.29<br/>
+Verified - Searched Product is Correctly Displayed<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testSearchProductsFromHomePage test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestProductDetails.testAddProductReviewByUser()'><b>testAddProductReviewByUser</b><br>Test class: tests.shopping.TestProductDetails<br/>
+<a href="#Output-1769947269" onClick='toggleBox("Output-1769947269", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1769947269" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1769947269">
+STEP - *** Running test method testAddProductReviewByUser...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as House Design mirror Traccia<br/>
+STEP - Set - House Design mirror Traccia<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - House Design mirror Traccia<br/>
+Verified - House Design mirror Traccia as Searched Product is Correctly Displayed<br/>
+STEP - Write Your Own Review<br/>
+STEP - Click - Write Your Own Review<br/>
+STEP - Submit a Review<br/>
+Verified - You are Reviewing House Design mirror Traccia<br/>
+STEP - Click - Send review<br/>
+Verified - Review Submitted for Review Successfully<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAddProductReviewByUser test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>tests.shopping.TestProductDetails@51c8530f</td></tr>
+<tr>
+<td title='tests.shopping.TestHomePage.testSignInAuthenticatedUser()'><b>testSignInAuthenticatedUser</b><br>Test class: tests.shopping.TestHomePage<br/>
+<a href="#Output-831473649" onClick='toggleBox("Output-831473649", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-831473649" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-831473649">
+STEP - *** Running test method testSignInAuthenticatedUser...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Go to Customer Log In Page and Validate Authenicated User Log In.<br/>
+STEP - Click - SIGN IN<br/>
+STEP - Click Sign In without setting username and Password<br/>
+STEP - Click - Login<br/>
+Verified - Email is required<br/>
+Verified - Password is required<br/>
+STEP - Click - <br/>
+STEP - Log In with Invalid username and Password<br/>
+STEP - Click - SIGN IN<br/>
+STEP - Click - Login<br/>
+Verified - Please enter a valid email address (Ex: johndoe@domain.com).<br/>
+Verified - Please enter 6 or more characters. Leading and trailing spaces will be ignored.<br/>
+STEP - Click - <br/>
+STEP - Log In with Valid username and Password<br/>
+STEP - Click - SIGN IN<br/>
+STEP - Click - Login<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testSignInAuthenticatedUser test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>tests.shopping.TestHomePage@13eb8acf</td></tr>
+<tr>
+<td title='tests.shopping.TestProductDetails.testProductAddToQuote()'><b>testProductAddToQuote</b><br>Test class: tests.shopping.TestProductDetails<br/>
+<a href="#Output-1866408768" onClick='toggleBox("Output-1866408768", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1866408768" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1866408768">
+STEP - *** Running test method testProductAddToQuote...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as Lineabeta Duemila hook 5507.29<br/>
+STEP - Set - Lineabeta Duemila hook<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Lineabeta Duemila hook 5507.29<br/>
+Verified - Lineabeta Duemila hook 5507.29 as Searched Product is Correctly Displayed<br/>
+STEP - Add to Quote<br/>
+STEP - Click - Add to Quote<br/>
+Verified - Lineabeta Duemila hook 5507.29<br/>
+Verified - has been added to your cart<br/>
+STEP - Navigate to Cart Quotes Page<br/>
+STEP - Click - Quote Cart<br/>
+Verified - Cart Quotes Page is Displayed<br/>
+STEP - Update Quote<br/>
+STEP - Set - 10<br/>
+STEP - Click - <br/>
+STEP - Enter User Details to Request Quote<br/>
+STEP - Set - email_0824164214478@test.com<br/>
+STEP - Set - FirstName_0824164214745<br/>
+STEP - Set - LastName_0824164214915<br/>
+STEP - Set - 123456<br/>
+STEP - Set - Remarks<br/>
+Select Option As - Germany<br/>
+STEP - Click - Request quote<br/>
+Verified - Your quote request has been received!<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testProductAddToQuote test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>71</td>
+<td>tests.shopping.TestProductDetails@51c8530f</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,14 +1,32 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
+<!-- To run entire automation suite -->
+
+<suite name="TestSuite" verbose="1"> 
+	<listeners>
+ 		<listener class-name="reports.TestListener" />
+	</listeners> 
+	<parameter name="browserType" value="chrome" /> 
+	<test name="Tests"> 
+		<packages> 
+			<package name=".*" /> 
+		</packages> 
+	</test> 
+</suite>
+
+<!-- *************************************************** -->
+<!-- To run class test of automation suite -->
+
+<!-- 
 <suite name="TestSuite" verbose="1">
 	<listeners>
 		<listener class-name="reports.TestListener" />
 	</listeners>
 	<parameter name="browserType" value="chrome" />
-
 	<test name="Tests">
-		<packages>
-			<package name=".*" />
-		</packages>
+		<classes>
+			<class name="tests.shopping.TestShoppingCart" />
+		</classes>
 	</test>
 </suite>
+ -->

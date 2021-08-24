@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>TestNG:  Tests(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Tests(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 19 12:15:12 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>118 seconds (118620 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.shopping.TestShoppingCart.testSecureCheckOutForProducts()'><b>testSecureCheckOutForProducts</b><br>Test class: tests.shopping.TestShoppingCart<br/>
+<a href="#Output-733672688" onClick='toggleBox("Output-733672688", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-733672688" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-733672688">
+STEP - *** Running test method testSecureCheckOutForProducts...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as Marazzi Evolutionmarble Calacatta 60x60 cm MHV2<br/>
+STEP - Set - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2<br/>
+Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 as Searched Product is Correctly Displayed<br/>
+STEP - Select Quantity and add to cart<br/>
+STEP - Set - 30<br/>
+STEP - Click - Add to Cart<br/>
+Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2<br/>
+Verified - has been added to your cart<br/>
+STEP - Click - Continue<br/>
+STEP - Validate Non-Empty Cart and Close<br/>
+STEP - Click - My Cart
+€705.02<br/>
+Verified - Item Prices are Correct<br/>
+Verified - Total Items are Correct<br/>
+STEP - View Shopping Cart<br/>
+STEP - Click - View and edit cart<br/>
+Validating '€705.02' from Summary...<br/>
+Verified - Sub Total is Correct<br/>
+Verified - Page Title is Displayed<br/>
+Validating '€150.00' from Summary...<br/>
+Verified - Shipping Price is Correct<br/>
+Validating '€158.09' from Summary...<br/>
+Verified - Tax Amount is Correct<br/>
+Validating '€989.16' from Summary...<br/>
+Verified - Order Total is Correct<br/>
+STEP - Proceed To Checkout<br/>
+STEP - Click - Proceed to Checkout<br/>
+Verified - Marazzi Evolutionmarble Calacatta 60x60 cm MHV2 is Displayed<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testSecureCheckOutForProducts test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>tests.shopping.TestShoppingCart@7a9273a8</td></tr>
+<tr>
+<td title='tests.shopping.TestProductDetails.testAddConfigurableProductsToQuotes()'><b>testAddConfigurableProductsToQuotes</b><br>Test class: tests.shopping.TestProductDetails<br/>
+<a href="#Output-1470911015" onClick='toggleBox("Output-1470911015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1470911015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1470911015">
+STEP - *** Running test method testAddConfigurableProductsToQuotes...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as Ragno Woodtale Miele 30x120 cm R4TH<br/>
+STEP - Set - R4TH<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Ragno Woodtale Miele 30x120 cm R4TH<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH as Searched Product is Correctly Displayed<br/>
+STEP - Select Quantity for all product groups<br/>
+Verified - Quantity per Squares is Correct<br/>
+Verified - Quantity per Boxes is Correct<br/>
+STEP - Increase Quantity using Meters (+)<br/>
+STEP - Click - <br/>
+STEP - Reduce Quantity using Boxes (-)<br/>
+STEP - Click - <br/>
+STEP - Increase Quantity using Boxes (+)<br/>
+STEP - Click - <br/>
+STEP - Reduce Quantity using Meters (-)<br/>
+STEP - Click - <br/>
+Verified - Quantity per Squares is Correct<br/>
+Verified - Quantity per Boxes is Correct<br/>
+STEP - Increase Quantity using Boxes (+)<br/>
+STEP - Click - <br/>
+Verified - Quantity per Boxes is Correct<br/>
+STEP - Add to Quote<br/>
+STEP - Click - Add to Quote<br/>
+Verified - Ragno Woodtale Miele 30x120 cm R4TH<br/>
+Verified - has been added to your cart<br/>
+STEP - Navigate to Cart Quotes Page<br/>
+STEP - Click - Quote Cart<br/>
+Verified - Cart Quotes Page is Displayed<br/>
+STEP - Validate Product Details<br/>
+STEP - Validating '3' from Shopping Cart Quotes Page...<br/>
+Verified - Quantity is Correct<br/>
+STEP - Validating '29.90' from Shopping Cart Quotes Page...<br/>
+Verified - Product Price is Correct<br/>
+STEP - STEP - Clicking CASA39 Logo to Return On Home Page...<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAddConfigurableProductsToQuotes test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>tests.shopping.TestProductDetails@25af5db5</td></tr>
+<tr>
+<td title='tests.shopping.TestProductDetails.testAddProductToCart()'><b>testAddProductToCart</b><br>Test class: tests.shopping.TestProductDetails<br/>
+<a href="#Output-1894144426" onClick='toggleBox("Output-1894144426", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1894144426" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1894144426">
+STEP - *** Running test method testAddProductToCart...<br/>
+STEP - Launch Browser Successfully...<br/>
+STEP - Navigate to Casa39 English Website Home Page.<br/>
+STEP - Accepting Cookies...<br/>
+STEP - Search for a Available Product as Lineabeta Basket waste bin 5346.29<br/>
+STEP - Set - Lineabeta Basket waste<br/>
+Selecting product from suggested item list...<br/>
+STEP - Click - Lineabeta Basket waste bin 5346.29<br/>
+Verified - Lineabeta Basket waste bin 5346.29 as Searched Product is Correctly Displayed<br/>
+STEP - Select Quantity and add to cart<br/>
+STEP - Set - 3<br/>
+STEP - Click - Add to Cart<br/>
+Verified - Lineabeta Basket waste bin 5346.29<br/>
+Verified - has been added to your cart<br/>
+STEP - Click - Continue<br/>
+STEP - Closing Browser Successfully...<br/>
+STEP - *** Executed testAddProductToCart test successfully...<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>tests.shopping.TestProductDetails@25af5db5</td></tr>
+</table><p>
+</body>
+</html>

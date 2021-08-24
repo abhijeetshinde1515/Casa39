@@ -5,7 +5,6 @@ import baseTestScripts.TestData;
 import baseTestScripts.TestNGBaseTest;
 import framework.TestDocumentation;
 import pages.catalogue.CartQuotesPage;
-import pages.catalogue.CheckOutPage;
 import pages.catalogue.InformationModal;
 import pages.catalogue.ProductDescriptionPage;
 import pages.catalogue.ShoppingCartPage;
@@ -15,53 +14,7 @@ import pages.home.MinicartModal;
 import pages.home.SearchResultsPage;
 
 public class TestShoppingCart extends TestNGBaseTest {
-
-	@TestDocumentation(
-			TestNumber = "", 
-			Coverage = "Verifies user can select product, add to cart and proceed to checkout page.",
-			CreateDate = "26/07/2021")
-	@Test()
-	public void testSecureCheckOutForProducts() throws Exception {
-
-		HomePage homePage = navigateToCasa39Website(false);
-
-		String productName = "Marazzi Evolutionmarble Calacatta 60x60 cm MHV2";
-		String searchText = "Marazzi Evolutionmarble Calacatta 60x60 cm MHV2";
-
-		logStep("Search for a Available Product as " + productName);
-		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
-		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText,
-				productName);
-		assertTrue(descriptionPage.isPageTitleDisplayed(productName),
-				productName + " as Searched Product is Correctly Displayed");
-
-		logStep("Select Quantity and add to cart");
-		descriptionPage.selectFlooringQtyAs("30");
-		InformationModal informationModal = descriptionPage.clickAddToCart();
-		assertTrue(informationModal.isSuccessMessageDisplayed(productName), productName);
-		assertTrue(informationModal.isSuccessMessageDisplayed("has been added to your cart"),
-				"has been added to your cart");
-		informationModal.clickCross();
 		
-		logStep("Validate Non-Empty Cart and Close");
-		MinicartModal minicartModal = homePage.clickMyCart();
-		assertTrue(minicartModal.getAmountPrice().contains("€705.02"), "Item Prices are Correct");
-		assertTrue(minicartModal.getTotalItems().contains("32.4"), "Total Items are Correct");
-		
-		logStep("View Shopping Cart");
-		ShoppingCartPage shoppingCartPage = minicartModal.clickViewAndEditCart();
-		assertTrue(shoppingCartPage.validatePriceSummary("€705.02"), "Sub Total is Correct");assertTrue(shoppingCartPage.isPageTitleDisplayed("Shopping cart"), "Page Title is Displayed");
-		
-		assertTrue(shoppingCartPage.validatePriceSummary("€150.00"), "Shipping Price is Correct");
-		assertTrue(shoppingCartPage.validatePriceSummary("€158.09"), "Tax Amount is Correct");
-		assertTrue(shoppingCartPage.validatePriceSummary("€989.16"), "Order Total is Correct");
-		
-		logStep("Proceed To Checkout");
-		CheckOutPage checkOutPage = shoppingCartPage.clickProceedToCheckOut();
-		assertTrue(checkOutPage.getProductName(productName), productName+" is Displayed");
-		closeBrowser();
-	}
-	
 	@TestDocumentation(
 			TestNumber = "",
 			Coverage = "Verifies that logged in user can access quotes mini cart section from home page.", 
@@ -175,6 +128,49 @@ public class TestShoppingCart extends TestNGBaseTest {
 		assertTrue(shoppingCartPage.validateCartQuantityDetails("5"), "Quantity is Correct");
 		assertTrue(shoppingCartPage.validateCartPriceDetails("5"), "Quantity is Correct");
 		assertTrue(shoppingCartPage.validateCartPriceDetails("5"), "Quantity is Correct");
+		
+		shoppingCartPage.clickCASA39Logo();
+		closeBrowser();
+	}
+	
+	@TestDocumentation(
+			TestNumber = "",
+			Coverage = "Verifies user remove product from cart from shopping cart page.", 
+			CreateDate = "24/08/2021")
+	@Test()
+	public void testRemoveProductFromCart() throws Exception {
+
+		HomePage homePage = navigateToCasa39Website(false);
+		
+		String productName = "Pozzi Ginori Abele Square shower tray 90x90 cm 60141";
+		String searchText = "Pozzi Ginori Abele Square";
+
+		logStep("Search for a Available Product as " + productName);
+		SearchResultsPage searchResultsPage = homePage.searchFor(searchText);
+		ProductDescriptionPage descriptionPage = searchResultsPage.selectProductFromSuggestedList(searchText, productName);
+		assertTrue(descriptionPage.isPageTitleDisplayed(productName), productName +" as Searched Product is Correctly Displayed");
+
+		logStep("Select Quantity and add to cart");
+		descriptionPage.selectQuantityAs("3");
+		InformationModal informationModal = descriptionPage.clickAddToCart();
+		assertTrue(informationModal.isSuccessMessageDisplayed(productName), productName);
+		assertTrue(informationModal.isSuccessMessageDisplayed("has been added to your cart"), "has been added to your cart");
+		
+		logStep("View Shopping Cart");
+		ShoppingCartPage shoppingCartPage = informationModal.clickViewCart();
+		
+		logStep("Validate Group Product Price Details");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€294.12"), "Price is Correct");
+		
+		logStep("Validate Group Product Sub Total Details");
+		assertTrue(shoppingCartPage.validateCartPriceDetails("€882.36"), "Subtotal Price is Correct");
+		
+		logStep("Validate Group Product Quantity Details");
+		assertTrue(shoppingCartPage.validateCartQuantityDetails("3"), "Quantity is Correct");
+		
+		logStep("Remove Item from Cart");
+		shoppingCartPage.clickRemoveItem();
+		assertTrue(shoppingCartPage.validateEmptyCartMessage(), "You have no items in your shopping cart.");
 		
 		shoppingCartPage.clickCASA39Logo();
 		closeBrowser();

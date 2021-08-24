@@ -3,6 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="tests.shopping.TestUserProfile">
+        <methods>
+          <include name="testAutomationSetUpForCasa39English"/>
+          <include name="testLoggedInUserMyAccountSection"/>
+        </methods>
+      </class> <!-- tests.shopping.TestUserProfile -->
       <class name="tests.shopping.TestProductDetails">
         <methods>
           <include name="testAddConfigurableProductsToQuotes"/>
@@ -13,6 +19,41 @@
           <include name="testAskForDiscount"/>
         </methods>
       </class> <!-- tests.shopping.TestProductDetails -->
+      <class name="tests.shopping.TestShoppingCart">
+        <methods>
+          <include name="testMinicartQuotesModalFromHomePage"/>
+          <include name="testApplyForDiscountOnShoppingCartPage"/>
+          <include name="testAddGroupProductsToCart"/>
+          <include name="testSecureCheckOutForProducts"/>
+        </methods>
+      </class> <!-- tests.shopping.TestShoppingCart -->
+      <class name="tests.shopping.TestHomePage">
+        <methods>
+          <include name="testAllFooterInformationLinks"/>
+          <include name="testAllOurServicesSection"/>
+          <include name="testAllProductSubCategoryLinks"/>
+          <include name="testSearchProductsFromHomePage"/>
+          <include name="testOffersForYouSectionLinks"/>
+          <include name="testAllPlatformAvailabilityLinks"/>
+          <include name="testEmailSubscription"/>
+          <include name="testRegisterNewUserByUniqueEmailId"/>
+          <include name="testSignInAuthenticatedUser"/>
+          <include name="testWhyChooseUsSection"/>
+          <include name="testHomePageInformationLinks"/>
+          <include name="testSelectProductCategory"/>
+          <include name="testSelectProductSubCategory"/>
+          <include name="testAllSocialMediaPlatformAvailabilityLinks"/>
+          <include name="testUserSelectLanguageCountryAndCurrency"/>
+          <include name="testBuyersProtectionInformationBadge"/>
+        </methods>
+      </class> <!-- tests.shopping.TestHomePage -->
+      <class name="tests.shopping.TestProductListPage">
+        <methods>
+          <include name="testAddProductToQuoteFromProductListPage"/>
+          <include name="testApplySortingOptionsFiltersAndPriceRange"/>
+          <include name="testAddProductToCartFromProductListPage"/>
+        </methods>
+      </class> <!-- tests.shopping.TestProductListPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

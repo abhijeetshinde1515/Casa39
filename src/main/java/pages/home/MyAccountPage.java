@@ -37,7 +37,11 @@ public class MyAccountPage extends CommonPage {
 
 	/************ actions ***************/
 	
-
+	public MyOrdersPage clickViewOrder() {
+		clickUsingJSExecutor(findElement(By.linkText("View Order")));
+		return new MyOrdersPage(driver);
+	}
+	
 	/************ validations ***************/
 	
 	public boolean isMyAccountPageDisplayed() {

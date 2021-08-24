@@ -320,7 +320,7 @@ public class TestHomePage extends TestNGBaseTest {
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "FURNITURE", "Mirrors", "Mirrors");
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "BATHTUBS", "Recessed", "Bathtubs Recessed");
 		ProductUtils.selectAndValidateProductSubCategories(homePage, "SHOWER ENCLOSURES", "Single door opening", "Single door opening");
-		ProductUtils.selectAndValidateProductSubCategories(homePage, "BRANDS", "RELAX", "Relax");
+		ProductUtils.selectAndValidateProductSubCategories(homePage, "BRANDS", "FLAVIKER", "Flaviker");
 		closeBrowser();
 	}
 	
@@ -502,7 +502,7 @@ public class TestHomePage extends TestNGBaseTest {
 			TestNumber = "",
 			Coverage = "Verifies CASA platform availability.", 
 			CreateDate = "28/07/2021")
-	@Test(enabled=false)
+	@Test(enabled=true)
 	public void testAllPlatformAvailabilityLinks() throws Exception {
 		HomePage homePage = navigateToCasa39Website(false);
 		ProductUtils.selectAndValidateAllPlatforms(homePage);

@@ -1,7 +1,6 @@
 package tests.shopping;
 
 import org.testng.annotations.Test;
-
 import baseTestScripts.TestNGBaseTest;
 import framework.TestDocumentation;
 import pages.catalogue.ProductListPage;
@@ -65,11 +64,11 @@ public class TestProductListPage extends TestNGBaseTest {
 		assertTrue(productListPage.isPageTitleDisplayed("accessories"),
 				category + " - Category Opened Successfully...");
 
-//		productListPage.addProductToCart(productName, 7);
-//		assertTrue(
-//				productListPage.isSuccessMessageDisplayed(
-//						"You added Lineabeta Ranpin accessories stand 51194.29 to your shopping cart."),
-//				"You added " + productName + " to your shopping cart.");
+		productListPage.addProductToCart(productName, 7);
+		assertTrue(
+				productListPage.isSuccessMessageDisplayed(
+						"You added Lineabeta Ranpin accessories stand 51194.29 to your shopping cart."),
+				"You added " + productName + " to your shopping cart.");
 
 		productListPage.clickHome();
 		closeBrowser();
@@ -92,11 +91,11 @@ public class TestProductListPage extends TestNGBaseTest {
 		assertTrue(productListPage.isPageTitleDisplayed("accessories"),
 				category + " - Category Opened Successfully...");
 
-//		productListPage.addProductToQuote(productName, 7);
-//		assertTrue(
-//				productListPage.isSuccessMessageDisplayed(
-//						"You added Lineabeta Ranpin accessories stand 51194.29 to your shopping cart."),
-//				"You added " + productName + " to your quote cart.");
+		productListPage.addProductToQuote(productName, 7);
+		assertTrue(
+				productListPage.isSuccessMessageDisplayed(
+						"You added Lineabeta Ranpin accessories stand 51194.29 to your shopping cart."),
+				"You added " + productName + " to your quote cart.");
 
 		productListPage.clickHome();
 		closeBrowser();

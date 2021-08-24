@@ -12,6 +12,11 @@
           <include name="testMinicartQuotesModalFromHomePage"/>
         </methods>
       </class> <!-- tests.shopping.TestShoppingCart -->
+      <class name="tests.shopping.TestProductDetails">
+        <methods>
+          <include name="testAskForDiscount"/>
+        </methods>
+      </class> <!-- tests.shopping.TestProductDetails -->
     </classes>
   </test> <!-- Tests(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

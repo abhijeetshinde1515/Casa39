@@ -60,6 +60,11 @@ public class ShoppingCartPage extends CommonPage {
 		clickUsingJSExecutor(clearShoppingButton_by);
 	}
 	
+	public ShoppingCartPage clickRemoveItem() {
+		clickUsingJSExecutor(findElement(By.linkText("Remove item")));
+		return new ShoppingCartPage(driver);
+	}
+	
 	/************ accessors **************/
 	
 	/************ validations ************/
